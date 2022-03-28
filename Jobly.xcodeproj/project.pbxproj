@@ -26,8 +26,8 @@
 		F995C97A27E5B71F008DE852 /* WorkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97927E5B71F008DE852 /* WorkDetailController.swift */; };
 		F995C97C27E5B753008DE852 /* WorkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97B27E5B753008DE852 /* WorkDetailViewController.swift */; };
 		F995C97E27E5B792008DE852 /* WorkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97D27E5B792008DE852 /* WorkDetail.swift */; };
-		F995C98127E5B7D1008DE852 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98027E5B7D1008DE852 /* Login.swift */; };
-		F995C98527E5B84F008DE852 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98427E5B84F008DE852 /* LoginController.swift */; };
+		F995C98127E5B7D1008DE852 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98027E5B7D1008DE852 /* SignIn.swift */; };
+		F995C98527E5B84F008DE852 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98427E5B84F008DE852 /* SignInController.swift */; };
 		F995C98827E5B8BF008DE852 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98727E5B8BF008DE852 /* Home.swift */; };
 		F995C98A27E5B8E4008DE852 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98927E5B8E4008DE852 /* HomeController.swift */; };
 		F995C99527E90A89008DE852 /* CategoriesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C99327E90A89008DE852 /* CategoriesCollection.swift */; };
@@ -92,8 +92,8 @@
 		F995C97927E5B71F008DE852 /* WorkDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailController.swift; sourceTree = "<group>"; };
 		F995C97B27E5B753008DE852 /* WorkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailViewController.swift; sourceTree = "<group>"; };
 		F995C97D27E5B792008DE852 /* WorkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetail.swift; sourceTree = "<group>"; };
-		F995C98027E5B7D1008DE852 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		F995C98427E5B84F008DE852 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F995C98027E5B7D1008DE852 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		F995C98427E5B84F008DE852 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		F995C98727E5B8BF008DE852 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F995C98927E5B8E4008DE852 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F995C99327E90A89008DE852 /* CategoriesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollection.swift; sourceTree = "<group>"; };
@@ -271,7 +271,7 @@
 		F995C9B427EA69D4008DE852 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F995C98027E5B7D1008DE852 /* Login.swift */,
+				F995C98027E5B7D1008DE852 /* SignIn.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 		F995C9B527EA69E4008DE852 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F995C98427E5B84F008DE852 /* LoginController.swift */,
+				F995C98427E5B84F008DE852 /* SignInController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -688,9 +688,9 @@
 				F949955627EC362100C3B2E9 /* Header.swift in Sources */,
 				F995C97A27E5B71F008DE852 /* WorkDetailController.swift in Sources */,
 				F995C9B227EA2341008DE852 /* Colors.swift in Sources */,
-				F995C98527E5B84F008DE852 /* LoginController.swift in Sources */,
+				F995C98527E5B84F008DE852 /* SignInController.swift in Sources */,
 				F995C98A27E5B8E4008DE852 /* HomeController.swift in Sources */,
-				F995C98127E5B7D1008DE852 /* Login.swift in Sources */,
+				F995C98127E5B7D1008DE852 /* SignIn.swift in Sources */,
 				F995C99527E90A89008DE852 /* CategoriesCollection.swift in Sources */,
 				F9BD34A427ECD77E0068343A /* HomeViewController.swift in Sources */,
 				F995C97727E5B6D3008DE852 /* Profile.swift in Sources */,

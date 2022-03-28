@@ -15,7 +15,7 @@ class CategoriesCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        imageView.layer.cornerRadius = 20
     }
     
     func setupCell(imageName: String, title: String) {

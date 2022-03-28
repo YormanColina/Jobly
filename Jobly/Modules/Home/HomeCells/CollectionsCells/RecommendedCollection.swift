@@ -17,6 +17,7 @@ class RecommendedCollection: UICollectionViewCell {
         
         super.awakeFromNib()
         collectionView.register(UINib(nibName: "RecommendedCell", bundle: nil), forCellWithReuseIdentifier: "RecommendedCell")
+        
     }
 
 }
@@ -43,7 +44,11 @@ extension RecommendedCollection: UICollectionViewDelegate {
 extension RecommendedCollection: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 200)
+        return CGSize(width: 310, height: 210)
+    }
+    
+    func collectionView(_: UICollectionView, layout: UICollectionViewLayout, minimumLineSpacingForSectionAt: Int) -> CGFloat {
+        return 20
     }
     
 }

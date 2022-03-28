@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-struct Login: Mappable {
+struct SignIn: Mappable {
     init?(map: Map) {
         
     }

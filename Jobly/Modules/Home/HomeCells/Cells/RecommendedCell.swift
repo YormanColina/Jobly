@@ -13,6 +13,7 @@ class RecommendedCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var descriptionCell: UILabel!
     @IBOutlet weak var viewContainer: UIView!
+    @IBOutlet weak var moreButton: UIButton!
     
     // MARK: Properties
     
@@ -26,7 +27,12 @@ class RecommendedCell: UICollectionViewCell {
     }
     
     func setupUi() {
-        viewContainer.layer.cornerRadius = 30
+        viewContainer.layer.cornerRadius = 20
+        layer.cornerRadius = 20
+        layer.borderColor = UIColor.lightGray.cgColor
+        layer.borderWidth = 0.2
+        moreButton.layer.cornerRadius = 20
+        moreButton.backgroundColor = Colors.primaryColor
     }
 
 }

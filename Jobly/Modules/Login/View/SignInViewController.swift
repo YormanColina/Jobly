@@ -16,7 +16,7 @@ class SignInViewController: UIViewController {
     
     // MARK: Properties
     
-    var controller: LoginController = LoginController()
+    var controller: SignInController = SignInController()
     
     
     init() {
@@ -33,6 +33,8 @@ class SignInViewController: UIViewController {
                 print("Hubo un error en el inicio de sesion")
                 return
             }
+            
+            let home = HomeViewController()
             self.navigationController?.setViewControllers([HomeViewController()], animated: true)
         }
     }

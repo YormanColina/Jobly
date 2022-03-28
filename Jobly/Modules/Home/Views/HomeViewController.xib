@@ -14,10 +14,11 @@
                 <outlet property="notificationButton" destination="VoY-PX-uOH" id="zvP-1H-dPH"/>
                 <outlet property="profileButton" destination="lQI-Q3-9Yq" id="4HJ-5e-Zet"/>
                 <outlet property="search" destination="BE7-55-PgA" id="dB2-oc-hNS"/>
-                <outlet property="searchYPosition" destination="ZEb-ka-plx" id="aOF-a3-6p5"/>
+                <outlet property="searchYPosition" destination="afL-vJ-r21" id="pT1-um-8pI"/>
                 <outlet property="titleHeader" destination="U0z-mk-H99" id="kZW-C5-Vy5"/>
                 <outlet property="userImage" destination="6gg-Rm-HYb" id="GSu-hP-NrG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHeaderHeight" destination="ZEb-ka-plx" id="x3p-1g-CVo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -73,9 +74,13 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="BE7-55-PgA">
-                            <rect key="frame" x="30" y="200" width="354" height="50"/>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search your job" translatesAutoresizingMaskIntoConstraints="NO" id="BE7-55-PgA">
+                            <rect key="frame" x="30" y="190" width="354" height="110"/>
                             <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
                         </searchBar>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,11 +91,11 @@
                         <constraint firstItem="lQI-Q3-9Yq" firstAttribute="leading" secondItem="VoY-PX-uOH" secondAttribute="trailing" constant="20" id="Fhl-Uv-efu"/>
                         <constraint firstAttribute="trailing" secondItem="lQI-Q3-9Yq" secondAttribute="trailing" constant="30" id="NHm-zK-fC6"/>
                         <constraint firstAttribute="height" constant="300" id="ZEb-ka-plx"/>
-                        <constraint firstItem="BE7-55-PgA" firstAttribute="top" secondItem="oXA-un-RGX" secondAttribute="top" constant="200" id="afL-vJ-r21"/>
+                        <constraint firstItem="BE7-55-PgA" firstAttribute="top" secondItem="oXA-un-RGX" secondAttribute="top" constant="190" id="afL-vJ-r21"/>
                         <constraint firstAttribute="trailing" secondItem="U0z-mk-H99" secondAttribute="trailing" constant="30" id="b1k-jE-e2N"/>
                         <constraint firstItem="6gg-Rm-HYb" firstAttribute="top" secondItem="oXA-un-RGX" secondAttribute="top" constant="60" id="dfg-L3-cmP"/>
                         <constraint firstItem="U0z-mk-H99" firstAttribute="leading" secondItem="oXA-un-RGX" secondAttribute="leading" constant="30" id="dxU-41-dV2"/>
-                        <constraint firstAttribute="bottom" secondItem="BE7-55-PgA" secondAttribute="bottom" constant="50" id="fdQ-Wh-20f"/>
+                        <constraint firstAttribute="bottom" secondItem="BE7-55-PgA" secondAttribute="bottom" id="fdQ-Wh-20f"/>
                         <constraint firstAttribute="trailing" secondItem="BE7-55-PgA" secondAttribute="trailing" constant="30" id="jQL-Oq-pzw"/>
                         <constraint firstItem="BE7-55-PgA" firstAttribute="leading" secondItem="oXA-un-RGX" secondAttribute="leading" constant="30" id="uYp-Zd-eBe"/>
                         <constraint firstItem="lQI-Q3-9Yq" firstAttribute="top" secondItem="oXA-un-RGX" secondAttribute="top" constant="60" id="vlX-dF-9ce"/>

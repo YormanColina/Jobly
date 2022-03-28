@@ -23,33 +23,39 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsD-LA-IKe">
                         <rect key="frame" x="0.0" y="219" width="400" height="110"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61A-tM-Knb">
-                                <rect key="frame" x="30" y="10" width="57" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3D, VFX Designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61A-tM-Knb">
+                                <rect key="frame" x="30" y="20" width="140" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOX-uC-aPy">
-                                <rect key="frame" x="30" y="47.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vancouver, BC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOX-uC-aPy">
+                                <rect key="frame" x="30" y="40.5" width="94.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZc-hW-LXj">
-                                <rect key="frame" x="303" y="30" width="67" height="31"/>
+                                <rect key="frame" x="330" y="20" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.44078457189999998" green="0.20918889160000001" blue="0.83787401439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="918-S7-cEs"/>
+                                    <constraint firstAttribute="width" constant="40" id="MW3-Gp-ffr"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.forward" catalog="system"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="61A-tM-Knb" firstAttribute="leading" secondItem="RsD-LA-IKe" secondAttribute="leading" constant="30" id="1I2-k7-lWW"/>
-                            <constraint firstItem="vOX-uC-aPy" firstAttribute="top" secondItem="61A-tM-Knb" secondAttribute="bottom" constant="10" id="GfZ-Kx-8pQ"/>
+                            <constraint firstItem="vOX-uC-aPy" firstAttribute="top" secondItem="61A-tM-Knb" secondAttribute="bottom" id="GfZ-Kx-8pQ"/>
                             <constraint firstItem="vOX-uC-aPy" firstAttribute="leading" secondItem="RsD-LA-IKe" secondAttribute="leading" constant="30" id="XUs-5R-ARn"/>
                             <constraint firstAttribute="trailing" secondItem="vZc-hW-LXj" secondAttribute="trailing" constant="30" id="crd-yz-aIr"/>
-                            <constraint firstItem="vZc-hW-LXj" firstAttribute="top" secondItem="RsD-LA-IKe" secondAttribute="top" constant="30" id="d02-lN-G2j"/>
+                            <constraint firstItem="vZc-hW-LXj" firstAttribute="top" secondItem="RsD-LA-IKe" secondAttribute="top" constant="20" id="d02-lN-G2j"/>
                             <constraint firstAttribute="height" constant="110" id="eSh-ml-Kd1"/>
-                            <constraint firstItem="61A-tM-Knb" firstAttribute="top" secondItem="RsD-LA-IKe" secondAttribute="top" constant="10" id="m7x-23-R6B"/>
+                            <constraint firstItem="61A-tM-Knb" firstAttribute="top" secondItem="RsD-LA-IKe" secondAttribute="top" constant="20" id="m7x-23-R6B"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -68,6 +74,7 @@
             <connections>
                 <outlet property="descriptionCell" destination="vOX-uC-aPy" id="lHR-sz-QRh"/>
                 <outlet property="imageView" destination="g3h-YP-DOm" id="37l-js-37E"/>
+                <outlet property="moreButton" destination="vZc-hW-LXj" id="DW3-RP-MEB"/>
                 <outlet property="titleCell" destination="61A-tM-Knb" id="pOY-pX-a8z"/>
                 <outlet property="viewContainer" destination="RsD-LA-IKe" id="syZ-a1-Whw"/>
             </connections>
@@ -75,6 +82,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="arrow.forward" catalog="system" width="128" height="98"/>
         <image name="ciudad" width="320" height="213.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
