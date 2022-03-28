@@ -13,6 +13,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var welcomeView: UIView!
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var activitiIndicator: UIActivityIndicatorView!
     
     // MARK: Properties
     
@@ -28,13 +29,26 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func presentHome(_ sender: Any) {
+        signUpButton.isHidden = true
+        activitiIndicator.isHidden = false
+        activitiIndicator.startAnimating()
+        
         controller.presentHome(viewController: self) { success in
+            
             guard success else {
                 print("Hubo un error en el inicio de sesion")
+                self.activitiIndicator.stopAnimating()
+                self.activitiIndicator.isHidden = true
+                self.signUpButton.isHidden = false
                 return
             }
             
             let home = HomeViewController()
+            guard let image = self.controller.currentUserImage else {
+                return
+            }
+            
+            home.configuredHome(profileImage: image)
             self.navigationController?.setViewControllers([HomeViewController()], animated: true)
         }
     }
@@ -57,6 +71,7 @@ class SignInViewController: UIViewController {
         signUpButton.layer.cornerRadius = 38
         welcomeView.layer.cornerRadius = 30
         imageView.layer.cornerRadius = 30
+        activitiIndicator.isHidden = true
     }
     
     override func viewWillLayoutSubviews() {

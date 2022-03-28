@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
     // MARK: @IBOutlets
@@ -36,8 +37,9 @@ class HomeViewController: UIViewController {
     
     // MARK: Methods
     
-    func configuredHome() {
-        
+    func configuredHome(profileImage: URL) {
+        print(profileImage)
+        userImage?.kf.setImage(with: profileImage)
     }
   
    private func configurateUI() {
@@ -45,14 +47,14 @@ class HomeViewController: UIViewController {
        
         notificationButton.layer.cornerRadius = 25
         notificationButton.layer.borderColor = UIColor.lightGray.cgColor
-        notificationButton.layer.borderWidth = 0.3
+        notificationButton.layer.borderWidth = 0.1
        
         profileButton.layer.cornerRadius = 25
         profileButton.layer.borderColor = UIColor.lightGray.cgColor
-        profileButton.layer.borderWidth = 0.4
+        profileButton.layer.borderWidth = 0.1
        
        searchView.layer.cornerRadius = 25
-       
+       searchTextField.attributedPlaceholder = NSAttributedString(string: "              Busca", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black])
        
     }
     
