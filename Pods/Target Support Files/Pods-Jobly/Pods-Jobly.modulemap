@@ -1,0 +1,6 @@
+module Pods_Jobly {
+  umbrella header "Pods-Jobly-umbrella.h"
+
+  export *
+  module * { export * }
+}

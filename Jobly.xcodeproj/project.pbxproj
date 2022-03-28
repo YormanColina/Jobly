@@ -1,0 +1,1049 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		056A3FB5644FF915F3389E74 /* libPods-Jobly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD55D557B2C27904CAC35F4E /* libPods-Jobly.a */; };
+		4245F1ACA9614C0C94596084 /* libPods-JoblyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CEF8400D157C2D2A60A397 /* libPods-JoblyTests.a */; };
+		AC9CE92C17F6A6B6209346FF /* libPods-Jobly-JoblyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD1D3813EA43873D7D24395 /* libPods-Jobly-JoblyUITests.a */; };
+		F949954527EBA2EB00C3B2E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F949954427EBA2EB00C3B2E9 /* GoogleService-Info.plist */; };
+		F949955627EC362100C3B2E9 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949955427EC362100C3B2E9 /* Header.swift */; };
+		F949955727EC362100C3B2E9 /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = F949955527EC362100C3B2E9 /* Header.xib */; };
+		F995C94227E57FF2008DE852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C94127E57FF2008DE852 /* AppDelegate.swift */; };
+		F995C94427E57FF2008DE852 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C94327E57FF2008DE852 /* SceneDelegate.swift */; };
+		F995C94B27E57FF4008DE852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F995C94A27E57FF4008DE852 /* Assets.xcassets */; };
+		F995C94E27E57FF4008DE852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F995C94C27E57FF4008DE852 /* LaunchScreen.storyboard */; };
+		F995C95927E57FF4008DE852 /* JoblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C95827E57FF4008DE852 /* JoblyTests.swift */; };
+		F995C96327E57FF4008DE852 /* JoblyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C96227E57FF4008DE852 /* JoblyUITests.swift */; };
+		F995C96527E57FF4008DE852 /* JoblyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C96427E57FF4008DE852 /* JoblyUITestsLaunchTests.swift */; };
+		F995C97327E5B657008DE852 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97227E5B657008DE852 /* ProfileController.swift */; };
+		F995C97527E5B67E008DE852 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97427E5B67E008DE852 /* ProfileViewController.swift */; };
+		F995C97727E5B6D3008DE852 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97627E5B6D3008DE852 /* Profile.swift */; };
+		F995C97A27E5B71F008DE852 /* WorkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97927E5B71F008DE852 /* WorkDetailController.swift */; };
+		F995C97C27E5B753008DE852 /* WorkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97B27E5B753008DE852 /* WorkDetailViewController.swift */; };
+		F995C97E27E5B792008DE852 /* WorkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97D27E5B792008DE852 /* WorkDetail.swift */; };
+		F995C98127E5B7D1008DE852 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98027E5B7D1008DE852 /* Login.swift */; };
+		F995C98527E5B84F008DE852 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98427E5B84F008DE852 /* LoginController.swift */; };
+		F995C98827E5B8BF008DE852 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98727E5B8BF008DE852 /* Home.swift */; };
+		F995C98A27E5B8E4008DE852 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98927E5B8E4008DE852 /* HomeController.swift */; };
+		F995C99527E90A89008DE852 /* CategoriesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C99327E90A89008DE852 /* CategoriesCollection.swift */; };
+		F995C99627E90A89008DE852 /* CategoriesCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = F995C99427E90A89008DE852 /* CategoriesCollection.xib */; };
+		F995C99B27E90B22008DE852 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C99927E90B22008DE852 /* CategoriesCell.swift */; };
+		F995C99C27E90B22008DE852 /* CategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F995C99A27E90B22008DE852 /* CategoriesCell.xib */; };
+		F995C9A527EA1A9D008DE852 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C9A327EA1A9D008DE852 /* SignInViewController.swift */; };
+		F995C9B227EA2341008DE852 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C9B127EA2341008DE852 /* Colors.swift */; };
+		F995C9C527EA6F25008DE852 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F995C9C427EA6F25008DE852 /* SignInViewController.xib */; };
+		F9BD34A427ECD77E0068343A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BD34A227ECD77E0068343A /* HomeViewController.swift */; };
+		F9BD34A527ECD77E0068343A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BD34A327ECD77E0068343A /* HomeViewController.xib */; };
+		F9BD34A827ECF70C0068343A /* RecommendedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BD34A627ECF70C0068343A /* RecommendedCell.swift */; };
+		F9BD34A927ECF70C0068343A /* RecommendedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BD34A727ECF70C0068343A /* RecommendedCell.xib */; };
+		F9BD34AC27ECF7520068343A /* RecommendedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BD34AA27ECF7520068343A /* RecommendedCollection.swift */; };
+		F9BD34AD27ECF7520068343A /* RecommendedCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BD34AB27ECF7520068343A /* RecommendedCollection.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F995C95527E57FF4008DE852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F995C93627E57FF2008DE852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F995C93D27E57FF2008DE852;
+			remoteInfo = Jobly;
+		};
+		F995C95F27E57FF4008DE852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F995C93627E57FF2008DE852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F995C93D27E57FF2008DE852;
+			remoteInfo = Jobly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		234E0AE15AFD36DCEE4117AD /* Pods-Jobly-JoblyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobly-JoblyUITests.release.xcconfig"; path = "Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		27137ED1699703317BDABC45 /* Pods-JoblyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoblyTests.debug.xcconfig"; path = "Target Support Files/Pods-JoblyTests/Pods-JoblyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		418C65F9567FA05A70B8898B /* Pods-JoblyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoblyTests.release.xcconfig"; path = "Target Support Files/Pods-JoblyTests/Pods-JoblyTests.release.xcconfig"; sourceTree = "<group>"; };
+		4FD1D3813EA43873D7D24395 /* libPods-Jobly-JoblyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobly-JoblyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F106C79B08D0DA76C01917 /* Pods-Jobly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobly.release.xcconfig"; path = "Target Support Files/Pods-Jobly/Pods-Jobly.release.xcconfig"; sourceTree = "<group>"; };
+		77CEF8400D157C2D2A60A397 /* libPods-JoblyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JoblyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7081FC4D586C6B974694294 /* Pods-Jobly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobly.debug.xcconfig"; path = "Target Support Files/Pods-Jobly/Pods-Jobly.debug.xcconfig"; sourceTree = "<group>"; };
+		CD55D557B2C27904CAC35F4E /* libPods-Jobly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC8FDC42DD789A46E860882 /* Pods-Jobly-JoblyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobly-JoblyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F949954427EBA2EB00C3B2E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F949955427EC362100C3B2E9 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		F949955527EC362100C3B2E9 /* Header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
+		F995C93E27E57FF2008DE852 /* Jobly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F995C94127E57FF2008DE852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F995C94327E57FF2008DE852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F995C94A27E57FF4008DE852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F995C94D27E57FF4008DE852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F995C94F27E57FF4008DE852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F995C95427E57FF4008DE852 /* JoblyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoblyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F995C95827E57FF4008DE852 /* JoblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoblyTests.swift; sourceTree = "<group>"; };
+		F995C95E27E57FF4008DE852 /* JoblyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoblyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F995C96227E57FF4008DE852 /* JoblyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoblyUITests.swift; sourceTree = "<group>"; };
+		F995C96427E57FF4008DE852 /* JoblyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoblyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F995C97227E5B657008DE852 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		F995C97427E5B67E008DE852 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F995C97627E5B6D3008DE852 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		F995C97927E5B71F008DE852 /* WorkDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailController.swift; sourceTree = "<group>"; };
+		F995C97B27E5B753008DE852 /* WorkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailViewController.swift; sourceTree = "<group>"; };
+		F995C97D27E5B792008DE852 /* WorkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetail.swift; sourceTree = "<group>"; };
+		F995C98027E5B7D1008DE852 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		F995C98427E5B84F008DE852 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F995C98727E5B8BF008DE852 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F995C98927E5B8E4008DE852 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		F995C99327E90A89008DE852 /* CategoriesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollection.swift; sourceTree = "<group>"; };
+		F995C99427E90A89008DE852 /* CategoriesCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollection.xib; sourceTree = "<group>"; };
+		F995C99927E90B22008DE852 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		F995C99A27E90B22008DE852 /* CategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCell.xib; sourceTree = "<group>"; };
+		F995C9A327EA1A9D008DE852 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F995C9B127EA2341008DE852 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F995C9C427EA6F25008DE852 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		F9BD34A227ECD77E0068343A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F9BD34A327ECD77E0068343A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		F9BD34A627ECF70C0068343A /* RecommendedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCell.swift; sourceTree = "<group>"; };
+		F9BD34A727ECF70C0068343A /* RecommendedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendedCell.xib; sourceTree = "<group>"; };
+		F9BD34AA27ECF7520068343A /* RecommendedCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollection.swift; sourceTree = "<group>"; };
+		F9BD34AB27ECF7520068343A /* RecommendedCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendedCollection.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F995C93B27E57FF2008DE852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056A3FB5644FF915F3389E74 /* libPods-Jobly.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F995C95127E57FF4008DE852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4245F1ACA9614C0C94596084 /* libPods-JoblyTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F995C95B27E57FF4008DE852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9CE92C17F6A6B6209346FF /* libPods-Jobly-JoblyUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061236C0A6930464E5C7C85F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD55D557B2C27904CAC35F4E /* libPods-Jobly.a */,
+				4FD1D3813EA43873D7D24395 /* libPods-Jobly-JoblyUITests.a */,
+				77CEF8400D157C2D2A60A397 /* libPods-JoblyTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5206C20ED136D736705F6DE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7081FC4D586C6B974694294 /* Pods-Jobly.debug.xcconfig */,
+				72F106C79B08D0DA76C01917 /* Pods-Jobly.release.xcconfig */,
+				CDC8FDC42DD789A46E860882 /* Pods-Jobly-JoblyUITests.debug.xcconfig */,
+				234E0AE15AFD36DCEE4117AD /* Pods-Jobly-JoblyUITests.release.xcconfig */,
+				27137ED1699703317BDABC45 /* Pods-JoblyTests.debug.xcconfig */,
+				418C65F9567FA05A70B8898B /* Pods-JoblyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F995C93527E57FF2008DE852 = {
+			isa = PBXGroup;
+			children = (
+				F995C94027E57FF2008DE852 /* Jobly */,
+				F995C95727E57FF4008DE852 /* JoblyTests */,
+				F995C96127E57FF4008DE852 /* JoblyUITests */,
+				F995C93F27E57FF2008DE852 /* Products */,
+				5206C20ED136D736705F6DE5 /* Pods */,
+				061236C0A6930464E5C7C85F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F995C93F27E57FF2008DE852 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F995C93E27E57FF2008DE852 /* Jobly.app */,
+				F995C95427E57FF4008DE852 /* JoblyTests.xctest */,
+				F995C95E27E57FF4008DE852 /* JoblyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F995C94027E57FF2008DE852 /* Jobly */ = {
+			isa = PBXGroup;
+			children = (
+				F949954427EBA2EB00C3B2E9 /* GoogleService-Info.plist */,
+				F995C94F27E57FF4008DE852 /* Info.plist */,
+				F995C9C327EA6D8C008DE852 /* Modules */,
+				F995C9A727EA1F90008DE852 /* Resources */,
+				F995C9AC27EA20AE008DE852 /* Base */,
+			);
+			path = Jobly;
+			sourceTree = "<group>";
+		};
+		F995C95727E57FF4008DE852 /* JoblyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F995C95827E57FF4008DE852 /* JoblyTests.swift */,
+			);
+			path = JoblyTests;
+			sourceTree = "<group>";
+		};
+		F995C96127E57FF4008DE852 /* JoblyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F995C96227E57FF4008DE852 /* JoblyUITests.swift */,
+				F995C96427E57FF4008DE852 /* JoblyUITestsLaunchTests.swift */,
+			);
+			path = JoblyUITests;
+			sourceTree = "<group>";
+		};
+		F995C98627E5B8AF008DE852 /* HomeCells */ = {
+			isa = PBXGroup;
+			children = (
+				F9BD34B027ECF79F0068343A /* Header */,
+				F9BD34AF27ECF7800068343A /* Cells */,
+				F9BD34AE27ECF75D0068343A /* CollectionsCells */,
+			);
+			path = HomeCells;
+			sourceTree = "<group>";
+		};
+		F995C9A727EA1F90008DE852 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F995C9AE27EA2137008DE852 /* Colors */,
+				F995C9AD27EA211A008DE852 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F995C9AC27EA20AE008DE852 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F995C94127E57FF2008DE852 /* AppDelegate.swift */,
+				F995C94327E57FF2008DE852 /* SceneDelegate.swift */,
+				F995C94C27E57FF4008DE852 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F995C9AD27EA211A008DE852 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F995C94A27E57FF4008DE852 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F995C9AE27EA2137008DE852 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F995C9B127EA2341008DE852 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		F995C9B327EA69A1008DE852 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F995C9B627EA69E6008DE852 /* View */,
+				F995C9B527EA69E4008DE852 /* Controller */,
+				F995C9B427EA69D4008DE852 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F995C9B427EA69D4008DE852 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F995C98027E5B7D1008DE852 /* Login.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F995C9B527EA69E4008DE852 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F995C98427E5B84F008DE852 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F995C9B627EA69E6008DE852 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F995C9A327EA1A9D008DE852 /* SignInViewController.swift */,
+				F995C9C427EA6F25008DE852 /* SignInViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F995C9B727EA6A06008DE852 /* WorkDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F995C9BA27EA6A70008DE852 /* Views */,
+				F995C9B927EA6A4A008DE852 /* Controller */,
+				F995C9B827EA6A38008DE852 /* Models */,
+			);
+			path = WorkDetail;
+			sourceTree = "<group>";
+		};
+		F995C9B827EA6A38008DE852 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F995C97D27E5B792008DE852 /* WorkDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F995C9B927EA6A4A008DE852 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F995C97927E5B71F008DE852 /* WorkDetailController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F995C9BA27EA6A70008DE852 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F995C97B27E5B753008DE852 /* WorkDetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F995C9BB27EA6A8A008DE852 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F995C9BE27EA6AA8008DE852 /* Views */,
+				F995C9BD27EA6AA1008DE852 /* Controller */,
+				F995C9BC27EA6A94008DE852 /* Models */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F995C9BC27EA6A94008DE852 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F995C97627E5B6D3008DE852 /* Profile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F995C9BD27EA6AA1008DE852 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F995C97227E5B657008DE852 /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F995C9BE27EA6AA8008DE852 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F995C97427E5B67E008DE852 /* ProfileViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F995C9BF27EA6AC9008DE852 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F995C9C027EA6AD1008DE852 /* Moldes */,
+				F995C9C227EA6AEA008DE852 /* Controller */,
+				F995C9C127EA6ADC008DE852 /* Views */,
+				F995C98627E5B8AF008DE852 /* HomeCells */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F995C9C027EA6AD1008DE852 /* Moldes */ = {
+			isa = PBXGroup;
+			children = (
+				F995C98727E5B8BF008DE852 /* Home.swift */,
+			);
+			path = Moldes;
+			sourceTree = "<group>";
+		};
+		F995C9C127EA6ADC008DE852 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9BD34A227ECD77E0068343A /* HomeViewController.swift */,
+				F9BD34A327ECD77E0068343A /* HomeViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F995C9C227EA6AEA008DE852 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F995C98927E5B8E4008DE852 /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F995C9C327EA6D8C008DE852 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F995C9B727EA6A06008DE852 /* WorkDetail */,
+				F995C9B327EA69A1008DE852 /* Login */,
+				F995C9BF27EA6AC9008DE852 /* Home */,
+				F995C9BB27EA6A8A008DE852 /* Profile */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F9BD34AE27ECF75D0068343A /* CollectionsCells */ = {
+			isa = PBXGroup;
+			children = (
+				F995C99327E90A89008DE852 /* CategoriesCollection.swift */,
+				F995C99427E90A89008DE852 /* CategoriesCollection.xib */,
+				F9BD34AA27ECF7520068343A /* RecommendedCollection.swift */,
+				F9BD34AB27ECF7520068343A /* RecommendedCollection.xib */,
+			);
+			path = CollectionsCells;
+			sourceTree = "<group>";
+		};
+		F9BD34AF27ECF7800068343A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F995C99A27E90B22008DE852 /* CategoriesCell.xib */,
+				F995C99927E90B22008DE852 /* CategoriesCell.swift */,
+				F9BD34A627ECF70C0068343A /* RecommendedCell.swift */,
+				F9BD34A727ECF70C0068343A /* RecommendedCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F9BD34B027ECF79F0068343A /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F949955527EC362100C3B2E9 /* Header.xib */,
+				F949955427EC362100C3B2E9 /* Header.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F995C93D27E57FF2008DE852 /* Jobly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F995C96827E57FF4008DE852 /* Build configuration list for PBXNativeTarget "Jobly" */;
+			buildPhases = (
+				24ED55D442540A47B748CB3A /* [CP] Check Pods Manifest.lock */,
+				F995C93A27E57FF2008DE852 /* Sources */,
+				F995C93B27E57FF2008DE852 /* Frameworks */,
+				F995C93C27E57FF2008DE852 /* Resources */,
+				D8977E12343274FD4233449D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jobly;
+			productName = Jobly;
+			productReference = F995C93E27E57FF2008DE852 /* Jobly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F995C95327E57FF4008DE852 /* JoblyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F995C96B27E57FF4008DE852 /* Build configuration list for PBXNativeTarget "JoblyTests" */;
+			buildPhases = (
+				85E0C13AB0A3B58185D687FB /* [CP] Check Pods Manifest.lock */,
+				F995C95027E57FF4008DE852 /* Sources */,
+				F995C95127E57FF4008DE852 /* Frameworks */,
+				F995C95227E57FF4008DE852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F995C95627E57FF4008DE852 /* PBXTargetDependency */,
+			);
+			name = JoblyTests;
+			productName = JoblyTests;
+			productReference = F995C95427E57FF4008DE852 /* JoblyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F995C95D27E57FF4008DE852 /* JoblyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F995C96E27E57FF4008DE852 /* Build configuration list for PBXNativeTarget "JoblyUITests" */;
+			buildPhases = (
+				FDDDC3B5F36BEC095BB7DB16 /* [CP] Check Pods Manifest.lock */,
+				F995C95A27E57FF4008DE852 /* Sources */,
+				F995C95B27E57FF4008DE852 /* Frameworks */,
+				F995C95C27E57FF4008DE852 /* Resources */,
+				ACE65D0CD1A5DCC914D414B2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F995C96027E57FF4008DE852 /* PBXTargetDependency */,
+			);
+			name = JoblyUITests;
+			productName = JoblyUITests;
+			productReference = F995C95E27E57FF4008DE852 /* JoblyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F995C93627E57FF2008DE852 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F995C93D27E57FF2008DE852 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F995C95327E57FF4008DE852 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F995C93D27E57FF2008DE852;
+					};
+					F995C95D27E57FF4008DE852 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F995C93D27E57FF2008DE852;
+					};
+				};
+			};
+			buildConfigurationList = F995C93927E57FF2008DE852 /* Build configuration list for PBXProject "Jobly" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F995C93527E57FF2008DE852;
+			productRefGroup = F995C93F27E57FF2008DE852 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F995C93D27E57FF2008DE852 /* Jobly */,
+				F995C95327E57FF4008DE852 /* JoblyTests */,
+				F995C95D27E57FF4008DE852 /* JoblyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F995C93C27E57FF2008DE852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BD34A527ECD77E0068343A /* HomeViewController.xib in Resources */,
+				F995C94E27E57FF4008DE852 /* LaunchScreen.storyboard in Resources */,
+				F9BD34A927ECF70C0068343A /* RecommendedCell.xib in Resources */,
+				F995C94B27E57FF4008DE852 /* Assets.xcassets in Resources */,
+				F9BD34AD27ECF7520068343A /* RecommendedCollection.xib in Resources */,
+				F995C99627E90A89008DE852 /* CategoriesCollection.xib in Resources */,
+				F995C9C527EA6F25008DE852 /* SignInViewController.xib in Resources */,
+				F995C99C27E90B22008DE852 /* CategoriesCell.xib in Resources */,
+				F949955727EC362100C3B2E9 /* Header.xib in Resources */,
+				F949954527EBA2EB00C3B2E9 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F995C95227E57FF4008DE852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F995C95C27E57FF4008DE852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24ED55D442540A47B748CB3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jobly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85E0C13AB0A3B58185D687FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoblyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE65D0CD1A5DCC914D414B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8977E12343274FD4233449D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jobly/Pods-Jobly-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jobly/Pods-Jobly-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jobly/Pods-Jobly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDDDC3B5F36BEC095BB7DB16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jobly-JoblyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F995C93A27E57FF2008DE852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F949955627EC362100C3B2E9 /* Header.swift in Sources */,
+				F995C97A27E5B71F008DE852 /* WorkDetailController.swift in Sources */,
+				F995C9B227EA2341008DE852 /* Colors.swift in Sources */,
+				F995C98527E5B84F008DE852 /* LoginController.swift in Sources */,
+				F995C98A27E5B8E4008DE852 /* HomeController.swift in Sources */,
+				F995C98127E5B7D1008DE852 /* Login.swift in Sources */,
+				F995C99527E90A89008DE852 /* CategoriesCollection.swift in Sources */,
+				F9BD34A427ECD77E0068343A /* HomeViewController.swift in Sources */,
+				F995C97727E5B6D3008DE852 /* Profile.swift in Sources */,
+				F995C94227E57FF2008DE852 /* AppDelegate.swift in Sources */,
+				F995C99B27E90B22008DE852 /* CategoriesCell.swift in Sources */,
+				F9BD34A827ECF70C0068343A /* RecommendedCell.swift in Sources */,
+				F995C98827E5B8BF008DE852 /* Home.swift in Sources */,
+				F995C97527E5B67E008DE852 /* ProfileViewController.swift in Sources */,
+				F995C97E27E5B792008DE852 /* WorkDetail.swift in Sources */,
+				F995C94427E57FF2008DE852 /* SceneDelegate.swift in Sources */,
+				F995C9A527EA1A9D008DE852 /* SignInViewController.swift in Sources */,
+				F995C97C27E5B753008DE852 /* WorkDetailViewController.swift in Sources */,
+				F9BD34AC27ECF7520068343A /* RecommendedCollection.swift in Sources */,
+				F995C97327E5B657008DE852 /* ProfileController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F995C95027E57FF4008DE852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F995C95927E57FF4008DE852 /* JoblyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F995C95A27E57FF4008DE852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F995C96327E57FF4008DE852 /* JoblyUITests.swift in Sources */,
+				F995C96527E57FF4008DE852 /* JoblyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F995C95627E57FF4008DE852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F995C93D27E57FF2008DE852 /* Jobly */;
+			targetProxy = F995C95527E57FF4008DE852 /* PBXContainerItemProxy */;
+		};
+		F995C96027E57FF4008DE852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F995C93D27E57FF2008DE852 /* Jobly */;
+			targetProxy = F995C95F27E57FF4008DE852 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F995C94C27E57FF4008DE852 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F995C94D27E57FF4008DE852 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F995C96627E57FF4008DE852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F995C96727E57FF4008DE852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F995C96927E57FF4008DE852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7081FC4D586C6B974694294 /* Pods-Jobly.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7KF839Q69;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jobly/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jobly.Jobly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F995C96A27E57FF4008DE852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F106C79B08D0DA76C01917 /* Pods-Jobly.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7KF839Q69;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jobly/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jobly.Jobly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F995C96C27E57FF4008DE852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27137ED1699703317BDABC45 /* Pods-JoblyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7KF839Q69;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jobly.JoblyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jobly.app/Jobly";
+			};
+			name = Debug;
+		};
+		F995C96D27E57FF4008DE852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418C65F9567FA05A70B8898B /* Pods-JoblyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7KF839Q69;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jobly.JoblyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jobly.app/Jobly";
+			};
+			name = Release;
+		};
+		F995C96F27E57FF4008DE852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC8FDC42DD789A46E860882 /* Pods-Jobly-JoblyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7KF839Q69;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jobly.JoblyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jobly;
+			};
+			name = Debug;
+		};
+		F995C97027E57FF4008DE852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234E0AE15AFD36DCEE4117AD /* Pods-Jobly-JoblyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7KF839Q69;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jobly.JoblyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jobly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F995C93927E57FF2008DE852 /* Build configuration list for PBXProject "Jobly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F995C96627E57FF4008DE852 /* Debug */,
+				F995C96727E57FF4008DE852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F995C96827E57FF4008DE852 /* Build configuration list for PBXNativeTarget "Jobly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F995C96927E57FF4008DE852 /* Debug */,
+				F995C96A27E57FF4008DE852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F995C96B27E57FF4008DE852 /* Build configuration list for PBXNativeTarget "JoblyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F995C96C27E57FF4008DE852 /* Debug */,
+				F995C96D27E57FF4008DE852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F995C96E27E57FF4008DE852 /* Build configuration list for PBXNativeTarget "JoblyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F995C96F27E57FF4008DE852 /* Debug */,
+				F995C97027E57FF4008DE852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F995C93627E57FF2008DE852 /* Project object */;
+}
