@@ -13,11 +13,11 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var notificationButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var profileButton: UIButton!
-    @IBOutlet weak var search: UISearchBar!
     @IBOutlet weak var titleHeader: UILabel!
     @IBOutlet weak var viewHeaderHeight: NSLayoutConstraint!
     @IBOutlet weak var searchYPosition: NSLayoutConstraint!
-    
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var searchView: UIView!
     // MARK: Properties
     
     
@@ -51,8 +51,9 @@ class HomeViewController: UIViewController {
         profileButton.layer.borderColor = UIColor.lightGray.cgColor
         profileButton.layer.borderWidth = 0.4
        
-        search.layer.cornerRadius = 30
-        search.layer.backgroundColor = UIColor.clear.cgColor
+       searchView.layer.cornerRadius = 25
+       
+       
     }
     
     override func viewDidLoad() {
@@ -139,7 +140,7 @@ extension HomeViewController: UICollectionViewDelegate {
             viewHeaderHeight.constant = abs(offsetY)
         }
         if offsetY <= -200 {
-            searchYPosition.constant = abs(offsetY) - 80
+            searchYPosition.constant = abs(offsetY) - 70
         }
         
         let num = Float((searchYPosition.constant / 100) / (viewHeaderHeight.constant / 100))

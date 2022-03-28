@@ -17,8 +17,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="491" height="233"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CKf-uX-HkV">
-                        <rect key="frame" x="40" y="0.0" width="411" height="233"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CKf-uX-HkV">
+                        <rect key="frame" x="30" y="0.0" width="461" height="233"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6Yq-Mb-JF3">
                             <size key="itemSize" width="128" height="128"/>
@@ -31,9 +31,9 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="CKf-uX-HkV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="bPq-lg-lAO"/>
+                <constraint firstItem="CKf-uX-HkV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="bPq-lg-lAO"/>
                 <constraint firstItem="CKf-uX-HkV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jd5-1A-rtL"/>
-                <constraint firstAttribute="trailing" secondItem="CKf-uX-HkV" secondAttribute="trailing" constant="40" id="srA-MA-vTc"/>
+                <constraint firstAttribute="trailing" secondItem="CKf-uX-HkV" secondAttribute="trailing" id="srA-MA-vTc"/>
                 <constraint firstAttribute="bottom" secondItem="CKf-uX-HkV" secondAttribute="bottom" id="yrM-rg-ZGL"/>
             </constraints>
             <size key="customSize" width="491" height="233"/>

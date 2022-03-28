@@ -13,8 +13,9 @@
                 <outlet property="collectionView" destination="5af-PD-9K0" id="FQ6-qg-muL"/>
                 <outlet property="notificationButton" destination="VoY-PX-uOH" id="zvP-1H-dPH"/>
                 <outlet property="profileButton" destination="lQI-Q3-9Yq" id="4HJ-5e-Zet"/>
-                <outlet property="search" destination="BE7-55-PgA" id="dB2-oc-hNS"/>
-                <outlet property="searchYPosition" destination="afL-vJ-r21" id="pT1-um-8pI"/>
+                <outlet property="searchTextField" destination="RU0-He-T0E" id="1sa-rb-IHA"/>
+                <outlet property="searchView" destination="8Kl-xV-LNz" id="fXU-eu-MRw"/>
+                <outlet property="searchYPosition" destination="Kgy-iN-oLB" id="dY2-sF-WSx"/>
                 <outlet property="titleHeader" destination="U0z-mk-H99" id="kZW-C5-Vy5"/>
                 <outlet property="userImage" destination="6gg-Rm-HYb" id="GSu-hP-NrG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -26,7 +27,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5af-PD-9K0">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5af-PD-9K0">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hnB-O8-agP">
@@ -55,7 +56,7 @@
                             </constraints>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="line.horizontal.3.circle" catalog="system"/>
+                            <buttonConfiguration key="configuration" style="plain" image="line.horizontal.3" catalog="system"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoY-PX-uOH">
                             <rect key="frame" x="264" y="60" width="50" height="50"/>
@@ -68,20 +69,47 @@
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="bell.fill" catalog="system"/>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover your favorite job" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0z-mk-H99">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover your favorite job" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0z-mk-H99">
                             <rect key="frame" x="30" y="150" width="354" height="100.5"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search your job" translatesAutoresizingMaskIntoConstraints="NO" id="BE7-55-PgA">
-                            <rect key="frame" x="30" y="190" width="354" height="110"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <scopeButtonTitles>
-                                <string>Title</string>
-                                <string>Title</string>
-                            </scopeButtonTitles>
-                        </searchBar>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kl-xV-LNz">
+                            <rect key="frame" x="30" y="195" width="354" height="85"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="             Search your job" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RU0-He-T0E">
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="85"/>
+                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg6-4B-fpg">
+                                    <rect key="frame" x="10" y="44" width="46" height="31"/>
+                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdw-kn-c7m">
+                                    <rect key="frame" x="297" y="44" width="47" height="31"/>
+                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="text.justifyleft" catalog="system"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="0.12120884775325952" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="RU0-He-T0E" secondAttribute="bottom" id="6QO-ph-Lem"/>
+                                <constraint firstItem="RU0-He-T0E" firstAttribute="leading" secondItem="8Kl-xV-LNz" secondAttribute="leading" id="AW8-WC-wWz"/>
+                                <constraint firstItem="RU0-He-T0E" firstAttribute="top" secondItem="8Kl-xV-LNz" secondAttribute="top" id="Fq7-6O-Mrv"/>
+                                <constraint firstAttribute="trailing" secondItem="RU0-He-T0E" secondAttribute="trailing" id="Uww-4S-OdW"/>
+                                <constraint firstAttribute="bottom" secondItem="lg6-4B-fpg" secondAttribute="bottom" constant="10" id="ZLc-0a-Fw3"/>
+                                <constraint firstAttribute="trailing" secondItem="Gdw-kn-c7m" secondAttribute="trailing" constant="10" id="but-gS-0Hb"/>
+                                <constraint firstAttribute="bottom" secondItem="Gdw-kn-c7m" secondAttribute="bottom" constant="10" id="ePK-IQ-jR0"/>
+                                <constraint firstItem="lg6-4B-fpg" firstAttribute="leading" secondItem="8Kl-xV-LNz" secondAttribute="leading" constant="10" id="gHm-gE-a59"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -89,15 +117,15 @@
                         <constraint firstItem="VoY-PX-uOH" firstAttribute="top" secondItem="oXA-un-RGX" secondAttribute="top" constant="60" id="Afu-Zq-jsr"/>
                         <constraint firstItem="6gg-Rm-HYb" firstAttribute="leading" secondItem="oXA-un-RGX" secondAttribute="leading" constant="30" id="ECV-AC-o0w"/>
                         <constraint firstItem="lQI-Q3-9Yq" firstAttribute="leading" secondItem="VoY-PX-uOH" secondAttribute="trailing" constant="20" id="Fhl-Uv-efu"/>
+                        <constraint firstItem="8Kl-xV-LNz" firstAttribute="top" secondItem="oXA-un-RGX" secondAttribute="top" constant="195" id="Kgy-iN-oLB"/>
                         <constraint firstAttribute="trailing" secondItem="lQI-Q3-9Yq" secondAttribute="trailing" constant="30" id="NHm-zK-fC6"/>
                         <constraint firstAttribute="height" constant="300" id="ZEb-ka-plx"/>
-                        <constraint firstItem="BE7-55-PgA" firstAttribute="top" secondItem="oXA-un-RGX" secondAttribute="top" constant="190" id="afL-vJ-r21"/>
                         <constraint firstAttribute="trailing" secondItem="U0z-mk-H99" secondAttribute="trailing" constant="30" id="b1k-jE-e2N"/>
+                        <constraint firstAttribute="bottom" secondItem="8Kl-xV-LNz" secondAttribute="bottom" constant="20" id="bHF-IO-TdG"/>
+                        <constraint firstAttribute="trailing" secondItem="8Kl-xV-LNz" secondAttribute="trailing" constant="30" id="dfY-Eb-7Zi"/>
                         <constraint firstItem="6gg-Rm-HYb" firstAttribute="top" secondItem="oXA-un-RGX" secondAttribute="top" constant="60" id="dfg-L3-cmP"/>
                         <constraint firstItem="U0z-mk-H99" firstAttribute="leading" secondItem="oXA-un-RGX" secondAttribute="leading" constant="30" id="dxU-41-dV2"/>
-                        <constraint firstAttribute="bottom" secondItem="BE7-55-PgA" secondAttribute="bottom" id="fdQ-Wh-20f"/>
-                        <constraint firstAttribute="trailing" secondItem="BE7-55-PgA" secondAttribute="trailing" constant="30" id="jQL-Oq-pzw"/>
-                        <constraint firstItem="BE7-55-PgA" firstAttribute="leading" secondItem="oXA-un-RGX" secondAttribute="leading" constant="30" id="uYp-Zd-eBe"/>
+                        <constraint firstItem="8Kl-xV-LNz" firstAttribute="leading" secondItem="oXA-un-RGX" secondAttribute="leading" constant="30" id="nzE-SX-CNB"/>
                         <constraint firstItem="lQI-Q3-9Yq" firstAttribute="top" secondItem="oXA-un-RGX" secondAttribute="top" constant="60" id="vlX-dF-9ce"/>
                     </constraints>
                 </view>
@@ -118,7 +146,9 @@
     </objects>
     <resources>
         <image name="bell.fill" catalog="system" width="128" height="124"/>
-        <image name="line.horizontal.3.circle" catalog="system" width="128" height="121"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="text.justifyleft" catalog="system" width="128" height="100"/>
         <image name="yoooo" width="432" height="432"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

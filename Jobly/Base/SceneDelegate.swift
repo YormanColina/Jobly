@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let rootNavigation = UINavigationController()
         
         if GIDSignIn.sharedInstance.currentUser == nil {
-            rootNavigation.setViewControllers([HomeViewController()], animated: false)
+            rootNavigation.setViewControllers([SignInViewController()], animated: false)
         } else {
             rootNavigation.setViewControllers([HomeViewController()], animated: false)
         }
