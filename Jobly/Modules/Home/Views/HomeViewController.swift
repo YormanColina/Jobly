@@ -42,7 +42,7 @@ class HomeViewController: UIViewController {
        
         notificationButton.layer.cornerRadius = 25
         notificationButton.layer.borderColor = UIColor.lightGray.cgColor
-        notificationButton.layer.borderWidth = 0.4
+        notificationButton.layer.borderWidth = 0.3
        
         profileButton.layer.cornerRadius = 25
         profileButton.layer.borderColor = UIColor.lightGray.cgColor
