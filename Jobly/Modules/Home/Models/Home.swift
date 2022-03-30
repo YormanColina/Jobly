@@ -9,13 +9,13 @@ import Foundation
 import ObjectMapper
 
 struct Home: Mappable {
-    init?(map: Map) {
-        
-    }
+    var widgets: [Widget] = []
+    
+    init() {}
+    
+    init?(map: Map) {}
     
     mutating func mapping(map: Map) {
-        
+        widgets <- map["widgets"]
     }
-    
-    
 }
