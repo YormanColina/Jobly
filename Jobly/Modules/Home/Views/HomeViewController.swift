@@ -19,8 +19,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchYPosition: NSLayoutConstraint!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchView: UIView!
-    // MARK: Properties
     
+    // MARK: Properties
+    var controller: HomeController?
     
     // MARK: Initializers
     init() {
@@ -66,7 +67,7 @@ class HomeViewController: UIViewController {
     
         navigationController?.isNavigationBarHidden = true
         collectionView.contentInset = UIEdgeInsets(top: 320, left: 0, bottom: 0, right: 0)
-        collectionView.register(UINib(nibName: "CategoriesCollection", bundle: nil), forCellWithReuseIdentifier: "CategoriesCollection")
+        collectionView.register(UINib(nibName: "CollectionCell", bundle: nil), forCellWithReuseIdentifier: "CollectionCell")
         collectionView.register(UINib(nibName: "RecommendedCollection", bundle: nil), forCellWithReuseIdentifier: "RecommendedCollection")
         collectionView.register(UINib(nibName: "Header", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
     }
@@ -84,21 +85,11 @@ extension HomeViewController: UICollectionViewDataSource {
     
     // Cell registration based on its section
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if indexPath.section == 0 {
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCollection", for: indexPath) as? CategoriesCollection {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionCell {
+                
+                cell.setupCollection(widget: controller?.home.widgets)
                 return cell
             }
-        } else if indexPath.section == 1 {
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendedCollection", for: indexPath) as? RecommendedCollection {
-                return cell
-            }
-        } else {
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCollection", for: indexPath) as? CategoriesCollection {
-                return cell
-            }
-        }
-        
         return UICollectionViewCell()
     }
     
@@ -167,7 +158,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         case 0:
             return CGSize(width: UIScreen.main.bounds.width, height: 120)
         case 1:
-            return CGSize(width: UIScreen.main.bounds.width, height: 210)
+            return CGSize(width: UIScreen.main.bounds.width, height: 200)
         default:
             return CGSize(width: UIScreen.main.bounds.width, height: 120)
         }
@@ -177,6 +168,5 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         
         return CGSize(width: UIScreen.main.bounds.width, height: 80)
     }
-    
 
 }

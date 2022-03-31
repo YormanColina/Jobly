@@ -34,5 +34,11 @@ class RecommendedCell: UICollectionViewCell {
         moreButton.layer.cornerRadius = 20
         moreButton.backgroundColor = Colors.primaryColor
     }
+    
+    func setupCell(recommended: Recommended) {
+        titleCell.text = recommended.title
+        imageView?.kf.setImage(with: recommended.image)
+        descriptionCell.text = recommended.location
+    }
 
 }

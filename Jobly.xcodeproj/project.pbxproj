@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		056A3FB5644FF915F3389E74 /* libPods-Jobly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD55D557B2C27904CAC35F4E /* libPods-Jobly.a */; };
-		4245F1ACA9614C0C94596084 /* libPods-JoblyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CEF8400D157C2D2A60A397 /* libPods-JoblyTests.a */; };
-		AC9CE92C17F6A6B6209346FF /* libPods-Jobly-JoblyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD1D3813EA43873D7D24395 /* libPods-Jobly-JoblyUITests.a */; };
 		F949954527EBA2EB00C3B2E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F949954427EBA2EB00C3B2E9 /* GoogleService-Info.plist */; };
 		F949955627EC362100C3B2E9 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949955427EC362100C3B2E9 /* Header.swift */; };
 		F949955727EC362100C3B2E9 /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = F949955527EC362100C3B2E9 /* Header.xib */; };
@@ -30,7 +27,7 @@
 		F995C98527E5B84F008DE852 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98427E5B84F008DE852 /* SignInController.swift */; };
 		F995C98827E5B8BF008DE852 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98727E5B8BF008DE852 /* Home.swift */; };
 		F995C98A27E5B8E4008DE852 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98927E5B8E4008DE852 /* HomeController.swift */; };
-		F995C99527E90A89008DE852 /* CategoriesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C99327E90A89008DE852 /* CategoriesCollection.swift */; };
+		F995C99527E90A89008DE852 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C99327E90A89008DE852 /* CollectionCell.swift */; };
 		F995C99627E90A89008DE852 /* CategoriesCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = F995C99427E90A89008DE852 /* CategoriesCollection.xib */; };
 		F995C99B27E90B22008DE852 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C99927E90B22008DE852 /* CategoriesCell.swift */; };
 		F995C99C27E90B22008DE852 /* CategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F995C99A27E90B22008DE852 /* CategoriesCell.xib */; };
@@ -67,15 +64,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		234E0AE15AFD36DCEE4117AD /* Pods-Jobly-JoblyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobly-JoblyUITests.release.xcconfig"; path = "Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		27137ED1699703317BDABC45 /* Pods-JoblyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoblyTests.debug.xcconfig"; path = "Target Support Files/Pods-JoblyTests/Pods-JoblyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		418C65F9567FA05A70B8898B /* Pods-JoblyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoblyTests.release.xcconfig"; path = "Target Support Files/Pods-JoblyTests/Pods-JoblyTests.release.xcconfig"; sourceTree = "<group>"; };
-		4FD1D3813EA43873D7D24395 /* libPods-Jobly-JoblyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobly-JoblyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72F106C79B08D0DA76C01917 /* Pods-Jobly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobly.release.xcconfig"; path = "Target Support Files/Pods-Jobly/Pods-Jobly.release.xcconfig"; sourceTree = "<group>"; };
-		77CEF8400D157C2D2A60A397 /* libPods-JoblyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JoblyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7081FC4D586C6B974694294 /* Pods-Jobly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobly.debug.xcconfig"; path = "Target Support Files/Pods-Jobly/Pods-Jobly.debug.xcconfig"; sourceTree = "<group>"; };
-		CD55D557B2C27904CAC35F4E /* libPods-Jobly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDC8FDC42DD789A46E860882 /* Pods-Jobly-JoblyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobly-JoblyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F949954427EBA2EB00C3B2E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F949955427EC362100C3B2E9 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		F949955527EC362100C3B2E9 /* Header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
@@ -100,7 +88,7 @@
 		F995C98427E5B84F008DE852 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		F995C98727E5B8BF008DE852 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F995C98927E5B8E4008DE852 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		F995C99327E90A89008DE852 /* CategoriesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollection.swift; sourceTree = "<group>"; };
+		F995C99327E90A89008DE852 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		F995C99427E90A89008DE852 /* CategoriesCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollection.xib; sourceTree = "<group>"; };
 		F995C99927E90B22008DE852 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		F995C99A27E90B22008DE852 /* CategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCell.xib; sourceTree = "<group>"; };
@@ -124,7 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056A3FB5644FF915F3389E74 /* libPods-Jobly.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4245F1ACA9614C0C94596084 /* libPods-JoblyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,32 +126,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9CE92C17F6A6B6209346FF /* libPods-Jobly-JoblyUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		061236C0A6930464E5C7C85F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CD55D557B2C27904CAC35F4E /* libPods-Jobly.a */,
-				4FD1D3813EA43873D7D24395 /* libPods-Jobly-JoblyUITests.a */,
-				77CEF8400D157C2D2A60A397 /* libPods-JoblyTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5206C20ED136D736705F6DE5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B7081FC4D586C6B974694294 /* Pods-Jobly.debug.xcconfig */,
-				72F106C79B08D0DA76C01917 /* Pods-Jobly.release.xcconfig */,
-				CDC8FDC42DD789A46E860882 /* Pods-Jobly-JoblyUITests.debug.xcconfig */,
-				234E0AE15AFD36DCEE4117AD /* Pods-Jobly-JoblyUITests.release.xcconfig */,
-				27137ED1699703317BDABC45 /* Pods-JoblyTests.debug.xcconfig */,
-				418C65F9567FA05A70B8898B /* Pods-JoblyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -178,7 +147,6 @@
 				F995C96127E57FF4008DE852 /* JoblyUITests */,
 				F995C93F27E57FF2008DE852 /* Products */,
 				5206C20ED136D736705F6DE5 /* Pods */,
-				061236C0A6930464E5C7C85F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -423,7 +391,7 @@
 		F9BD34AE27ECF75D0068343A /* CollectionsCells */ = {
 			isa = PBXGroup;
 			children = (
-				F995C99327E90A89008DE852 /* CategoriesCollection.swift */,
+				F995C99327E90A89008DE852 /* CollectionCell.swift */,
 				F995C99427E90A89008DE852 /* CategoriesCollection.xib */,
 				F9BD34AA27ECF7520068343A /* RecommendedCollection.swift */,
 				F9BD34AB27ECF7520068343A /* RecommendedCollection.xib */,
@@ -458,11 +426,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F995C96827E57FF4008DE852 /* Build configuration list for PBXNativeTarget "Jobly" */;
 			buildPhases = (
-				24ED55D442540A47B748CB3A /* [CP] Check Pods Manifest.lock */,
 				F995C93A27E57FF2008DE852 /* Sources */,
 				F995C93B27E57FF2008DE852 /* Frameworks */,
 				F995C93C27E57FF2008DE852 /* Resources */,
-				D8977E12343274FD4233449D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -477,7 +443,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F995C96B27E57FF4008DE852 /* Build configuration list for PBXNativeTarget "JoblyTests" */;
 			buildPhases = (
-				85E0C13AB0A3B58185D687FB /* [CP] Check Pods Manifest.lock */,
 				F995C95027E57FF4008DE852 /* Sources */,
 				F995C95127E57FF4008DE852 /* Frameworks */,
 				F995C95227E57FF4008DE852 /* Resources */,
@@ -496,11 +461,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F995C96E27E57FF4008DE852 /* Build configuration list for PBXNativeTarget "JoblyUITests" */;
 			buildPhases = (
-				FDDDC3B5F36BEC095BB7DB16 /* [CP] Check Pods Manifest.lock */,
 				F995C95A27E57FF4008DE852 /* Sources */,
 				F995C95B27E57FF4008DE852 /* Frameworks */,
 				F995C95C27E57FF4008DE852 /* Resources */,
-				ACE65D0CD1A5DCC914D414B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -589,109 +552,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		24ED55D442540A47B748CB3A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Jobly-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85E0C13AB0A3B58185D687FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JoblyTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ACE65D0CD1A5DCC914D414B2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jobly-JoblyUITests/Pods-Jobly-JoblyUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8977E12343274FD4233449D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Jobly/Pods-Jobly-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Jobly/Pods-Jobly-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jobly/Pods-Jobly-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDDDC3B5F36BEC095BB7DB16 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Jobly-JoblyUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F995C93A27E57FF2008DE852 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -704,7 +564,7 @@
 				F995C98527E5B84F008DE852 /* SignInController.swift in Sources */,
 				F995C98A27E5B8E4008DE852 /* HomeController.swift in Sources */,
 				F995C98127E5B7D1008DE852 /* SignIn.swift in Sources */,
-				F995C99527E90A89008DE852 /* CategoriesCollection.swift in Sources */,
+				F995C99527E90A89008DE852 /* CollectionCell.swift in Sources */,
 				F9BD34A427ECD77E0068343A /* HomeViewController.swift in Sources */,
 				F995C97727E5B6D3008DE852 /* Profile.swift in Sources */,
 				F995C94227E57FF2008DE852 /* AppDelegate.swift in Sources */,
@@ -886,7 +746,6 @@
 		};
 		F995C96927E57FF4008DE852 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7081FC4D586C6B974694294 /* Pods-Jobly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -914,7 +773,6 @@
 		};
 		F995C96A27E57FF4008DE852 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72F106C79B08D0DA76C01917 /* Pods-Jobly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -942,7 +800,6 @@
 		};
 		F995C96C27E57FF4008DE852 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27137ED1699703317BDABC45 /* Pods-JoblyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -963,7 +820,6 @@
 		};
 		F995C96D27E57FF4008DE852 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 418C65F9567FA05A70B8898B /* Pods-JoblyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -984,7 +840,6 @@
 		};
 		F995C96F27E57FF4008DE852 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDC8FDC42DD789A46E860882 /* Pods-Jobly-JoblyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1003,7 +858,6 @@
 		};
 		F995C97027E57FF4008DE852 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 234E0AE15AFD36DCEE4117AD /* Pods-Jobly-JoblyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
