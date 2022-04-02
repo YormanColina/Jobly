@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class RecommendedCell: UICollectionViewCell {
 // MARK: IBOutlets
@@ -37,7 +38,7 @@ class RecommendedCell: UICollectionViewCell {
     
     func setupCell(recommended: Recommended) {
         titleCell.text = recommended.title
-        imageView?.kf.setImage(with: recommended.image)
+        //imageView?.kf.setImage(with: recommended.image)
         descriptionCell.text = recommended.location
     }
 

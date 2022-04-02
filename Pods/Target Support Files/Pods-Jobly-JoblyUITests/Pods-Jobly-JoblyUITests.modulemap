@@ -1,0 +1,6 @@
+module Pods_Jobly_JoblyUITests {
+  umbrella header "Pods-Jobly-JoblyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -18,7 +18,7 @@ class HomeController {
             guard let data = response.value as? [String: Any], let home = Mapper<Home>().map(JSON: data) else { return }
            
             self.home = home
+            
         }
-        
     }
 }

@@ -16,7 +16,6 @@ struct Recommended: Mappable {
     var description: String = ""
     var owner: Owner = Owner()
     
-    
     init?(map: Map) {}
     
     mutating func mapping(map: Map) {

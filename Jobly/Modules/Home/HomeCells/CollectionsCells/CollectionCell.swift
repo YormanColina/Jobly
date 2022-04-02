@@ -12,12 +12,12 @@ class CollectionCell: UICollectionViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: Properties
-    var completion: (Widget) -> Void
+    var widgettt: Widget = Widget()
     // MARK: Methods
     
     func setupCollection(widgets: [Widget]) {
         for widget in widgets {
-            completion(widget)
+            widgettt = widget
         }
     }
     
@@ -34,29 +34,24 @@ class CollectionCell: UICollectionViewCell {
 
 }
 
-extension CategoriesCollection: UICollectionViewDataSource {
+extension CollectionCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-            self.completion { widget in
-                if widget.type ==  "categories" {
-                    if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: indexPath) as? CategoriesCell {
-                        // Aqui seva a configurar la celda
-                        return cell
-                    }
-                } else if let = widget.type == "jobs" {
-                    if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendedCell", for: indexPath) as? RecommendedCell {
-                        // Aqui seva a configurar la celda
-                        return cell
-                    }
-                }
+        if widgettt.type == "Categories" {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: indexPath) as? CategoriesCell {
+                return cell
             }
+        }
+        
+        print(widgettt.type)
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendedCell", for: indexPath) as? RecommendedCell {
+            return cell
+        }
         return UICollectionViewCell()
     }
-    
     
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -65,7 +60,7 @@ extension CategoriesCollection: UICollectionViewDataSource {
     
 }
 
-extension CategoriesCollection: UICollectionViewDelegateFlowLayout {
+extension CollectionCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
             return CGSize(width: 150, height: 150)
@@ -75,7 +70,7 @@ extension CategoriesCollection: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension CategoriesCollection: UICollectionViewDelegate {
+extension CollectionCell: UICollectionViewDelegate {
     
 }
 

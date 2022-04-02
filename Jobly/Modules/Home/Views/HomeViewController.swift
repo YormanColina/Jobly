@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchView: UIView!
     
     // MARK: Properties
-    var controller: HomeController?
+    var controller: HomeController = HomeController()
     
     // MARK: Initializers
     init() {
@@ -41,6 +41,7 @@ class HomeViewController: UIViewController {
     func configuredHome(profileImage: URL) {
         print(profileImage)
         userImage?.kf.setImage(with: profileImage)
+        controller.configurateHome()
     }
   
    private func configurateUI() {
@@ -68,7 +69,6 @@ class HomeViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         collectionView.contentInset = UIEdgeInsets(top: 320, left: 0, bottom: 0, right: 0)
         collectionView.register(UINib(nibName: "CollectionCell", bundle: nil), forCellWithReuseIdentifier: "CollectionCell")
-        collectionView.register(UINib(nibName: "RecommendedCollection", bundle: nil), forCellWithReuseIdentifier: "RecommendedCollection")
         collectionView.register(UINib(nibName: "Header", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
     }
 }
@@ -87,7 +87,7 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionCell {
                 
-                cell.setupCollection(widget: controller?.home.widgets)
+                cell.setupCollection(widgets: (controller.home.widgets))
                 return cell
             }
         return UICollectionViewCell()

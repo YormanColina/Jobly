@@ -14,6 +14,8 @@ struct Categorie: Mappable {
     var color: String = ""
     var title: String = ""
     
+    init(){}
+    
     init?(map: Map) {}
     
     mutating func mapping(map: Map) {
