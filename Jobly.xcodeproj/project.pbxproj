@@ -45,8 +45,6 @@
 		F9BD34A527ECD77E0068343A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BD34A327ECD77E0068343A /* HomeViewController.xib */; };
 		F9BD34A827ECF70C0068343A /* RecommendedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BD34A627ECF70C0068343A /* RecommendedCell.swift */; };
 		F9BD34A927ECF70C0068343A /* RecommendedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BD34A727ECF70C0068343A /* RecommendedCell.xib */; };
-		F9BD34AC27ECF7520068343A /* RecommendedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BD34AA27ECF7520068343A /* RecommendedCollection.swift */; };
-		F9BD34AD27ECF7520068343A /* RecommendedCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BD34AB27ECF7520068343A /* RecommendedCollection.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,8 +113,6 @@
 		F9BD34A327ECD77E0068343A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		F9BD34A627ECF70C0068343A /* RecommendedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCell.swift; sourceTree = "<group>"; };
 		F9BD34A727ECF70C0068343A /* RecommendedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendedCell.xib; sourceTree = "<group>"; };
-		F9BD34AA27ECF7520068343A /* RecommendedCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollection.swift; sourceTree = "<group>"; };
-		F9BD34AB27ECF7520068343A /* RecommendedCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendedCollection.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,8 +421,6 @@
 			children = (
 				F995C99327E90A89008DE852 /* CollectionCell.swift */,
 				F995C99427E90A89008DE852 /* CollectionCell.xib */,
-				F9BD34AA27ECF7520068343A /* RecommendedCollection.swift */,
-				F9BD34AB27ECF7520068343A /* RecommendedCollection.xib */,
 			);
 			path = CollectionsCells;
 			sourceTree = "<group>";
@@ -564,7 +558,6 @@
 				F995C94E27E57FF4008DE852 /* LaunchScreen.storyboard in Resources */,
 				F9BD34A927ECF70C0068343A /* RecommendedCell.xib in Resources */,
 				F995C94B27E57FF4008DE852 /* Assets.xcassets in Resources */,
-				F9BD34AD27ECF7520068343A /* RecommendedCollection.xib in Resources */,
 				F995C99627E90A89008DE852 /* CollectionCell.xib in Resources */,
 				F995C9C527EA6F25008DE852 /* SignInViewController.xib in Resources */,
 				F995C99C27E90B22008DE852 /* CategoriesCell.xib in Resources */,
@@ -718,7 +711,6 @@
 				F995C9A527EA1A9D008DE852 /* SignInViewController.swift in Sources */,
 				F995C97C27E5B753008DE852 /* WorkDetailViewController.swift in Sources */,
 				F999F1DD27F3AA4D009DF782 /* Recommended.swift in Sources */,
-				F9BD34AC27ECF7520068343A /* RecommendedCollection.swift in Sources */,
 				F995C97327E5B657008DE852 /* ProfileController.swift in Sources */,
 				F999F1D927F3A477009DF782 /* Widget.swift in Sources */,
 			);

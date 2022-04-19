@@ -23,12 +23,12 @@ struct Widget: Mappable {
         id <- map ["id"]
         title <- map ["title"]
         type <- map ["type"]
-        values <- (map["values"], CustomClass(type: type))
+        values <- (map["values"], TypesClass(type: type))
     }
 }
 
 
-struct CustomClass: TransformType {
+struct TypesClass: TransformType {
     var type: String
     
     init(type: String) { self.type = type }
@@ -53,6 +53,4 @@ struct CustomClass: TransformType {
     func transformToJSON(_ value: Any?) -> [[String : Any]]? {
         return nil
     }
-    
-    
 }

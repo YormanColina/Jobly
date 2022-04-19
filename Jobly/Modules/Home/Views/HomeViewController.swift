@@ -41,7 +41,6 @@ class HomeViewController: UIViewController {
     func configuredHome(profileImage: URL) {
         print(profileImage)
         userImage?.kf.setImage(with: profileImage)
-        controller.configurateHome()
     }
   
    private func configurateUI() {
@@ -62,6 +61,11 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        controller.configurateHome {
+            self.collectionView.reloadData()
+        }
+        
         configurateUI()
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -70,6 +74,8 @@ class HomeViewController: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 320, left: 0, bottom: 0, right: 0)
         collectionView.register(UINib(nibName: "CollectionCell", bundle: nil), forCellWithReuseIdentifier: "CollectionCell")
         collectionView.register(UINib(nibName: "Header", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
+        
+       
     }
 }
 
@@ -81,13 +87,20 @@ extension HomeViewController: UICollectionViewDataSource {
         1
     }
     
-    
-    
     // Cell registration based on its section
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionCell {
+                if indexPath.section == 0 {
+                    if controller.home.widgets.count > 0 {
+                        print(controller.home.widgets.count)
+                        cell.setupCollection(widgets: controller.home.widgets, section: indexPath.section)
+                    }
+                } else {
+                    if controller.home.widgets.count > 0 {
+                        cell.setupCollection(widgets: controller.home.widgets, section: indexPath.section)
+                    }
+                }
                 
-                cell.setupCollection(widgets: (controller.home.widgets))
                 return cell
             }
         return UICollectionViewCell()
@@ -115,7 +128,7 @@ extension HomeViewController: UICollectionViewDataSource {
     
     // Number of sections in collection
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        4
+        2
     }
 }
 

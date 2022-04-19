@@ -12,13 +12,14 @@ class CollectionCell: UICollectionViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: Properties
-    var widgettt: Widget = Widget()
+    var widget: Widget = Widget()
+    var section: Int = 0
     // MARK: Methods
     
-    func setupCollection(widgets: [Widget]) {
-        for widget in widgets {
-            widgettt = widget
-        }
+    func setupCollection(widgets: [Widget], section: Int) {
+        print("se inicio coleccion horizontal")
+        self.widget = widgets[section]
+        collectionView.reloadData()
     }
     
     // MARK: IBActions
@@ -30,32 +31,38 @@ class CollectionCell: UICollectionViewCell {
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CategoriesCell", bundle: nil), forCellWithReuseIdentifier: "CategoriesCell")
         collectionView.register(UINib(nibName: "RecommendedCell", bundle: nil), forCellWithReuseIdentifier: "RecommendedCell")
+        
     }
 
 }
 
 extension CollectionCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        return widget.values.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if widgettt.type == "Categories" {
+        if widget.values is [Categorie] {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: indexPath) as? CategoriesCell {
+                if let categories = widget.values as? [Categorie] {
+                    cell.setupCell(category: categories[indexPath.row])
+                }
                 return cell
             }
-        }
-        
-        print(widgettt.type)
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendedCell", for: indexPath) as? RecommendedCell {
-            return cell
+        } else {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendedCell", for: indexPath) as? RecommendedCell {
+                if let jobs = widget.values as? [Recommended] {
+                    cell.setupCell(recommended: jobs[indexPath.row])
+                }
+                return cell
+            }
         }
         return UICollectionViewCell()
     }
     
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 1
     }
     
 }
