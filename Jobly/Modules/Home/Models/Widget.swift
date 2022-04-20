@@ -24,6 +24,8 @@ struct Widget: Mappable {
         title <- map ["title"]
         type <- map ["type"]
         values <- (map["values"], TypesClass(type: type))
+        
+        print(values as? [Categorie])
     }
 }
 
@@ -35,7 +37,7 @@ struct TypesClass: TransformType {
     
     typealias Object = Any
     
-    typealias JSON = [[String: Any]]
+    typealias JSON = [String: Any]
     
     
     func transformFromJSON(_ value: Any?) -> Any? {
@@ -44,13 +46,13 @@ struct TypesClass: TransformType {
         }
         
         if type == "Categories" {
-            return Mapper<Categorie>().mapArray(JSONArray: json)
+            return Mapper<Categorie>().map(JSON: json)
         } else {
-            return Mapper<Recommended>().mapArray(JSONArray: json)
+            return Mapper<Job>().map(JSON: json)
         }
     }
     
-    func transformToJSON(_ value: Any?) -> [[String : Any]]? {
+    func transformToJSON(_ value: Any?) -> [String : Any]? {
         return nil
     }
 }

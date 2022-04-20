@@ -36,9 +36,11 @@ class RecommendedCell: UICollectionViewCell {
         moreButton.backgroundColor = Colors.primaryColor
     }
     
-    func setupCell(recommended: Recommended) {
+    func setupCell(recommended: Job) {
+        print(recommended.image)
+        
         titleCell.text = recommended.title
-        //imageView?.kf.setImage(with: recommended.image)
+        imageView?.kf.setImage(with: URL(string: recommended.image))
         descriptionCell.text = recommended.location
     }
 

@@ -89,20 +89,15 @@ extension HomeViewController: UICollectionViewDataSource {
     
     // Cell registration based on its section
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionCell {
-                if indexPath.section == 0 {
-                    if controller.home.widgets.count > 0 {
-                        print(controller.home.widgets.count)
-                        cell.setupCollection(widgets: controller.home.widgets, section: indexPath.section)
-                    }
-                } else {
-                    if controller.home.widgets.count > 0 {
-                        cell.setupCollection(widgets: controller.home.widgets, section: indexPath.section)
-                    }
-                }
-                
-                return cell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionCell {
+            
+            if controller.home.widgets.count > 0 {
+                print(controller.home.widgets.count)
+                cell.setupCollection(widgets: controller.home.widgets, section: indexPath.section)
             }
+
+            return cell
+        }
         return UICollectionViewCell()
     }
     
@@ -115,12 +110,10 @@ extension HomeViewController: UICollectionViewDataSource {
         
         switch indexPath.section {
         case 0:
-            header.setupHeader(title: "Categories", isHidden: false)
-            return header
-        case 1:
-            header.setupHeader(title: "Recommended", isHidden: true)
+            header.setupHeader(title: controller.home.widgets[indexPath.section].title, isHidden: false)
             return header
         default:
+            header.setupHeader(title: controller.home.widgets[indexPath.section].title, isHidden: true)
             return header
         }
     }
@@ -128,7 +121,7 @@ extension HomeViewController: UICollectionViewDataSource {
     
     // Number of sections in collection
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        2
+        controller.home.widgets.count
     }
 }
 
@@ -167,11 +160,11 @@ extension HomeViewController: UICollectionViewDelegate {
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        switch indexPath.section {
-        case 0:
+        switch controller.home.widgets[indexPath.section].type {
+        case "Categories":
             return CGSize(width: UIScreen.main.bounds.width, height: 120)
-        case 1:
-            return CGSize(width: UIScreen.main.bounds.width, height: 200)
+        case "Jobs":
+            return CGSize(width: UIScreen.main.bounds.width, height: 210)
         default:
             return CGSize(width: UIScreen.main.bounds.width, height: 120)
         }

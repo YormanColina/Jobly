@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-struct Recommended: Mappable {
+struct Job: Mappable {
     var id: String = ""
     var title: String = ""
     var location: String = ""

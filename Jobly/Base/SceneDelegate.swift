@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if GIDSignIn.sharedInstance.currentUser == nil {
             rootNavigation.setViewControllers([SignInViewController()], animated: false)
         } else {
-            rootNavigation.setViewControllers([SignInViewController()], animated: false)
+            rootNavigation.setViewControllers([HomeViewController()], animated: false)
         }
                                                
         window = UIWindow(windowScene: windowScene)

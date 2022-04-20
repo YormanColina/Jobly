@@ -39,7 +39,7 @@
 		F995C9C527EA6F25008DE852 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F995C9C427EA6F25008DE852 /* SignInViewController.xib */; };
 		F999F1D927F3A477009DF782 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F999F1D827F3A477009DF782 /* Widget.swift */; };
 		F999F1DB27F3A50B009DF782 /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F999F1DA27F3A50B009DF782 /* Categorie.swift */; };
-		F999F1DD27F3AA4D009DF782 /* Recommended.swift in Sources */ = {isa = PBXBuildFile; fileRef = F999F1DC27F3AA4D009DF782 /* Recommended.swift */; };
+		F999F1DD27F3AA4D009DF782 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = F999F1DC27F3AA4D009DF782 /* Job.swift */; };
 		F999F1DF27F3AC4A009DF782 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F999F1DE27F3AC4A009DF782 /* Owner.swift */; };
 		F9BD34A427ECD77E0068343A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BD34A227ECD77E0068343A /* HomeViewController.swift */; };
 		F9BD34A527ECD77E0068343A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BD34A327ECD77E0068343A /* HomeViewController.xib */; };
@@ -107,7 +107,7 @@
 		F995C9C427EA6F25008DE852 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		F999F1D827F3A477009DF782 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		F999F1DA27F3A50B009DF782 /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
-		F999F1DC27F3AA4D009DF782 /* Recommended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommended.swift; sourceTree = "<group>"; };
+		F999F1DC27F3AA4D009DF782 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		F999F1DE27F3AC4A009DF782 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		F9BD34A227ECD77E0068343A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F9BD34A327ECD77E0068343A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -382,7 +382,7 @@
 				F995C98727E5B8BF008DE852 /* Home.swift */,
 				F999F1D827F3A477009DF782 /* Widget.swift */,
 				F999F1DA27F3A50B009DF782 /* Categorie.swift */,
-				F999F1DC27F3AA4D009DF782 /* Recommended.swift */,
+				F999F1DC27F3AA4D009DF782 /* Job.swift */,
 				F999F1DE27F3AC4A009DF782 /* Owner.swift */,
 			);
 			path = Models;
@@ -710,7 +710,7 @@
 				F995C94427E57FF2008DE852 /* SceneDelegate.swift in Sources */,
 				F995C9A527EA1A9D008DE852 /* SignInViewController.swift in Sources */,
 				F995C97C27E5B753008DE852 /* WorkDetailViewController.swift in Sources */,
-				F999F1DD27F3AA4D009DF782 /* Recommended.swift in Sources */,
+				F999F1DD27F3AA4D009DF782 /* Job.swift in Sources */,
 				F995C97327E5B657008DE852 /* ProfileController.swift in Sources */,
 				F999F1D927F3A477009DF782 /* Widget.swift in Sources */,
 			);
