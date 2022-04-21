@@ -73,8 +73,8 @@ extension CollectionCell: UICollectionViewDataSource {
 extension CollectionCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if let _ = widget.values as? [Categorie] {
-            collectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 10)
-            return CGSize(width: 100, height: 120)
+            collectionView.contentInset = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 10)
+            return CGSize(width: 100, height: 130)
         }
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 10)
         return CGSize(width: 310, height: 210)

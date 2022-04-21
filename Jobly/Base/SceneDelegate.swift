@@ -18,10 +18,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let rootNavigation = UINavigationController()
         
+        
+        
         if GIDSignIn.sharedInstance.currentUser == nil {
             rootNavigation.setViewControllers([SignInViewController()], animated: false)
         } else {
-            rootNavigation.setViewControllers([HomeViewController()], animated: false)
+            guard let image = GIDSignIn.sharedInstance.currentUser?.profile?.imageURL(withDimension: 96) else {
+                return
+            }
+            rootNavigation.setViewControllers([HomeViewController(imageProfileURL: image)], animated: false)
+            
         }
                                                
         window = UIWindow(windowScene: windowScene)

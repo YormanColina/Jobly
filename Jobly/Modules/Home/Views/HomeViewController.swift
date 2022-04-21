@@ -10,22 +10,32 @@ import Kingfisher
 
 class HomeViewController: UIViewController {
     // MARK: @IBOutlets
+    
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var notificationButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var titleHeader: UILabel!
+    @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var viewHeaderHeight: NSLayoutConstraint!
+    @IBOutlet weak var searchImage: UIImageView!
     @IBOutlet weak var searchYPosition: NSLayoutConstraint!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchView: UIView!
+    @IBOutlet weak var perfilButton: UIButton!
+    @IBOutlet weak var viewImage: UIView!
     
     // MARK: Properties
     var controller: HomeController = HomeController()
+    var currentUserImage: URL?
     
     // MARK: Initializers
     init() {
         super.init(nibName: "HomeViewController", bundle: nil)
+    }
+    
+    init(imageProfileURL: URL) {
+        super.init(nibName: "HomeViewController", bundle: nil)
+        self.currentUserImage = imageProfileURL
     }
     
     required init?(coder: NSCoder) {
@@ -43,20 +53,29 @@ class HomeViewController: UIViewController {
         userImage?.kf.setImage(with: profileImage)
     }
   
-   private func configurateUI() {
-        userImage.layer.cornerRadius = 25
-       
+    private func configurateUI() {
+        
+        
         notificationButton.layer.cornerRadius = 25
         notificationButton.layer.borderColor = UIColor.lightGray.cgColor
-        notificationButton.layer.borderWidth = 0.1
-       
+        notificationButton.layer.borderWidth = 0.2
+        
+        profileButton.layer.masksToBounds = false
+        
         profileButton.layer.cornerRadius = 25
         profileButton.layer.borderColor = UIColor.lightGray.cgColor
         profileButton.layer.borderWidth = 0.1
-       
-       searchView.layer.cornerRadius = 25
-       searchTextField.attributedPlaceholder = NSAttributedString(string: "              Busca", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black])
-       
+        
+        
+        perfilButton.isHidden = true
+        
+        
+        
+        searchView.layer.cornerRadius = 25
+        searchTextField.attributedPlaceholder = NSAttributedString(string: "              Search your job...", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        
+        searchImage.alpha = 0.6
+        userImage.kf.setImage(with: currentUserImage)
     }
     
     override func viewDidLoad() {
@@ -65,6 +84,7 @@ class HomeViewController: UIViewController {
         controller.configurateHome {
             self.collectionView.reloadData()
         }
+        
         
         configurateUI()
         collectionView.delegate = self
@@ -76,6 +96,23 @@ class HomeViewController: UIViewController {
         collectionView.register(UINib(nibName: "Header", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
         
        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        userImage.layer.borderWidth = 1.0
+        userImage.layer.borderColor = UIColor.white.cgColor
+        userImage.layer.cornerRadius = userImage.bounds.height * 0.5
+        userImage.layer.masksToBounds = true
+        
+        
+        
+        viewImage.backgroundColor = .clear
+        viewImage.layer.shadowColor = UIColor.lightGray.withAlphaComponent(0.7).cgColor
+        viewImage.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        viewImage.layer.shadowOpacity = 1.0
+        viewImage.layer.shadowRadius = 10.0
+        
     }
 }
 
@@ -162,7 +199,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch controller.home.widgets[indexPath.section].type {
         case "Categories":
-            return CGSize(width: UIScreen.main.bounds.width, height: 120)
+            return CGSize(width: UIScreen.main.bounds.width, height: 132)
         case "Jobs":
             return CGSize(width: UIScreen.main.bounds.width, height: 210)
         default:

@@ -43,13 +43,13 @@ class SignInViewController: UIViewController {
                 return
             }
             
-            let home = HomeViewController()
             guard let image = self.controller.currentUserImage else {
                 return
             }
             
-            home.configuredHome(profileImage: image)
-            self.navigationController?.setViewControllers([HomeViewController()], animated: true)
+            print(image)
+            
+            self.navigationController?.setViewControllers([HomeViewController(imageProfileURL: image)], animated: true)
         }
     }
     
