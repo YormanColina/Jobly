@@ -91,7 +91,7 @@ class HomeViewController: UIViewController {
         collectionView.dataSource = self
     
         navigationController?.isNavigationBarHidden = true
-        collectionView.contentInset = UIEdgeInsets(top: 320, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: 320, left: 0, bottom: 30, right: 0)
         collectionView.register(UINib(nibName: "CollectionCell", bundle: nil), forCellWithReuseIdentifier: "CollectionCell")
         collectionView.register(UINib(nibName: "Header", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
         
@@ -131,6 +131,16 @@ extension HomeViewController: UICollectionViewDataSource {
             if controller.home.widgets.count > 0 {
                 print(controller.home.widgets.count)
                 cell.setupCollection(widgets: controller.home.widgets, section: indexPath.section)
+                cell.completion = { value in
+                    if value {
+                        
+                        if indexPath.section > 0 {
+                            self.navigationController?.pushViewController(JobDetailViewController(), animated: true)
+                            self.navigationController?.setNavigationBarHidden(false, animated: true)
+                        }
+                        
+                    }
+                }
             }
 
             return cell
@@ -187,7 +197,8 @@ extension HomeViewController: UICollectionViewDelegate {
                 titleHeader.layer.opacity = 0
             }
         }
-  
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
 

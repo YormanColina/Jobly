@@ -14,6 +14,8 @@ class CollectionCell: UICollectionViewCell {
     // MARK: Properties
     var widget: Widget = Widget()
     var section: Int = 0
+    var completion: ((Bool) -> Void)?
+    
     // MARK: Methods
     
     func setupCollection(widgets: [Widget], section: Int) {
@@ -33,7 +35,7 @@ class CollectionCell: UICollectionViewCell {
         collectionView.register(UINib(nibName: "RecommendedCell", bundle: nil), forCellWithReuseIdentifier: "RecommendedCell")
         
     }
-
+    
 }
 
 extension CollectionCell: UICollectionViewDataSource {
@@ -88,6 +90,8 @@ extension CollectionCell: UICollectionViewDelegateFlowLayout {
 }
 
 extension CollectionCell: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        completion!(true)
+    }
 }
 

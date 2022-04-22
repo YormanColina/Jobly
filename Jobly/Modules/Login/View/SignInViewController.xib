@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="activitiIndicator" destination="nN7-hS-DNF" id="S5I-7o-Xc6"/>
                 <outlet property="imageView" destination="REu-It-avF" id="hG1-vb-fpE"/>
+                <outlet property="progressView" destination="hUC-mF-Isl" id="tM4-47-eSr"/>
                 <outlet property="signUpButton" destination="foW-9B-CXX" id="sT7-ul-b0I"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="welcomeView" destination="Hlr-3P-aHh" id="CQ3-Lm-NJY"/>

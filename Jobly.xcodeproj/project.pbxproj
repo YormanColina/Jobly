@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1800F367281333C000F04666 /* JobDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800F365281333C000F04666 /* JobDetailViewController.swift */; };
+		1800F368281333C000F04666 /* JobDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1800F366281333C000F04666 /* JobDetailViewController.xib */; };
 		331EA654F8D348D9688AE1BD /* libPods-Jobly-JoblyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D4D21BEA3FEBABFBC4E94E /* libPods-Jobly-JoblyUITests.a */; };
 		BCAE5C7E9D1A2AA3A8C703A3 /* libPods-Jobly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC656D9D02A326AF71BE4C8 /* libPods-Jobly.a */; };
 		EC0F718331F6D15A52E22603 /* libPods-JoblyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 543A113B55A3B3C157E9FF35 /* libPods-JoblyTests.a */; };
@@ -24,7 +26,6 @@
 		F995C97527E5B67E008DE852 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97427E5B67E008DE852 /* ProfileViewController.swift */; };
 		F995C97727E5B6D3008DE852 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97627E5B6D3008DE852 /* Profile.swift */; };
 		F995C97A27E5B71F008DE852 /* WorkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97927E5B71F008DE852 /* WorkDetailController.swift */; };
-		F995C97C27E5B753008DE852 /* WorkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97B27E5B753008DE852 /* WorkDetailViewController.swift */; };
 		F995C97E27E5B792008DE852 /* WorkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97D27E5B792008DE852 /* WorkDetail.swift */; };
 		F995C98127E5B7D1008DE852 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98027E5B7D1008DE852 /* SignIn.swift */; };
 		F995C98527E5B84F008DE852 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C98427E5B84F008DE852 /* SignInController.swift */; };
@@ -65,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1800F365281333C000F04666 /* JobDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewController.swift; sourceTree = "<group>"; };
+		1800F366281333C000F04666 /* JobDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetailViewController.xib; sourceTree = "<group>"; };
 		19D4D21BEA3FEBABFBC4E94E /* libPods-Jobly-JoblyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobly-JoblyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC656D9D02A326AF71BE4C8 /* libPods-Jobly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		464CF7A711579CC516933D57 /* Pods-JoblyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoblyTests.debug.xcconfig"; path = "Target Support Files/Pods-JoblyTests/Pods-JoblyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,7 +95,6 @@
 		F995C97427E5B67E008DE852 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F995C97627E5B6D3008DE852 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F995C97927E5B71F008DE852 /* WorkDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailController.swift; sourceTree = "<group>"; };
-		F995C97B27E5B753008DE852 /* WorkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailViewController.swift; sourceTree = "<group>"; };
 		F995C97D27E5B792008DE852 /* WorkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetail.swift; sourceTree = "<group>"; };
 		F995C98027E5B7D1008DE852 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		F995C98427E5B84F008DE852 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
@@ -326,7 +328,8 @@
 		F995C9BA27EA6A70008DE852 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F995C97B27E5B753008DE852 /* WorkDetailViewController.swift */,
+				1800F365281333C000F04666 /* JobDetailViewController.swift */,
+				1800F366281333C000F04666 /* JobDetailViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				F995C99627E90A89008DE852 /* CollectionCell.xib in Resources */,
 				F995C9C527EA6F25008DE852 /* SignInViewController.xib in Resources */,
 				F995C99C27E90B22008DE852 /* CategoriesCell.xib in Resources */,
+				1800F368281333C000F04666 /* JobDetailViewController.xib in Resources */,
 				F949955727EC362100C3B2E9 /* Header.xib in Resources */,
 				F949954527EBA2EB00C3B2E9 /* GoogleService-Info.plist in Resources */,
 			);
@@ -708,8 +712,8 @@
 				F995C97527E5B67E008DE852 /* ProfileViewController.swift in Sources */,
 				F995C97E27E5B792008DE852 /* WorkDetail.swift in Sources */,
 				F995C94427E57FF2008DE852 /* SceneDelegate.swift in Sources */,
+				1800F367281333C000F04666 /* JobDetailViewController.swift in Sources */,
 				F995C9A527EA1A9D008DE852 /* SignInViewController.swift in Sources */,
-				F995C97C27E5B753008DE852 /* WorkDetailViewController.swift in Sources */,
 				F999F1DD27F3AA4D009DF782 /* Job.swift in Sources */,
 				F995C97327E5B657008DE852 /* ProfileController.swift in Sources */,
 				F999F1D927F3A477009DF782 /* Widget.swift in Sources */,

@@ -14,6 +14,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var welcomeView: UIView!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var activitiIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var progressView: UIProgressView!
     
     // MARK: Properties
     
@@ -32,6 +33,7 @@ class SignInViewController: UIViewController {
         signUpButton.isHidden = true
         activitiIndicator.isHidden = false
         activitiIndicator.startAnimating()
+        progressView.progress = 100
         
         controller.presentHome(viewController: self) { success in
             
