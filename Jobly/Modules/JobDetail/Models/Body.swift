@@ -6,3 +6,50 @@
 //
 
 import Foundation
+import ObjectMapper
+
+struct Body: Mappable {
+    var type: String = ""
+    var content: Description = Description()
+    
+    init?(map: Map) {}
+    
+    init() {}
+    
+    mutating func mapping(map: Map) {
+        type <- map["type"]
+        content <- map["content"]
+    }
+    
+    
+}
+
+struct TransformClass: TransformType {
+    var type: String = ""
+    
+    init(type: String) { self.type = type }
+    
+    typealias Object = Any
+
+    typealias JSON = [String: Any]
+    
+    
+    func transformFromJSON(_ value: Any?) -> Any? {
+        guard let json = value as? JSON else {
+            return value
+        }
+        
+        if type == "site" {
+            return Mapper<Site>().map(JSON: json)
+        } else if type == "description" {
+            return Mapper<Description>().map(JSON: json)
+            } else {
+                return Mapper<List>().map(JSON: json)
+            }
+    }
+    
+    func transformToJSON(_ value: Any?) -> [String : Any]? {
+        nil
+    }
+    
+}

@@ -49,7 +49,7 @@ class HomeViewController: UIViewController {
     // MARK: Methods
     
     func configuredHome(profileImage: URL) {
-        print(profileImage)
+        
         userImage?.kf.setImage(with: profileImage)
     }
   
@@ -129,16 +129,17 @@ extension HomeViewController: UICollectionViewDataSource {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionCell {
             
             if controller.home.widgets.count > 0 {
-                print(controller.home.widgets.count)
+                
                 cell.setupCollection(widgets: controller.home.widgets, section: indexPath.section)
-                cell.completion = { value in
+                cell.completion = { value, position in
                     if value {
                         
-                        if indexPath.section > 0 {
-                            self.navigationController?.pushViewController(JobDetailViewController(), animated: true)
-                            self.navigationController?.setNavigationBarHidden(false, animated: true)
+                        if let array = self.controller.home.widgets[indexPath.section].values as? [Job] {
+                            if indexPath.section > 0 {
+                                self.navigationController?.pushViewController(JobDetailViewController(id: array[position].id), animated: true)
+                                self.navigationController?.setNavigationBarHidden(false, animated: true)
+                            }
                         }
-                        
                     }
                 }
             }

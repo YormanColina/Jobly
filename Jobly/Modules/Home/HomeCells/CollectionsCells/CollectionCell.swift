@@ -14,12 +14,13 @@ class CollectionCell: UICollectionViewCell {
     // MARK: Properties
     var widget: Widget = Widget()
     var section: Int = 0
-    var completion: ((Bool) -> Void)?
+    var completion: ((Bool, Int) -> Void)?
+    
     
     // MARK: Methods
     
     func setupCollection(widgets: [Widget], section: Int) {
-        print("se inicio coleccion horizontal")
+    
         self.widget = widgets[section]
         
     }
@@ -45,8 +46,6 @@ extension CollectionCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        print(widget.values is [Categorie])
-        
         if let categories = widget.values as? [Categorie] {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: indexPath) as? CategoriesCell {
                 cell.setupCell(category: categories[indexPath.row])
@@ -55,7 +54,6 @@ extension CollectionCell: UICollectionViewDataSource {
             
         } else if let jobs = widget.values as? [Job] {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendedCell", for: indexPath) as? RecommendedCell {
-                
                 cell.setupCell(recommended: jobs[indexPath.row])
                 return cell
             }
@@ -91,7 +89,7 @@ extension CollectionCell: UICollectionViewDelegateFlowLayout {
 
 extension CollectionCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        completion!(true)
+        completion!(true, indexPath.row)
     }
 }
 

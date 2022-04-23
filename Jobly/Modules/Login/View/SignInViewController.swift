@@ -33,7 +33,7 @@ class SignInViewController: UIViewController {
         signUpButton.isHidden = true
         activitiIndicator.isHidden = false
         activitiIndicator.startAnimating()
-        progressView.progress = 100
+        self.progressView.progress = 0.5
         
         controller.presentHome(viewController: self) { success in
             
@@ -45,11 +45,11 @@ class SignInViewController: UIViewController {
                 return
             }
             
+            self.progressView.progress = 100
+            
             guard let image = self.controller.currentUserImage else {
                 return
             }
-            
-            print(image)
             
             self.navigationController?.setViewControllers([HomeViewController(imageProfileURL: image)], animated: true)
         }
@@ -70,6 +70,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.progressView.progress = 0
         signUpButton.layer.cornerRadius = 38
         welcomeView.layer.cornerRadius = 30
         imageView.layer.cornerRadius = 30

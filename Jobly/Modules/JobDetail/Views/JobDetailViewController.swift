@@ -8,8 +8,17 @@
 import UIKit
 
 class JobDetailViewController: UIViewController {
+    //MARK: IBOutlets
+    var controller: JobDetailController = JobDetailController()
     
-    init() {
+    
+    //MARK: Properties
+    var id: String
+    
+    //MARK: Initializers
+    
+    init(id: String) {
+        self.id = id
         super.init(nibName: "JobDetailViewController", bundle: nil)
     }
     
@@ -17,8 +26,24 @@ class JobDetailViewController: UIViewController {
         nil
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
     }
+    
+    //MARK: IBActions
+    
+    
+    //MARK: Methods
+    
+    func setupUI() {
+        controller.getDetail(id: self.id) {
+            print("llego mi respuesta")
+        }
+    }
+    
+  
+    
+   
 }

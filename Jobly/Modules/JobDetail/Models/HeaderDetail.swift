@@ -15,8 +15,12 @@ struct HeaderDetail: Mappable {
     
     init?(map: Map) {}
     
+    init() {}
+    
     mutating func mapping(map: Map) {
-        backgroundImage <- map[""]
+        backgroundImage <- map["background_image"]
+        title <- map["title"]
+        tag <- map["tag"]
     }
     
     

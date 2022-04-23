@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Alamofire
 import ObjectMapper
 import Alamofire
 
@@ -18,7 +17,7 @@ class HomeController {
             guard let data = response.value as? [String: Any], let home = Mapper<Home>().map(JSON: data) else { return }
            
             self.home = home
-            print("ya tenemos la home")
+            
             completion()
             
         }

@@ -21,8 +21,6 @@ class CategoriesCell: UICollectionViewCell {
     }
     
     func setupCell(category: Categorie) {
-        
-    
         categoryNameLabel.text = category.title
         imageView.kf.setImage(with: URL(string: category.image))
         containerView.backgroundColor = colorWithHexStringg(hexString: category.color)

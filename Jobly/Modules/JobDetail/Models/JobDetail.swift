@@ -8,14 +8,25 @@
 import Foundation
 import ObjectMapper
 
-struct WorkDetail: Mappable {
+struct JobDetail: Mappable {
+    var id: String = ""
+    var header: HeaderDetail = HeaderDetail()
+    var body: [Body] = []
+    
+    init() {}
+    
     init?(map: Map) {
-        
     }
     
     mutating func mapping(map: Map) {
-        
+        id <- map["id"]
+        header <- map["header"]
+        body <- map["body"]
     }
     
     
 }
+
+
+
+

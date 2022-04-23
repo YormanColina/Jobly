@@ -37,8 +37,6 @@ class RecommendedCell: UICollectionViewCell {
     }
     
     func setupCell(recommended: Job) {
-        print(recommended.image)
-        
         titleCell.text = recommended.title
         imageView?.kf.setImage(with: URL(string: recommended.image))
         descriptionCell.text = recommended.location

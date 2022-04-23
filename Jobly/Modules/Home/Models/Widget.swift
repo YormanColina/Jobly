@@ -24,8 +24,6 @@ struct Widget: Mappable {
         title <- map ["title"]
         type <- map ["type"]
         values <- (map["values"], TypesClass(type: type))
-        
-        print(values as? [Categorie])
     }
 }
 
