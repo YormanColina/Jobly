@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1800F367281333C000F04666 /* JobDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800F365281333C000F04666 /* JobDetailViewController.swift */; };
 		1800F368281333C000F04666 /* JobDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1800F366281333C000F04666 /* JobDetailViewController.xib */; };
+		180CD01128186DB3001ABEA3 /* DescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD00F28186DB3001ABEA3 /* DescriptionViewCell.swift */; };
+		180CD01228186DB3001ABEA3 /* DescriptionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180CD01028186DB3001ABEA3 /* DescriptionViewCell.xib */; };
+		180CD01528186DD4001ABEA3 /* SiteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD01328186DD4001ABEA3 /* SiteCollectionViewCell.swift */; };
+		180CD01628186DD4001ABEA3 /* SiteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180CD01428186DD4001ABEA3 /* SiteCollectionViewCell.xib */; };
+		180CD01928186DFA001ABEA3 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD01728186DFA001ABEA3 /* ListCollectionViewCell.swift */; };
+		180CD01A28186DFA001ABEA3 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180CD01828186DFA001ABEA3 /* ListCollectionViewCell.xib */; };
 		1866A98928146B660093AB69 /* HeaderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A98828146B660093AB69 /* HeaderDetail.swift */; };
 		1866A98B28146C8F0093AB69 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A98A28146C8F0093AB69 /* Body.swift */; };
 		1866A98D28146F290093AB69 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A98C28146F290093AB69 /* Description.swift */; };
@@ -73,6 +79,12 @@
 /* Begin PBXFileReference section */
 		1800F365281333C000F04666 /* JobDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewController.swift; sourceTree = "<group>"; };
 		1800F366281333C000F04666 /* JobDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetailViewController.xib; sourceTree = "<group>"; };
+		180CD00F28186DB3001ABEA3 /* DescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewCell.swift; sourceTree = "<group>"; };
+		180CD01028186DB3001ABEA3 /* DescriptionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionViewCell.xib; sourceTree = "<group>"; };
+		180CD01328186DD4001ABEA3 /* SiteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteCollectionViewCell.swift; sourceTree = "<group>"; };
+		180CD01428186DD4001ABEA3 /* SiteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SiteCollectionViewCell.xib; sourceTree = "<group>"; };
+		180CD01728186DFA001ABEA3 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		180CD01828186DFA001ABEA3 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
 		1866A98828146B660093AB69 /* HeaderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetail.swift; sourceTree = "<group>"; };
 		1866A98A28146C8F0093AB69 /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
 		1866A98C28146F290093AB69 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
@@ -155,6 +167,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180CD00E28186D45001ABEA3 /* DetailCells */ = {
+			isa = PBXGroup;
+			children = (
+				180CD00F28186DB3001ABEA3 /* DescriptionViewCell.swift */,
+				180CD01028186DB3001ABEA3 /* DescriptionViewCell.xib */,
+				180CD01328186DD4001ABEA3 /* SiteCollectionViewCell.swift */,
+				180CD01428186DD4001ABEA3 /* SiteCollectionViewCell.xib */,
+				180CD01728186DFA001ABEA3 /* ListCollectionViewCell.swift */,
+				180CD01828186DFA001ABEA3 /* ListCollectionViewCell.xib */,
+			);
+			path = DetailCells;
+			sourceTree = "<group>";
+		};
 		19C2C1B2AD743EB8218699AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +370,7 @@
 			children = (
 				1800F365281333C000F04666 /* JobDetailViewController.swift */,
 				1800F366281333C000F04666 /* JobDetailViewController.xib */,
+				180CD00E28186D45001ABEA3 /* DetailCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -572,14 +598,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180CD01228186DB3001ABEA3 /* DescriptionViewCell.xib in Resources */,
 				F9BD34A527ECD77E0068343A /* HomeViewController.xib in Resources */,
 				F995C94E27E57FF4008DE852 /* LaunchScreen.storyboard in Resources */,
+				180CD01628186DD4001ABEA3 /* SiteCollectionViewCell.xib in Resources */,
 				F9BD34A927ECF70C0068343A /* RecommendedCell.xib in Resources */,
 				F995C94B27E57FF4008DE852 /* Assets.xcassets in Resources */,
 				F995C99627E90A89008DE852 /* CollectionCell.xib in Resources */,
 				F995C9C527EA6F25008DE852 /* SignInViewController.xib in Resources */,
 				F995C99C27E90B22008DE852 /* CategoriesCell.xib in Resources */,
 				1800F368281333C000F04666 /* JobDetailViewController.xib in Resources */,
+				180CD01A28186DFA001ABEA3 /* ListCollectionViewCell.xib in Resources */,
 				F949955727EC362100C3B2E9 /* Header.xib in Resources */,
 				F949954527EBA2EB00C3B2E9 /* GoogleService-Info.plist in Resources */,
 			);
@@ -730,12 +759,15 @@
 				F995C98827E5B8BF008DE852 /* Home.swift in Sources */,
 				F999F1DB27F3A50B009DF782 /* Categorie.swift in Sources */,
 				F995C97527E5B67E008DE852 /* ProfileViewController.swift in Sources */,
+				180CD01928186DFA001ABEA3 /* ListCollectionViewCell.swift in Sources */,
 				F995C97E27E5B792008DE852 /* JobDetail.swift in Sources */,
 				F995C94427E57FF2008DE852 /* SceneDelegate.swift in Sources */,
 				1800F367281333C000F04666 /* JobDetailViewController.swift in Sources */,
 				F995C9A527EA1A9D008DE852 /* SignInViewController.swift in Sources */,
 				F999F1DD27F3AA4D009DF782 /* Job.swift in Sources */,
 				F995C97327E5B657008DE852 /* ProfileController.swift in Sources */,
+				180CD01528186DD4001ABEA3 /* SiteCollectionViewCell.swift in Sources */,
+				180CD01128186DB3001ABEA3 /* DescriptionViewCell.swift in Sources */,
 				F999F1D927F3A477009DF782 /* Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

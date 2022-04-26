@@ -9,7 +9,13 @@ import Foundation
 import ObjectMapper
 import Alamofire
 
-class JobDetailController {
+protocol JobDetailControlable: AnyObject {
+    var jobDetail: JobDetail { get set }
+    func getDetail(id: String, completion: @escaping () -> Void)
+}
+
+
+class JobDetailController: JobDetailControlable {
     var jobDetail: JobDetail = JobDetail()
     
     func getDetail(id: String, completion: @escaping () -> Void) {

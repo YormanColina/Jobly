@@ -9,8 +9,9 @@ import Foundation
 import ObjectMapper
 
 struct Body: Mappable {
+    var title: String = ""
     var type: String = ""
-    var content: Description = Description()
+    var content: Any = ""
     
     init?(map: Map) {}
     
@@ -18,7 +19,7 @@ struct Body: Mappable {
     
     mutating func mapping(map: Map) {
         type <- map["type"]
-        content <- map["content"]
+        content <- (map["content"], TransformClass(type: type))
     }
     
     
