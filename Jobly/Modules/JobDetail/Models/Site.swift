@@ -22,7 +22,4 @@ struct Site: Mappable {
         journaly <- map["journaly"]
         image <- map["image"]
     }
-    
-   
-    
 }

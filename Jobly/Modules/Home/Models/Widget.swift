@@ -50,6 +50,7 @@ struct TypesClass: TransformType {
         }
     }
     
+    
     func transformToJSON(_ value: Any?) -> [String : Any]? {
         return nil
     }

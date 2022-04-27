@@ -18,11 +18,11 @@ struct Body: Mappable {
     init() {}
     
     mutating func mapping(map: Map) {
+        title <- map["title"]
         type <- map["type"]
         content <- (map["content"], TransformClass(type: type))
     }
-    
-    
+
 }
 
 struct TransformClass: TransformType {
@@ -31,22 +31,22 @@ struct TransformClass: TransformType {
     init(type: String) { self.type = type }
     
     typealias Object = Any
-
+    
     typealias JSON = [String: Any]
     
     
     func transformFromJSON(_ value: Any?) -> Any? {
         guard let json = value as? JSON else {
-            return value
+            return value as? [String]
         }
         
         if type == "site" {
             return Mapper<Site>().map(JSON: json)
         } else if type == "description" {
             return Mapper<Description>().map(JSON: json)
-            } else {
-                return Mapper<List>().map(JSON: json)
-            }
+        }
+        
+        return nil
     }
     
     func transformToJSON(_ value: Any?) -> [String : Any]? {

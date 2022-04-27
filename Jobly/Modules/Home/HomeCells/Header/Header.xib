@@ -27,21 +27,32 @@
                         <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYu-P1-cH6">
+                    <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Q6q-bw-YlR"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <constraints>
                 <constraint firstItem="pzT-cx-fs0" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="6KX-qY-THa"/>
                 <constraint firstAttribute="trailing" secondItem="bSK-oc-mE3" secondAttribute="trailing" constant="20" id="6zW-uJ-Rd7"/>
                 <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="pzT-cx-fs0" secondAttribute="bottom" id="8FS-JR-hmM"/>
+                <constraint firstAttribute="trailing" secondItem="sYu-P1-cH6" secondAttribute="trailing" id="TNC-6v-q0p"/>
                 <constraint firstItem="bSK-oc-mE3" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="TxS-nf-m7R"/>
                 <constraint firstItem="pzT-cx-fs0" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="30" id="ZM5-dg-iYK"/>
                 <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="bSK-oc-mE3" secondAttribute="bottom" id="jbS-8B-PCt"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="sYu-P1-cH6" secondAttribute="bottom" id="oP4-Ef-8JM"/>
+                <constraint firstItem="sYu-P1-cH6" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="roL-gQ-KXd"/>
             </constraints>
             <connections>
+                <outlet property="footerView" destination="sYu-P1-cH6" id="9d2-Bd-8tx"/>
                 <outlet property="moreButton" destination="bSK-oc-mE3" id="sxA-H2-qBO"/>
                 <outlet property="titleLabel" destination="pzT-cx-fs0" id="Mpc-aC-dJT"/>
             </connections>
-            <point key="canvasLocation" x="133" y="96"/>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </collectionReusableView>
     </objects>
 </document>

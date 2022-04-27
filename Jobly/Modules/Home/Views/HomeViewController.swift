@@ -158,10 +158,10 @@ extension HomeViewController: UICollectionViewDataSource {
         
         switch indexPath.section {
         case 0:
-            header.setupHeader(title: controller.home.widgets[indexPath.section].title, isHidden: false)
+            header.setupHeader(title: controller.home.widgets[indexPath.section].title, isHidden: false, type: self)
             return header
         default:
-            header.setupHeader(title: controller.home.widgets[indexPath.section].title, isHidden: true)
+            header.setupHeader(title: controller.home.widgets[indexPath.section].title, isHidden: true, type: self)
             return header
         }
     }

@@ -11,6 +11,7 @@ class Header: UICollectionReusableView {
 
     @IBOutlet weak var moreButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var footerView: UIView!
     
     var hiddenMoreButton: Bool = false
     
@@ -19,11 +20,16 @@ class Header: UICollectionReusableView {
         
     }
     
-    func setupHeader(title: String, isHidden: Bool) {
+    func setupHeader(title: String, isHidden: Bool, type: Any?) {
         titleLabel.text = title
+        
+        if type is HomeViewController {
+            footerView.isHidden = true
+        } 
         
         if isHidden {
             moreButton.isHidden = true
+            
         }
     }
     

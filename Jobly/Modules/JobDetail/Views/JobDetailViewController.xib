@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobDetailViewController" customModule="Jobly" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="JPd-3E-Tp8" id="Wzg-v2-mFk"/>
+                <outlet property="imageHeigthConstraint" destination="Wyy-CA-X0s" id="w67-J4-xIt"/>
+                <outlet property="labelTopContraint" destination="gra-Db-fRo" id="SAK-Dt-BhQ"/>
                 <outlet property="titleWork" destination="ZgT-Vb-Dhj" id="gPu-vP-q6C"/>
                 <outlet property="typeOfWork" destination="z2d-cg-m7k" id="1ag-mI-KSW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

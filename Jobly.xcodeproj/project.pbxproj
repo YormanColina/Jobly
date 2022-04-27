@@ -19,7 +19,6 @@
 		1866A98B28146C8F0093AB69 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A98A28146C8F0093AB69 /* Body.swift */; };
 		1866A98D28146F290093AB69 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A98C28146F290093AB69 /* Description.swift */; };
 		1866A98F28146FFC0093AB69 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A98E28146FFC0093AB69 /* Site.swift */; };
-		1866A991281471310093AB69 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A990281471310093AB69 /* List.swift */; };
 		331EA654F8D348D9688AE1BD /* libPods-Jobly-JoblyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D4D21BEA3FEBABFBC4E94E /* libPods-Jobly-JoblyUITests.a */; };
 		BCAE5C7E9D1A2AA3A8C703A3 /* libPods-Jobly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC656D9D02A326AF71BE4C8 /* libPods-Jobly.a */; };
 		EC0F718331F6D15A52E22603 /* libPods-JoblyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 543A113B55A3B3C157E9FF35 /* libPods-JoblyTests.a */; };
@@ -89,7 +88,6 @@
 		1866A98A28146C8F0093AB69 /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
 		1866A98C28146F290093AB69 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		1866A98E28146FFC0093AB69 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
-		1866A990281471310093AB69 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		19D4D21BEA3FEBABFBC4E94E /* libPods-Jobly-JoblyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobly-JoblyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC656D9D02A326AF71BE4C8 /* libPods-Jobly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jobly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		464CF7A711579CC516933D57 /* Pods-JoblyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoblyTests.debug.xcconfig"; path = "Target Support Files/Pods-JoblyTests/Pods-JoblyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -352,7 +350,6 @@
 				1866A98A28146C8F0093AB69 /* Body.swift */,
 				1866A98C28146F290093AB69 /* Description.swift */,
 				1866A98E28146FFC0093AB69 /* Site.swift */,
-				1866A990281471310093AB69 /* List.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -747,7 +744,6 @@
 				F995C98A27E5B8E4008DE852 /* HomeController.swift in Sources */,
 				1866A98D28146F290093AB69 /* Description.swift in Sources */,
 				F995C98127E5B7D1008DE852 /* SignIn.swift in Sources */,
-				1866A991281471310093AB69 /* List.swift in Sources */,
 				F995C99527E90A89008DE852 /* CollectionCell.swift in Sources */,
 				F9BD34A427ECD77E0068343A /* HomeViewController.swift in Sources */,
 				1866A98B28146C8F0093AB69 /* Body.swift in Sources */,

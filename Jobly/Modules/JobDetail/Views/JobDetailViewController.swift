@@ -13,8 +13,9 @@ class JobDetailViewController: UIViewController {
     @IBOutlet weak var typeOfWork: UILabel!
     @IBOutlet weak var titleWork: UILabel!
     @IBOutlet weak var workImage: UIImageView!
+    @IBOutlet weak var imageHeigthConstraint: NSLayoutConstraint!
     
-    
+    @IBOutlet weak var labelTopContraint: NSLayoutConstraint!
     //MARK: Properties
     var controller: JobDetailControlable? = JobDetailController()
     var id: String
@@ -36,10 +37,7 @@ class JobDetailViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "DescriptionViewCell", bundle: nil), forCellWithReuseIdentifier: "DescriptionViewCell")
-        collectionView.register(UINib(nibName: "SiteCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SiteCollectionViewCell")
-        collectionView.register(UINib(nibName: "ListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ListCollectionViewCell")
-        collectionView.register(UINib(nibName: "Header", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
+        registerCells()
         collectionView.contentInset = UIEdgeInsets(top: 230, left: 0, bottom: 0, right: 0)
         customizingNavigationBar()
         setupUI()
@@ -64,12 +62,11 @@ class JobDetailViewController: UIViewController {
     }
     
     @objc func dismissViewController() {
-        print("se oculto")
         navigationController?.popViewController(animated: true)
     }
     
     func customizingNavigationBar() {
-        let leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(dismissViewController))
+        let leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         let leftImageView = UIImageView(frame: .zero)
         leftImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -79,16 +76,24 @@ class JobDetailViewController: UIViewController {
         leftView.widthAnchor.constraint(equalToConstant: 44).isActive = true
         leftView.heightAnchor.constraint(equalToConstant: 44).isActive = true
         
+        let button = UIButton(frame: .zero)
+        button.addTarget(self, action: #selector(dismissViewController), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        leftView.backgroundColor = .white
         leftView.addSubview(leftImageView)
-        leftView.backgroundColor = .gray
+        leftView.addSubview(button)
         leftView.layer.cornerRadius = 22
         leftImageView.image = UIImage(named: "arrow")
         leftImageView.leadingAnchor.constraint(equalTo: leftView.leadingAnchor, constant: 12).isActive = true
         leftImageView.topAnchor.constraint(equalTo: leftView.topAnchor, constant: 12).isActive = true
+        button.topAnchor.constraint(equalTo: leftView.topAnchor).isActive = true
+        button.leadingAnchor.constraint(equalTo: leftView.leadingAnchor).isActive = true
+        button.trailingAnchor.constraint(equalTo: leftView.trailingAnchor).isActive = true
+        button.bottomAnchor.constraint(equalTo: leftView.bottomAnchor).isActive = true
+        
         leftBarButtonItem.customView = leftView
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
-        leftImageView.isUserInteractionEnabled = false
-        leftView.isUserInteractionEnabled = false
+       
 
         
         let rightBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(dismissViewController))
@@ -98,6 +103,19 @@ class JobDetailViewController: UIViewController {
         rightBarButtonItem.customView = customRightView
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
 
+    }
+    
+    
+    func registerCells() {
+        // Regiter of cells
+        collectionView.register(UINib(nibName: "DescriptionViewCell", bundle: nil), forCellWithReuseIdentifier: "DescriptionViewCell")
+        
+        collectionView.register(UINib(nibName: "SiteCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SiteCollectionViewCell")
+        
+        collectionView.register(UINib(nibName: "ListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ListCollectionViewCell")
+        
+        // Register of Header
+        collectionView.register(UINib(nibName: "Header", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
     }
 }
 // MARK: UICollectionViewDataSource
@@ -109,7 +127,8 @@ extension JobDetailViewController: UICollectionViewDataSource {
         
         switch indexPath.section {
         case 0 :
-           cell = registerCell("DescriptionViewCell", indexPath: indexPath)
+            // Creation of the Description cell
+            cell = registerCell("DescriptionViewCell", indexPath: indexPath)
             guard let descriptioncell = cell as? DescriptionViewCell else {
                 return cell
             }
@@ -117,7 +136,9 @@ extension JobDetailViewController: UICollectionViewDataSource {
                 descriptioncell.setupDescription(description: description)
             }
             return descriptioncell
+            
         case 1 :
+            // Creation of the Site cell
             cell = registerCell("SiteCollectionViewCell", indexPath: indexPath)
             guard let siteCell = cell as? SiteCollectionViewCell else {
                 return cell
@@ -126,13 +147,15 @@ extension JobDetailViewController: UICollectionViewDataSource {
                 siteCell.setupSite(site: site)
             }
             return siteCell
-        default :
+            
+        default:
+            // Creation of the List cell
             cell = registerCell("ListCollectionViewCell", indexPath: indexPath)
             guard let listCell = cell as? ListCollectionViewCell else {
                 return cell
             }
-            if let list = controller?.jobDetail.body[indexPath.section].content as? List {
-                listCell.setupList(list: list)
+            if let list = controller?.jobDetail.body[indexPath.section].content as? [String] {
+                listCell.setupList(list: list, section: indexPath.row)
             }
             return listCell
         }
@@ -149,10 +172,10 @@ extension JobDetailViewController: UICollectionViewDataSource {
         case 1:
             return 1
         default:
-            guard let list = controller?.jobDetail.body[section].content as? List else {
+            guard let list = controller?.jobDetail.body[section].content as? [String] else {
                 return 0
             }
-            return list.content.count
+            return list.count 
         }
     }
     
@@ -170,26 +193,21 @@ extension JobDetailViewController: UICollectionViewDataSource {
         
         switch indexPath.section {
         case 0 :
-            header.setupHeader(title: "", isHidden: true)
+            header.setupHeader(title: "", isHidden: true, type: self)
             return header
         case 1 :
-            header.setupHeader(title: "", isHidden: true)
+            header.setupHeader(title: "", isHidden: true, type: self)
             return header
         default :
-            header.setupHeader(title: (controller?.jobDetail.body[indexPath.section].title)!, isHidden: true)
+            header.setupHeader(title: (controller?.jobDetail.body[indexPath.section].title)!, isHidden: true, type: self)
             return header
         }
         
     }
 }
 
-// MARK: UICollectionViewDelegate
-extension JobDetailViewController: UICollectionViewDelegate {
-    
-}
-
-
 // MARK: UICollectionViewDelegateFlowLayout
+
 extension JobDetailViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.section {
@@ -198,7 +216,7 @@ extension JobDetailViewController: UICollectionViewDelegateFlowLayout {
         case 1:
             return CGSize(width: UIScreen.main.bounds.width, height: 120)
         default:
-            return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            return CGSize(width: UIScreen.main.bounds.width, height: 30)
         }
     }
     
@@ -213,4 +231,19 @@ extension JobDetailViewController: UICollectionViewDelegateFlowLayout {
         }
     }
     
+}
+
+// MARK: UICollectionViewDelegate
+
+extension JobDetailViewController: UICollectionViewDelegate {
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let maxHeight: CGFloat = 230.0
+//        let minHeigth : CGFloat = 90.0
+//
+//        print(scrollView.contentOffset.y)
+//        navigationController?.navigationBar.isHidden = true
+//        let heigth = scrollView.contentOffset.y
+//
+//        imageHeigthConstraint.constant = abs(heigth) + minHeigth
+//    }
 }

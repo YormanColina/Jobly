@@ -16,8 +16,8 @@ class ListCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setupList(list: List) {
-        descriptionLabel.text = list.title
+    func setupList(list: [String], section: Int) {
+        descriptionLabel.text = list[section]
     }
 
 }

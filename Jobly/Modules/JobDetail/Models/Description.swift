@@ -22,6 +22,4 @@ struct Description: Mappable {
         salary <- map["salary"]
         description <- map["description"]
     }
-    
-    
 }
