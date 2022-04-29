@@ -12,6 +12,7 @@ class DescriptionViewCell: UICollectionViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var salaryLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var footerView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,9 +20,10 @@ class DescriptionViewCell: UICollectionViewCell {
     }
     
     func setupDescription(description: Description) {
-        descriptionLabel.text = description.description
-        salaryLabel.text = description.salary
+        descriptionLabel.text = "Description: " + description.description
+        salaryLabel.text = "Salary: " + description.salary
         locationLabel.text = description.location
+        
     }
 
 }

@@ -17,7 +17,7 @@ class ListCollectionViewCell: UICollectionViewCell {
     }
     
     func setupList(list: [String], section: Int) {
-        descriptionLabel.text = list[section]
+        descriptionLabel.text = "- " + list[section]
     }
 
 }

@@ -2,14 +2,21 @@
 //  ProfileViewController.swift
 //  Jobly
 //
-//  Created by Jyferson Colina on 19/03/22.
+//  Created by Apple on 29/04/22.
 //
 
-import Foundation
 import UIKit
-import Alamofire
 
-class ProfileViewController :UIViewController {
+class ProfileViewController: UIViewController {
+    
+    init() {
+        super.init(nibName: "ProfileViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        nil
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

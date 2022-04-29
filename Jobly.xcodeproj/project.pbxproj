@@ -15,6 +15,8 @@
 		180CD01628186DD4001ABEA3 /* SiteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180CD01428186DD4001ABEA3 /* SiteCollectionViewCell.xib */; };
 		180CD01928186DFA001ABEA3 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD01728186DFA001ABEA3 /* ListCollectionViewCell.swift */; };
 		180CD01A28186DFA001ABEA3 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180CD01828186DFA001ABEA3 /* ListCollectionViewCell.xib */; };
+		180CD01E281C974C001ABEA3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD01C281C974C001ABEA3 /* ProfileViewController.swift */; };
+		180CD01F281C974C001ABEA3 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180CD01D281C974C001ABEA3 /* ProfileViewController.xib */; };
 		1866A98928146B660093AB69 /* HeaderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A98828146B660093AB69 /* HeaderDetail.swift */; };
 		1866A98B28146C8F0093AB69 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A98A28146C8F0093AB69 /* Body.swift */; };
 		1866A98D28146F290093AB69 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866A98C28146F290093AB69 /* Description.swift */; };
@@ -33,7 +35,6 @@
 		F995C96327E57FF4008DE852 /* JoblyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C96227E57FF4008DE852 /* JoblyUITests.swift */; };
 		F995C96527E57FF4008DE852 /* JoblyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C96427E57FF4008DE852 /* JoblyUITestsLaunchTests.swift */; };
 		F995C97327E5B657008DE852 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97227E5B657008DE852 /* ProfileController.swift */; };
-		F995C97527E5B67E008DE852 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97427E5B67E008DE852 /* ProfileViewController.swift */; };
 		F995C97727E5B6D3008DE852 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97627E5B6D3008DE852 /* Profile.swift */; };
 		F995C97A27E5B71F008DE852 /* JobDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97927E5B71F008DE852 /* JobDetailController.swift */; };
 		F995C97E27E5B792008DE852 /* JobDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F995C97D27E5B792008DE852 /* JobDetail.swift */; };
@@ -84,6 +85,8 @@
 		180CD01428186DD4001ABEA3 /* SiteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SiteCollectionViewCell.xib; sourceTree = "<group>"; };
 		180CD01728186DFA001ABEA3 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		180CD01828186DFA001ABEA3 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		180CD01C281C974C001ABEA3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		180CD01D281C974C001ABEA3 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		1866A98828146B660093AB69 /* HeaderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetail.swift; sourceTree = "<group>"; };
 		1866A98A28146C8F0093AB69 /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
 		1866A98C28146F290093AB69 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
@@ -112,7 +115,6 @@
 		F995C96227E57FF4008DE852 /* JoblyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoblyUITests.swift; sourceTree = "<group>"; };
 		F995C96427E57FF4008DE852 /* JoblyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoblyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F995C97227E5B657008DE852 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		F995C97427E5B67E008DE852 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F995C97627E5B6D3008DE852 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F995C97927E5B71F008DE852 /* JobDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailController.swift; sourceTree = "<group>"; };
 		F995C97D27E5B792008DE852 /* JobDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetail.swift; sourceTree = "<group>"; };
@@ -401,7 +403,8 @@
 		F995C9BE27EA6AA8008DE852 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F995C97427E5B67E008DE852 /* ProfileViewController.swift */,
+				180CD01C281C974C001ABEA3 /* ProfileViewController.swift */,
+				180CD01D281C974C001ABEA3 /* ProfileViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180CD01F281C974C001ABEA3 /* ProfileViewController.xib in Resources */,
 				180CD01228186DB3001ABEA3 /* DescriptionViewCell.xib in Resources */,
 				F9BD34A527ECD77E0068343A /* HomeViewController.xib in Resources */,
 				F995C94E27E57FF4008DE852 /* LaunchScreen.storyboard in Resources */,
@@ -747,6 +751,7 @@
 				F995C99527E90A89008DE852 /* CollectionCell.swift in Sources */,
 				F9BD34A427ECD77E0068343A /* HomeViewController.swift in Sources */,
 				1866A98B28146C8F0093AB69 /* Body.swift in Sources */,
+				180CD01E281C974C001ABEA3 /* ProfileViewController.swift in Sources */,
 				F995C97727E5B6D3008DE852 /* Profile.swift in Sources */,
 				F995C94227E57FF2008DE852 /* AppDelegate.swift in Sources */,
 				F995C99B27E90B22008DE852 /* CategoriesCell.swift in Sources */,
@@ -754,7 +759,6 @@
 				1866A98928146B660093AB69 /* HeaderDetail.swift in Sources */,
 				F995C98827E5B8BF008DE852 /* Home.swift in Sources */,
 				F999F1DB27F3A50B009DF782 /* Categorie.swift in Sources */,
-				F995C97527E5B67E008DE852 /* ProfileViewController.swift in Sources */,
 				180CD01928186DFA001ABEA3 /* ListCollectionViewCell.swift in Sources */,
 				F995C97E27E5B792008DE852 /* JobDetail.swift in Sources */,
 				F995C94427E57FF2008DE852 /* SceneDelegate.swift in Sources */,
