@@ -35,6 +35,9 @@ class SiteCollectionViewCell: UICollectionViewCell {
         viewImageContainer.layer.shadowOffset = CGSize(width: 0, height: 5)
         viewImageContainer.layer.shadowColor = UIColor.gray.cgColor
         viewImageContainer.layer.shadowOpacity = 0.2
+        
+        viewImageContainer.layer.borderWidth = 0.4
+        viewImageContainer.layer.borderColor = UIColor.black.cgColor
     }
 
 }

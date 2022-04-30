@@ -17,6 +17,9 @@ class JobDetailViewController: UIViewController {
     @IBOutlet private weak var labelTopContraint: NSLayoutConstraint!
     @IBOutlet weak var blurImage: UIVisualEffectView!
     @IBOutlet weak var viewHeaderContainer: UIView!
+    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var applyButton: UIButton!
+    
     //MARK: Properties
     private var controller: JobDetailControlable? = JobDetailController()
     private var id: String
@@ -35,10 +38,11 @@ class JobDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         collectionView.delegate = self
         collectionView.dataSource = self
         registerCells()
-        collectionView.contentInset = UIEdgeInsets(top: 230, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: 230, left: 0, bottom: 80, right: 0)
         navigationItem.leftBarButtonItem = customizingNavigationBar(image: UIImage(named: "arrow")!, completion: {
             dismissViewController()
         })
@@ -72,6 +76,13 @@ class JobDetailViewController: UIViewController {
         titleWork.textColor = .white
         titleWork.alpha = 2
         blurImage.alpha = 0.4
+//        bottomView.layer.cornerRadius = 20
+        bottomView.layer.borderColor = UIColor.black.cgColor
+        bottomView.layer.borderWidth = 0.4
+        applyButton.backgroundColor = Colors.primaryColor
+        applyButton.titleLabel?.textColor = .white
+        applyButton.layer.cornerRadius = 30
+        
     }
     
     private func setupUI() {
@@ -261,11 +272,8 @@ extension JobDetailViewController: UICollectionViewDelegate {
         
         if offSet >= -100 && offSet < 0 {
             labelTopContraint.constant = abs(offSet) + 50
-            typeOfWork.isHidden = true
         }
         
-        if offSet <= -100 && offSet < 0 {
-            typeOfWork.isHidden = false
-        }
+      
     }
 }

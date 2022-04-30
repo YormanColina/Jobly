@@ -54,20 +54,7 @@ class SignInViewController: UIViewController {
             self.navigationController?.setViewControllers([HomeViewController(imageProfileURL: image)], animated: true)
         }
     }
-    
-    func addGradient(leadingColor: UIColor, trailingColor: UIColor) {
-        let gradient = CAGradientLayer()
-        gradient.frame = view.bounds
-        gradient.type = .axial
-        gradient.colors = [leadingColor.cgColor, trailingColor.cgColor]
-        gradient.locations = [0.0, 1.0]
-        gradient.startPoint = CGPoint(x: 0, y: 0)
-        gradient.endPoint = CGPoint(x: 1, y: 1)
-        view.layer.insertSublayer(gradient, at: 0)
         
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.progressView.progress = 0
@@ -79,6 +66,8 @@ class SignInViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        addGradient(leadingColor: Colors.primaryColor , trailingColor: Colors.secondaryColor)
+        UIColor.addGradient(view: self.view, leadingColor: Colors.primaryColor , trailingColor: Colors.secondaryColor)
     }
 }
+
+

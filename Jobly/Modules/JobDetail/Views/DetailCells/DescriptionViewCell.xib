@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,22 +17,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="356" height="154"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYR-GW-WqQ">
-                        <rect key="frame" x="30" y="10" width="52.5" height="25.5"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIA-ph-x5N">
-                        <rect key="frame" x="30" y="50.5" width="47.5" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="65" y="12" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlx-Dx-72H">
-                        <rect key="frame" x="30" y="86.5" width="296" height="20"/>
-                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="30" y="91" width="296" height="25.5"/>
+                        <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="18"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebj-fK-M8i">
@@ -41,20 +36,44 @@
                             <constraint firstAttribute="height" constant="1" id="JF2-A9-f99"/>
                         </constraints>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="J5m-NI-K88">
+                        <rect key="frame" x="30" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Ogr-2G-4F8"/>
+                            <constraint firstAttribute="height" constant="25" id="tyG-Da-Vby"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="XKc-nC-RQ6">
+                        <rect key="frame" x="30" y="50" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="56m-j8-5KE"/>
+                            <constraint firstAttribute="height" constant="25" id="6dy-Cx-6Kx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYR-GW-WqQ">
+                        <rect key="frame" x="65" y="50" width="52" height="26"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                        <color key="textColor" systemColor="linkColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="qIA-ph-x5N" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="0xX-fW-1oA"/>
-                <constraint firstItem="sYR-GW-WqQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="2Uv-pS-aBQ"/>
+                <constraint firstItem="sYR-GW-WqQ" firstAttribute="top" secondItem="qIA-ph-x5N" secondAttribute="bottom" constant="17" id="1od-Uy-ibf"/>
                 <constraint firstItem="ebj-fK-M8i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5b2-mb-uRK"/>
-                <constraint firstItem="sYR-GW-WqQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="7Ob-QZ-AaX"/>
-                <constraint firstItem="dlx-Dx-72H" firstAttribute="top" secondItem="qIA-ph-x5N" secondAttribute="bottom" constant="15" id="K4P-Qm-Hjo"/>
+                <constraint firstItem="qIA-ph-x5N" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="5u8-Hx-lPL"/>
+                <constraint firstItem="XKc-nC-RQ6" firstAttribute="top" secondItem="J5m-NI-K88" secondAttribute="bottom" constant="15" id="61a-GB-0jH"/>
+                <constraint firstItem="XKc-nC-RQ6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Eft-Oc-1OU"/>
+                <constraint firstItem="sYR-GW-WqQ" firstAttribute="leading" secondItem="XKc-nC-RQ6" secondAttribute="trailing" constant="10" id="MaI-Mq-GJP"/>
+                <constraint firstItem="dlx-Dx-72H" firstAttribute="top" secondItem="sYR-GW-WqQ" secondAttribute="bottom" constant="15" id="SD0-Cs-C57"/>
                 <constraint firstAttribute="trailing" secondItem="ebj-fK-M8i" secondAttribute="trailing" id="SL3-5n-eGg"/>
                 <constraint firstAttribute="bottom" secondItem="ebj-fK-M8i" secondAttribute="bottom" id="Xp4-lQ-2wX"/>
-                <constraint firstAttribute="trailing" secondItem="dlx-Dx-72H" secondAttribute="trailing" constant="30" id="ihh-u6-9em"/>
-                <constraint firstItem="qIA-ph-x5N" firstAttribute="top" secondItem="sYR-GW-WqQ" secondAttribute="bottom" constant="15" id="xQC-if-M4B"/>
-                <constraint firstItem="dlx-Dx-72H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="yKV-kA-OUE"/>
+                <constraint firstItem="qIA-ph-x5N" firstAttribute="leading" secondItem="J5m-NI-K88" secondAttribute="trailing" constant="10" id="ZCh-tC-231"/>
+                <constraint firstItem="J5m-NI-K88" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="ahK-HC-FwC"/>
+                <constraint firstItem="dlx-Dx-72H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="fFJ-Hv-seO"/>
+                <constraint firstAttribute="trailing" secondItem="dlx-Dx-72H" secondAttribute="trailing" constant="30" id="np6-xm-5Ew"/>
+                <constraint firstItem="J5m-NI-K88" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="oqo-Ea-7aB"/>
             </constraints>
             <size key="customSize" width="356" height="154"/>
             <connections>
@@ -66,4 +85,14 @@
             <point key="canvasLocation" x="359.4202898550725" y="127.90178571428571"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="dollar" width="320" height="512"/>
+        <image name="location" width="384" height="512"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
