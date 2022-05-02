@@ -20,9 +20,10 @@ class DescriptionViewCell: UICollectionViewCell {
     }
     
     func setupDescription(description: Description) {
+        descriptionLabel.numberOfLines = 0
         descriptionLabel.text = "Description: " + description.description
-        salaryLabel.text = "Salary: " + description.salary
-        locationLabel.text = description.location
+        salaryLabel.text = "Salary: \n " + description.salary
+        locationLabel.text = "Location: \n " + description.location
         
     }
 

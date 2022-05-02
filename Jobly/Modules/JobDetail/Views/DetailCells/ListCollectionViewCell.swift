@@ -10,14 +10,16 @@ import UIKit
 class ListCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var pointView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
     
     func setupList(list: [String], section: Int) {
-        descriptionLabel.text = "- " + list[section]
+        descriptionLabel.text = list[section]
+        pointView.layer.cornerRadius = 4
     }
 
 }

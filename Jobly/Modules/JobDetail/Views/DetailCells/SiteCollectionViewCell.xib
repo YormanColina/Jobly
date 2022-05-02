@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGS-k8-a3t">
-                        <rect key="frame" x="25" y="28" width="60" height="60"/>
+                        <rect key="frame" x="25" y="23" width="60" height="60"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q4g-A1-eCp">
                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -38,13 +38,13 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7b-Yl-aEq">
-                        <rect key="frame" x="100" y="33" width="44.5" height="21"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <rect key="frame" x="100" y="32" width="44.5" height="20"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPh-5h-lyW">
-                        <rect key="frame" x="100" y="67" width="42" height="21"/>
+                        <rect key="frame" x="100" y="52" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -63,9 +63,9 @@
                 <constraint firstAttribute="bottom" secondItem="HVW-Vr-f5Y" secondAttribute="bottom" id="JHs-vg-Z08"/>
                 <constraint firstItem="sGS-k8-a3t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="PKu-OZ-2aa"/>
                 <constraint firstItem="qPh-5h-lyW" firstAttribute="leading" secondItem="sGS-k8-a3t" secondAttribute="trailing" constant="15" id="QFe-gn-Fus"/>
-                <constraint firstItem="qPh-5h-lyW" firstAttribute="top" secondItem="v7b-Yl-aEq" secondAttribute="bottom" constant="13" id="V9c-WT-l0D"/>
-                <constraint firstItem="HVW-Vr-f5Y" firstAttribute="top" secondItem="sGS-k8-a3t" secondAttribute="bottom" constant="20" id="k6y-O1-54E"/>
-                <constraint firstItem="HVW-Vr-f5Y" firstAttribute="top" secondItem="qPh-5h-lyW" secondAttribute="bottom" constant="20" id="rQP-0s-SQd"/>
+                <constraint firstItem="qPh-5h-lyW" firstAttribute="top" secondItem="v7b-Yl-aEq" secondAttribute="bottom" id="V9c-WT-l0D"/>
+                <constraint firstItem="HVW-Vr-f5Y" firstAttribute="top" secondItem="sGS-k8-a3t" secondAttribute="bottom" constant="25" id="k6y-O1-54E"/>
+                <constraint firstItem="HVW-Vr-f5Y" firstAttribute="top" secondItem="qPh-5h-lyW" secondAttribute="bottom" constant="35" id="rQP-0s-SQd"/>
                 <constraint firstItem="HVW-Vr-f5Y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uMR-Y3-0tH"/>
                 <constraint firstItem="v7b-Yl-aEq" firstAttribute="leading" secondItem="sGS-k8-a3t" secondAttribute="trailing" constant="15" id="vl0-fT-AWY"/>
                 <constraint firstAttribute="trailing" secondItem="HVW-Vr-f5Y" secondAttribute="trailing" id="xIT-Iw-Mvd"/>

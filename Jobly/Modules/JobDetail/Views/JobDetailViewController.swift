@@ -19,10 +19,14 @@ class JobDetailViewController: UIViewController {
     @IBOutlet weak var viewHeaderContainer: UIView!
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var applyButton: UIButton!
+    @IBOutlet weak var headerFooterView: UIView!
+    
     
     //MARK: Properties
     private var controller: JobDetailControlable? = JobDetailController()
     private var id: String
+    private var flowLayout = UICollectionViewFlowLayout()
+    
     
     //MARK: Initializers
     
@@ -38,11 +42,10 @@ class JobDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         collectionView.delegate = self
         collectionView.dataSource = self
         registerCells()
-        collectionView.contentInset = UIEdgeInsets(top: 230, left: 0, bottom: 80, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: 310, left: 0, bottom: 80, right: 0)
         navigationItem.leftBarButtonItem = customizingNavigationBar(image: UIImage(named: "arrow")!, completion: {
             dismissViewController()
         })
@@ -70,19 +73,23 @@ class JobDetailViewController: UIViewController {
     }
     
     private func configuratedUI() {
-        workImage.layer.cornerRadius = 25
-        blurImage.layer.cornerRadius = 25
         blurImage.layer.masksToBounds = true
         titleWork.textColor = .white
         titleWork.alpha = 2
         blurImage.alpha = 0.4
-//        bottomView.layer.cornerRadius = 20
-        bottomView.layer.borderColor = UIColor.black.cgColor
+
+        bottomView.layer.borderColor = UIColor.lightGray.cgColor
         bottomView.layer.borderWidth = 0.4
         applyButton.backgroundColor = Colors.primaryColor
         applyButton.titleLabel?.textColor = .white
         applyButton.layer.cornerRadius = 30
+        headerFooterView.layer.cornerRadius = 20
+        bottomView.layer.cornerRadius = 25
         
+        
+//        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+//        collectionView.collectionViewLayout = flowLayout
+//        collectionView.translatesAutoresizingMaskIntoConstraints = false
     }
     
     private func setupUI() {
@@ -217,13 +224,13 @@ extension JobDetailViewController: UICollectionViewDataSource {
         
         switch indexPath.section {
         case 0 :
-            header.setupHeader(title: "", isHidden: true, type: self)
+            header.setupHeader(title: "", isHidden: true)
             return header
         case 1 :
-            header.setupHeader(title: "", isHidden: true, type: self)
+            header.setupHeader(title: "", isHidden: true)
             return header
         default :
-            header.setupHeader(title: (controller?.jobDetail.body[indexPath.section].title)!, isHidden: true, type: self)
+            header.setupHeader(title: (controller?.jobDetail.body[indexPath.section].title)!, isHidden: true)
             return header
         }
         
@@ -232,37 +239,39 @@ extension JobDetailViewController: UICollectionViewDataSource {
 
 // MARK: UICollectionViewDelegateFlowLayout
 
-extension JobDetailViewController: UICollectionViewDelegateFlowLayout {
+extension JobDetailViewController: UICollectionViewDelegateFlowLayout  {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         switch indexPath.section {
         case 0:
-           return CGSize(width: UIScreen.main.bounds.width, height: 120)
+           return CGSize(width: UIScreen.main.bounds.width, height: 90)
         case 1:
-            return CGSize(width: UIScreen.main.bounds.width, height: 100)
+            return CGSize(width: UIScreen.main.bounds.width, height: 110)
         default:
-            return CGSize(width: UIScreen.main.bounds.width, height: 30)
+            return CGSize(width: UIScreen.main.bounds.width, height: 40)
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         switch section {
         case 0:
-           return CGSize(width: UIScreen.main.bounds.width, height: 0)
+           return CGSize(width: UIScreen.main.bounds.width, height: 8)
         case 1:
-            return CGSize(width: UIScreen.main.bounds.width, height: 0)
+            return CGSize(width: UIScreen.main.bounds.width, height: 8)
         default:
-            return CGSize(width: UIScreen.main.bounds.width, height: 50)
+            return CGSize(width: UIScreen.main.bounds.width, height: 80)
         }
     }
-    
 }
+   
 
 // MARK: UICollectionViewDelegate
 
 extension JobDetailViewController: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
         let offSet = scrollView.contentOffset.y
-        let minHeigth : CGFloat = 90.0
+        let minHeigth : CGFloat = 110.0
         
         let heigth = scrollView.contentOffset.y
         
@@ -270,10 +279,13 @@ extension JobDetailViewController: UICollectionViewDelegate {
             imageHeigthConstraint.constant = abs(heigth) + minHeigth
         }
         
-        if offSet >= -100 && offSet < 0 {
-            labelTopContraint.constant = abs(offSet) + 50
+        if offSet >= -180 && offSet < 0 {
+            labelTopContraint.constant = abs(offSet)
+            
         }
         
-      
+      print(offSet)
     }
 }
+
+

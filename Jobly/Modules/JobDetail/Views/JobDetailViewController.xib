@@ -14,6 +14,7 @@
                 <outlet property="blurImage" destination="CpC-xD-kB5" id="M2m-os-e7E"/>
                 <outlet property="bottomView" destination="fej-zD-zMr" id="KSa-7h-v5h"/>
                 <outlet property="collectionView" destination="JPd-3E-Tp8" id="Wzg-v2-mFk"/>
+                <outlet property="headerFooterView" destination="rEi-Mc-8lu" id="z6x-qa-x4S"/>
                 <outlet property="imageHeigthConstraint" destination="W1Z-dM-cm1" id="mmt-RG-251"/>
                 <outlet property="labelTopContraint" destination="F4E-ha-shE" id="Ybf-jZ-EZO"/>
                 <outlet property="titleWork" destination="ZgT-Vb-Dhj" id="gPu-vP-q6C"/>
@@ -39,38 +40,48 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PS-Nd-MJW">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mek-Uf-60k">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
                         </imageView>
                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CpC-xD-kB5">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HPL-dM-Na1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </view>
                             <blurEffect style="systemMaterialDark"/>
                         </visualEffectView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgT-Vb-Dhj">
-                            <rect key="frame" x="50" y="150" width="314" height="38.5"/>
+                            <rect key="frame" x="50" y="180" width="314" height="38.5"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEi-Mc-8lu">
+                            <rect key="frame" x="0.0" y="355" width="414" height="35"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="l60-BE-Ggd"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rEi-Mc-8lu" secondAttribute="bottom" constant="-20" id="1CV-te-xeU"/>
                         <constraint firstAttribute="trailing" secondItem="ZgT-Vb-Dhj" secondAttribute="trailing" constant="50" id="AOy-NP-19d"/>
                         <constraint firstItem="ZgT-Vb-Dhj" firstAttribute="leading" secondItem="2PS-Nd-MJW" secondAttribute="leading" constant="50" id="DiP-Uc-fWa"/>
-                        <constraint firstItem="ZgT-Vb-Dhj" firstAttribute="top" secondItem="2PS-Nd-MJW" secondAttribute="top" constant="150" id="F4E-ha-shE"/>
+                        <constraint firstItem="ZgT-Vb-Dhj" firstAttribute="top" secondItem="2PS-Nd-MJW" secondAttribute="top" constant="180" id="F4E-ha-shE"/>
                         <constraint firstItem="CpC-xD-kB5" firstAttribute="leading" secondItem="2PS-Nd-MJW" secondAttribute="leading" id="I4i-Vo-Ajx"/>
                         <constraint firstAttribute="bottom" secondItem="Mek-Uf-60k" secondAttribute="bottom" id="PDt-xT-fAP"/>
                         <constraint firstAttribute="bottom" secondItem="CpC-xD-kB5" secondAttribute="bottom" id="PPT-Gr-ybk"/>
                         <constraint firstItem="Mek-Uf-60k" firstAttribute="leading" secondItem="2PS-Nd-MJW" secondAttribute="leading" id="VHy-Jc-uRO"/>
-                        <constraint firstAttribute="height" constant="320" id="W1Z-dM-cm1"/>
+                        <constraint firstAttribute="height" constant="370" id="W1Z-dM-cm1"/>
+                        <constraint firstAttribute="trailing" secondItem="rEi-Mc-8lu" secondAttribute="trailing" id="WqI-ga-NaP"/>
                         <constraint firstAttribute="trailing" secondItem="Mek-Uf-60k" secondAttribute="trailing" id="cha-qc-ufb"/>
                         <constraint firstItem="CpC-xD-kB5" firstAttribute="top" secondItem="2PS-Nd-MJW" secondAttribute="top" id="fgi-px-61O"/>
+                        <constraint firstItem="rEi-Mc-8lu" firstAttribute="leading" secondItem="2PS-Nd-MJW" secondAttribute="leading" id="ftV-UW-ghT"/>
                         <constraint firstItem="Mek-Uf-60k" firstAttribute="top" secondItem="2PS-Nd-MJW" secondAttribute="top" id="hwf-iP-sxb"/>
                         <constraint firstAttribute="trailing" secondItem="CpC-xD-kB5" secondAttribute="trailing" id="mAS-Cj-sx7"/>
                     </constraints>
