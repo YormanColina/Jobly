@@ -21,20 +21,25 @@ class SiteCollectionViewCell: UICollectionViewCell {
     }
     
     func setupSite(site: Site) {
+
+        let myAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14) ]
+        let myString = NSMutableAttributedString(string: site.journaly, attributes: myAttribute )
+        let attrString = NSAttributedString(string: " (Journaly)")
+        myString.append(attrString)
         logoImageView.kf.setImage(with: URL(string: site.image))
         bussinessLabel.text = site.businessName
-        journalyLabel.text = site.journaly
+        journalyLabel.attributedText = myString
     }
     
     func configutatedCell() {
-        logoImageView.layer.borderColor = UIColor.gray.cgColor
-        logoImageView.layer.borderWidth = 0.4
-        viewImageContainer.layer.cornerRadius = 30
-        logoImageView.layer.cornerRadius = 30
         
-        viewImageContainer.layer.shadowOffset = CGSize(width: 0, height: 5)
-        viewImageContainer.layer.shadowColor = UIColor.gray.cgColor
+        viewImageContainer.layer.cornerRadius = viewImageContainer.bounds.height / 2
+        logoImageView.layer.cornerRadius = viewImageContainer.bounds.height / 2
+        viewImageContainer.layer.shadowOffset = CGSize(width: 0, height: 0)
+        viewImageContainer.layer.shadowColor = UIColor.lightGray.cgColor
         viewImageContainer.layer.shadowOpacity = 0.2
+        viewImageContainer.layer.shadowRadius = 10
+        logoImageView.contentMode = .scaleAspectFit
         
         viewImageContainer.layer.borderWidth = 2
         viewImageContainer.layer.borderColor = UIColor.white.cgColor

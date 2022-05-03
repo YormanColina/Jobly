@@ -20,7 +20,7 @@ class JobDetailViewController: UIViewController {
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var applyButton: UIButton!
     @IBOutlet weak var headerFooterView: UIView!
-    
+    @IBOutlet weak var safeAreaHeightBottom: NSLayoutConstraint!
     
     //MARK: Properties
     private var controller: JobDetailControlable? = JobDetailController()
@@ -45,16 +45,17 @@ class JobDetailViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         registerCells()
-        collectionView.contentInset = UIEdgeInsets(top: 310, left: 0, bottom: 80, right: 0)
-        navigationItem.leftBarButtonItem = customizingNavigationBar(image: UIImage(named: "arrow")!, completion: {
+        navigationItem.leftBarButtonItem = customizingNavigationBar(image: UIImage(named: "arrow")!, imageWidth: 20, imageHeight: 20, completion: {
             dismissViewController()
         })
-        navigationItem.rightBarButtonItem = customizingNavigationBar(image: UIImage(named: "saveJob")!, completion: {
+        navigationItem.rightBarButtonItem = customizingNavigationBar(image: UIImage(named: "saveJob")!, imageWidth: 18, imageHeight: 20, completion: {
             navigationController?.pushViewController(ProfileViewController(), animated: true)
         })
         setupUI()
         setupTransparentNagigatioNBar()
         configuratedUI()
+        safeAreaHeightBottom.constant += UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0
+        collectionView.contentInset = UIEdgeInsets(top: 270, left: 0, bottom: safeAreaHeightBottom.constant, right: 0)
     }
     
     //MARK: IBActions
@@ -75,28 +76,30 @@ class JobDetailViewController: UIViewController {
     private func configuratedUI() {
         blurImage.layer.masksToBounds = true
         titleWork.textColor = .white
-        titleWork.alpha = 2
         blurImage.alpha = 0.4
-
-        bottomView.layer.borderColor = UIColor.lightGray.cgColor
-        bottomView.layer.borderWidth = 0.4
+       
+        headerFooterView.layer.cornerRadius = 20
+        
+        bottomView.layer.cornerRadius = 35
+        bottomView.layer.shadowOffset = CGSize(width: 0, height: -6)
+        bottomView.layer.shadowColor = UIColor.lightGray.cgColor
+        bottomView.layer.shadowOpacity = 0.1
+        
         applyButton.backgroundColor = Colors.primaryColor
         applyButton.titleLabel?.textColor = .white
-        applyButton.layer.cornerRadius = 30
-        headerFooterView.layer.cornerRadius = 20
-        bottomView.layer.cornerRadius = 25
-        
-        
-//        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-//        collectionView.collectionViewLayout = flowLayout
-//        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        applyButton.layer.cornerRadius = 25
+        applyButton.layer.borderWidth = 2
+        applyButton.layer.borderColor = Colors.primaryColor.cgColor
+        applyButton.layer.shadowColor = UIColor.gray.cgColor
+        applyButton.layer.shadowOffset = CGSize(width: -1, height: 5)
+        applyButton.layer.shadowOpacity = 0.2
     }
     
     private func setupUI() {
         controller?.getDetail(id: self.id) {
             self.collectionView.reloadData()
             self.workImage.kf.setImage(with: URL(string: (self.controller?.jobDetail.header.backgroundImage)!))
-            self.typeOfWork.text = self.controller?.jobDetail.header.tag
+            self.typeOfWork.text = "- \(self.controller!.jobDetail.header.tag)"
             self.titleWork.text = self.controller?.jobDetail.header.title
         }
     }
@@ -105,14 +108,14 @@ class JobDetailViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    private func customizingNavigationBar(image: UIImage, completion: () -> Void) -> UIBarButtonItem {
+    private func customizingNavigationBar(image: UIImage, imageWidth: CGFloat, imageHeight: CGFloat, completion: () -> Void) -> UIBarButtonItem {
         
         let buttonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         let leftImageView = UIImageView(frame: .zero)
         leftImageView.translatesAutoresizingMaskIntoConstraints = false
-        leftImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        leftImageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        leftImageView.widthAnchor.constraint(equalToConstant: imageWidth).isActive = true
+        leftImageView.heightAnchor.constraint(equalToConstant: imageHeight).isActive = true
         leftImageView.contentMode = .scaleAspectFit
         leftView.widthAnchor.constraint(equalToConstant: 44).isActive = true
         leftView.heightAnchor.constraint(equalToConstant: 44).isActive = true
@@ -244,9 +247,9 @@ extension JobDetailViewController: UICollectionViewDelegateFlowLayout  {
         
         switch indexPath.section {
         case 0:
-           return CGSize(width: UIScreen.main.bounds.width, height: 90)
+           return CGSize(width: UIScreen.main.bounds.width, height: 135)
         case 1:
-            return CGSize(width: UIScreen.main.bounds.width, height: 110)
+            return CGSize(width: UIScreen.main.bounds.width, height: 90)
         default:
             return CGSize(width: UIScreen.main.bounds.width, height: 40)
         }
@@ -255,9 +258,9 @@ extension JobDetailViewController: UICollectionViewDelegateFlowLayout  {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         switch section {
         case 0:
-           return CGSize(width: UIScreen.main.bounds.width, height: 8)
+           return CGSize(width: UIScreen.main.bounds.width, height: 30)
         case 1:
-            return CGSize(width: UIScreen.main.bounds.width, height: 8)
+            return CGSize(width: UIScreen.main.bounds.width, height: 24)
         default:
             return CGSize(width: UIScreen.main.bounds.width, height: 80)
         }
@@ -271,19 +274,17 @@ extension JobDetailViewController: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let offSet = scrollView.contentOffset.y
-        let minHeigth : CGFloat = 110.0
+        let minHeigth : CGFloat = 125.0
         
-        let heigth = scrollView.contentOffset.y
-        
-        if offSet <= 0 {
-            imageHeigthConstraint.constant = abs(heigth) + minHeigth
+        if offSet <= 0 && offSet < -30 {
+            imageHeigthConstraint.constant = abs(offSet) + 110
         }
         
-        if offSet >= -180 && offSet < 0 {
-            labelTopContraint.constant = abs(offSet)
+        if offSet >= -140 && labelTopContraint.constant >= 50 && offSet <= 0 {
+            labelTopContraint.constant = imageHeigthConstraint.constant / 2
             
         }
-        
+        print(imageHeigthConstraint.constant)
       print(offSet)
     }
 }
