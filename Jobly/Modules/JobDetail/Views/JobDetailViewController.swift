@@ -21,7 +21,7 @@ class JobDetailViewController: UIViewController {
     @IBOutlet weak var applyButton: UIButton!
     @IBOutlet weak var headerFooterView: UIView!
     @IBOutlet weak var safeAreaHeightBottom: NSLayoutConstraint!
-    
+    @IBOutlet weak var bottomTitleConstraint: NSLayoutConstraint!
     //MARK: Properties
     private var controller: JobDetailControlable? = JobDetailController()
     private var id: String
@@ -87,19 +87,21 @@ class JobDetailViewController: UIViewController {
         
         applyButton.backgroundColor = Colors.primaryColor
         applyButton.titleLabel?.textColor = .white
-        applyButton.layer.cornerRadius = 25
+        applyButton.layer.cornerRadius = 27.5
         applyButton.layer.borderWidth = 2
         applyButton.layer.borderColor = Colors.primaryColor.cgColor
-        applyButton.layer.shadowColor = UIColor.gray.cgColor
-        applyButton.layer.shadowOffset = CGSize(width: -1, height: 5)
-        applyButton.layer.shadowOpacity = 0.2
+        applyButton.layer.shadowColor = Colors.primaryColor.cgColor
+        applyButton.layer.shadowOffset = CGSize(width: 0, height: 7)
+        applyButton.layer.shadowOpacity = 0.3
+        applyButton.layer.shadowRadius = 7
+        
     }
     
     private func setupUI() {
         controller?.getDetail(id: self.id) {
             self.collectionView.reloadData()
             self.workImage.kf.setImage(with: URL(string: (self.controller?.jobDetail.header.backgroundImage)!))
-            self.typeOfWork.text = "- \(self.controller!.jobDetail.header.tag)"
+            self.typeOfWork.text = "\(self.controller!.jobDetail.header.tag)"
             self.titleWork.text = self.controller?.jobDetail.header.title
         }
     }
@@ -272,21 +274,21 @@ extension JobDetailViewController: UICollectionViewDelegateFlowLayout  {
 
 extension JobDetailViewController: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
         let offSet = scrollView.contentOffset.y
-        let minHeigth : CGFloat = 125.0
+        let minOffset = -40.0
+        let maxOfset = -270.0
+        let maxheigtHeader = 370.0
+        let heigthDiferenceOffset = maxheigtHeader - abs(maxOfset)
         
-        if offSet <= 0 && offSet < -30 {
-            imageHeigthConstraint.constant = abs(offSet) + 110
+        if offSet <= minOffset && offSet >= maxOfset {
+            imageHeigthConstraint.constant = abs(offSet) + heigthDiferenceOffset
+        } else if offSet > minOffset {
+            imageHeigthConstraint.constant = abs(minOffset) + heigthDiferenceOffset
+        } else if offSet <= maxOfset {
+            imageHeigthConstraint.constant = abs(offSet) + heigthDiferenceOffset
         }
-        
-        if offSet >= -140 && labelTopContraint.constant >= 50 && offSet <= 0 {
-            labelTopContraint.constant = imageHeigthConstraint.constant / 2
-            
-        }
-        print(imageHeigthConstraint.constant)
-      print(offSet)
     }
 }
+
 
 
