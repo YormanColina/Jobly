@@ -136,7 +136,7 @@ extension HomeViewController: UICollectionViewDataSource {
                         
                         if let array = self.controller.home.widgets[indexPath.section].values as? [Job] {
                             if indexPath.section > 0 {
-                                self.navigationController?.pushViewController(JobDetailViewController(id: array[position].id), animated: true)
+                                self.navigationController?.pushViewController(JobDetailViewController(job: array[position]), animated: true)
                                 self.navigationController?.setNavigationBarHidden(false, animated: true)
                             }
                         }

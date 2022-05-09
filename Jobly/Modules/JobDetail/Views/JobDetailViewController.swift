@@ -22,16 +22,19 @@ class JobDetailViewController: UIViewController {
     @IBOutlet weak var headerFooterView: UIView!
     @IBOutlet weak var safeAreaHeightBottom: NSLayoutConstraint!
     @IBOutlet weak var bottomTitleConstraint: NSLayoutConstraint!
+    
     //MARK: Properties
+    
     private var controller: JobDetailControlable? = JobDetailController()
     private var id: String
     private var flowLayout = UICollectionViewFlowLayout()
     
-    
     //MARK: Initializers
     
-    init(id: String) {
-        self.id = id
+    init(job: Job) {
+        self.id = job.id
+        titleWork?.text = job.title
+        workImage?.kf.setImage(with: URL(string: job.image))
         super.init(nibName: "JobDetailViewController", bundle: nil)
     }
     
@@ -59,9 +62,6 @@ class JobDetailViewController: UIViewController {
     }
     
     //MARK: IBActions
-    
-    
-    
     
     //MARK: Methods
     
@@ -153,8 +153,20 @@ class JobDetailViewController: UIViewController {
         // Register of Header
         collectionView.register(UINib(nibName: "Header", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
     }
+    
+    private func takeHeigthOftTitle(text: String, font: CGFloat) -> CGFloat {
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 50))
+        label.text = text
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byTruncatingHead
+        label.font = UIFont(name: "System", size: font)
+        label.sizeToFit()
+        let heigth = label.bounds.height
+        return heigth
+    }
 }
 // MARK: UICollectionViewDataSource
+
 extension JobDetailViewController: UICollectionViewDataSource {
     
     
@@ -185,6 +197,7 @@ extension JobDetailViewController: UICollectionViewDataSource {
             return siteCell
             
         default:
+            
             // Creation of the List cell
             cell = registerCell("ListCollectionViewCell", indexPath: indexPath)
             guard let listCell = cell as? ListCollectionViewCell else {
@@ -246,14 +259,25 @@ extension JobDetailViewController: UICollectionViewDataSource {
 
 extension JobDetailViewController: UICollectionViewDelegateFlowLayout  {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var  heigth: CGFloat = 0
         
         switch indexPath.section {
         case 0:
-           return CGSize(width: UIScreen.main.bounds.width, height: 135)
+            if let description = controller?.jobDetail.body[indexPath.section].content as? Description {
+                heigth = takeHeigthOftTitle(text: description.description, font: 18)
+                heigth += takeHeigthOftTitle(text: description.salary, font: 14)
+                heigth += takeHeigthOftTitle(text: description.location, font: 14)
+                print(heigth)
+            }
+            return CGSize(width: UIScreen.main.bounds.width, height: heigth + 60)
         case 1:
             return CGSize(width: UIScreen.main.bounds.width, height: 90)
         default:
-            return CGSize(width: UIScreen.main.bounds.width, height: 40)
+            if let list = controller?.jobDetail.body[indexPath.section].content as? [String] {
+                heigth = takeHeigthOftTitle(text: list[indexPath.row], font: 15)
+            }
+            
+            return CGSize(width: UIScreen.main.bounds.width, height: heigth + 10)
         }
     }
     

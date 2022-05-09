@@ -11,10 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DescriptionViewCell" customModule="Jobly" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="356" height="154"/>
+            <rect key="frame" x="0.0" y="0.0" width="356" height="105"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="356" height="154"/>
+                <rect key="frame" x="0.0" y="0.0" width="356" height="105"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIA-ph-x5N">
@@ -30,7 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebj-fK-M8i">
-                        <rect key="frame" x="0.0" y="153" width="356" height="1"/>
+                        <rect key="frame" x="0.0" y="104" width="356" height="1"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="JF2-A9-f99"/>
@@ -74,14 +74,14 @@
                 <constraint firstItem="qIA-ph-x5N" firstAttribute="top" secondItem="J5m-NI-K88" secondAttribute="top" id="vdD-yd-8Vl"/>
                 <constraint firstItem="J5m-NI-K88" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="zeS-ak-Grm"/>
             </constraints>
-            <size key="customSize" width="356" height="154"/>
+            <size key="customSize" width="356" height="105"/>
             <connections>
                 <outlet property="descriptionLabel" destination="dlx-Dx-72H" id="ztJ-3H-cbg"/>
                 <outlet property="footerView" destination="ebj-fK-M8i" id="0Ed-4Z-tfT"/>
                 <outlet property="locationLabel" destination="sYR-GW-WqQ" id="giy-zj-2O3"/>
                 <outlet property="salaryLabel" destination="qIA-ph-x5N" id="ozX-Ah-CHp"/>
             </connections>
-            <point key="canvasLocation" x="359.4202898550725" y="127.90178571428571"/>
+            <point key="canvasLocation" x="359.4202898550725" y="111.49553571428571"/>
         </collectionViewCell>
     </objects>
     <resources>

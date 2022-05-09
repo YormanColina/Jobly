@@ -30,8 +30,14 @@ class DescriptionViewCell: UICollectionViewCell {
         descriptionLabel.numberOfLines = 0
         descriptionLabel.text = "Description: " + description.description
         salaryLabel.text = "Salary:  " + description.salary
-//        locationLabel.text = "Location: " + description.location
         
+        descriptionLabel.numberOfLines = 0
+        descriptionLabel.sizeToFit()
+        
+        
+//        descriptionLabel.frame =  CGRect(x: 0, y: 0, width: descriptionLabel.intrinsicContentSize.width, height: descriptionLabel.intrinsicContentSize.height)
+//
+//        print(descriptionLabel.frame.height)
     }
 
 }
