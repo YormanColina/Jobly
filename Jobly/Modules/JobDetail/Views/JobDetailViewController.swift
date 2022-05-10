@@ -26,15 +26,14 @@ class JobDetailViewController: UIViewController {
     //MARK: Properties
     
     private var controller: JobDetailControlable? = JobDetailController()
-    private var id: String
-    private var flowLayout = UICollectionViewFlowLayout()
+    private var id: String = ""
+    private var job: Job
     
     //MARK: Initializers
     
     init(job: Job) {
+        self.job = job
         self.id = job.id
-        titleWork?.text = job.title
-        workImage?.kf.setImage(with: URL(string: job.image))
         super.init(nibName: "JobDetailViewController", bundle: nil)
     }
     
@@ -45,6 +44,7 @@ class JobDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.bottomView.transform = CGAffineTransform(translationX: 0, y: self.bottomView.bounds.height + safeAreaHeightBottom.constant)
         collectionView.delegate = self
         collectionView.dataSource = self
         registerCells()
@@ -74,6 +74,9 @@ class JobDetailViewController: UIViewController {
     }
     
     private func configuratedUI() {
+        titleWork?.text = job.title
+        workImage?.kf.setImage(with: URL(string: job.image))
+        
         blurImage.layer.masksToBounds = true
         titleWork.textColor = .white
         blurImage.alpha = 0.4
@@ -94,15 +97,17 @@ class JobDetailViewController: UIViewController {
         applyButton.layer.shadowOffset = CGSize(width: 0, height: 7)
         applyButton.layer.shadowOpacity = 0.3
         applyButton.layer.shadowRadius = 7
-        
     }
     
     private func setupUI() {
         controller?.getDetail(id: self.id) {
-            self.collectionView.reloadData()
             self.workImage.kf.setImage(with: URL(string: (self.controller?.jobDetail.header.backgroundImage)!))
             self.typeOfWork.text = "\(self.controller!.jobDetail.header.tag)"
             self.titleWork.text = self.controller?.jobDetail.header.title
+            UIView.animate(withDuration: TimeInterval(0.5), delay: TimeInterval(0)) {
+                self.bottomView.transform = .identity
+            }
+            self.collectionView.reloadData()
         }
     }
     
@@ -267,7 +272,6 @@ extension JobDetailViewController: UICollectionViewDelegateFlowLayout  {
                 heigth = takeHeigthOftTitle(text: description.description, font: 18)
                 heigth += takeHeigthOftTitle(text: description.salary, font: 14)
                 heigth += takeHeigthOftTitle(text: description.location, font: 14)
-                print(heigth)
             }
             return CGSize(width: UIScreen.main.bounds.width, height: heigth + 60)
         case 1:
@@ -302,7 +306,11 @@ extension JobDetailViewController: UICollectionViewDelegate {
         let minOffset = -40.0
         let maxOfset = -270.0
         let maxheigtHeader = 370.0
+        let minHeigth = 140.0
         let heigthDiferenceOffset = maxheigtHeader - abs(maxOfset)
+        let fontDifference: CGFloat = 12.0
+        let maxFont: CGFloat = 32.0
+        
         
         if offSet <= minOffset && offSet >= maxOfset {
             imageHeigthConstraint.constant = abs(offSet) + heigthDiferenceOffset
@@ -311,8 +319,36 @@ extension JobDetailViewController: UICollectionViewDelegate {
         } else if offSet <= maxOfset {
             imageHeigthConstraint.constant = abs(offSet) + heigthDiferenceOffset
         }
+        
+        let proportion = abs((imageHeigthConstraint.constant - maxheigtHeader) / (maxheigtHeader - minHeigth))
+        
+        
+        if imageHeigthConstraint.constant <= maxheigtHeader {
+            titleWork.font = titleWork.font.withSize(maxFont - fontDifference * proportion)
+        }
     }
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+//(n - min) / (max - min)
+
+
+//let n1 = imageHeigthConstraint.constant * 20 / 100
+//let num = (n1 - 20) / (32 - 20)
+//
+////        print(n1, "n1")
+//print(num, "num")
+////        print(percentaje, "porcentaje")

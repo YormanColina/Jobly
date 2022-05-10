@@ -23,7 +23,6 @@ class JobDetailController: JobDetailControlable {
             guard let json = response.value as? [String: Any], let detail = Mapper<JobDetail>().map(JSON: json) else {
                 return
             }
-            
             self.jobDetail = detail
             completion()
             

@@ -34,7 +34,7 @@ class SiteCollectionViewCell: UICollectionViewCell {
     func configutatedCell() {
         
         viewImageContainer.layer.cornerRadius = viewImageContainer.bounds.height / 2
-        logoImageView.layer.cornerRadius = viewImageContainer.bounds.height / 2
+        logoImageView.layer.cornerRadius = 26
         viewImageContainer.layer.shadowOffset = CGSize(width: 0, height: 0)
         viewImageContainer.layer.shadowColor = UIColor.lightGray.cgColor
         viewImageContainer.layer.shadowOpacity = 0.2
