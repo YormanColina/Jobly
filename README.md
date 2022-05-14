@@ -1,3 +1,3 @@
 Prueba
-![pop](https://i.imgur.com/7zT8Y4X.mp4?raw=true)
+![pop](https://github.com/YormanColina/Jobly/blob/main/resources/login.gif?raw=true)
 
