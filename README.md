@@ -4,7 +4,7 @@
 <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a>
 </div>
 
----
+Esto es otro texto
 
  # 🏠 Vista rapida de la Home
  
