@@ -180,6 +180,13 @@
 			path = DetailCells;
 			sourceTree = "<group>";
 		};
+		18439BA62830384900FC7116 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		19C2C1B2AD743EB8218699AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +235,7 @@
 		F995C94027E57FF2008DE852 /* Jobly */ = {
 			isa = PBXGroup;
 			children = (
+				18439BA62830384900FC7116 /* New Group */,
 				F949954427EBA2EB00C3B2E9 /* GoogleService-Info.plist */,
 				F995C94F27E57FF4008DE852 /* Info.plist */,
 				F995C9C327EA6D8C008DE852 /* Modules */,
