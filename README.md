@@ -1,5 +1,5 @@
 LaunchScreen, SignIn and Google SignIn, Home
-![pop](https://github.com/YormanColina/Jobly/blob/main/resources/login.gif?raw=true)
+![pop](https://github.com/YormanColina/Jobly/blob/main/resources/login.gif?raw=true&width=50)
 
 Vista rapida del funcionamiento y diseño de la Home
 ![pop](https://github.com/YormanColina/Jobly/blob/main/resources/Home.gif?raw=true)
