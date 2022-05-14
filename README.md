@@ -7,7 +7,7 @@ Descripcion de modulo
 
 
 
----
+
 
  # 🏠 Home Module
 
@@ -19,9 +19,6 @@ Descripcion de modulo
 
 
 
-
-
----
 
 
  # 🧐 Job Detail
