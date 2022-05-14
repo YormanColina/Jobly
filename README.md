@@ -10,6 +10,7 @@
 
  # 🧐 Vista rapida del detalle del los trabajos
  jgdjdjgdjg
+ 
 <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Detail.gif?" align="center" height="700" width="350" ></a>
 
 
