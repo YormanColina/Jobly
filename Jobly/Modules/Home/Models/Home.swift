@@ -11,7 +11,11 @@ import ObjectMapper
 struct Home: Mappable {
     var widgets: [Widget] = []
     
-    init() {}
+    init() {
+        let fakeCategories = [Categorie(), Categorie(), Categorie(), Categorie()]
+        let fakeJobs = [Job(), Job()]
+        widgets = [Widget(values: fakeCategories, type: "Categories"), Widget(values: fakeJobs, type: "Jobs")]
+    }
     
     init?(map: Map) {}
     

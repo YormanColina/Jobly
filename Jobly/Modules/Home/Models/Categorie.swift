@@ -13,8 +13,9 @@ struct Categorie: Mappable {
     var image: String = ""
     var color: String = ""
     var title: String = ""
+    var isLoader: Bool = true
     
-    init(){}
+    init() {}
     
     init?(map: Map) {}
     
@@ -23,6 +24,7 @@ struct Categorie: Mappable {
         image <- map  ["image"]
         color <- map  ["color"]
         title <- map  ["title"]
+        isLoader = false
     }
     
    

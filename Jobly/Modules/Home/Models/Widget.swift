@@ -14,7 +14,12 @@ struct Widget: Mappable {
     var type: String = ""
     var values: [Any] = []
     
-    init() {
+    init(values: [Any]?, type: String) {
+        guard let values = values else {
+            return
+        }
+        self.values = values
+        self.type = type
     }
     
     init?(map: Map) {}

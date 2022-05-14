@@ -37,6 +37,9 @@ class RecommendedCell: UICollectionViewCell {
     }
     
     func setupCell(recommended: Job) {
+        if recommended.isLoader {
+            backgroundColor = Colors.superLigthGary
+        }
         titleCell.text = recommended.title
         imageView?.kf.setImage(with: URL(string: recommended.image))
         descriptionCell.text = recommended.location

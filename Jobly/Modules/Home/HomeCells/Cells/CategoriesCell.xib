@@ -31,12 +31,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mvY-F4-YnQ">
                                 <rect key="frame" x="15" y="15" width="84" height="79"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWD-VU-GbL">
+                                <rect key="frame" x="9.5" y="115" width="95" height="18"/>
+                                <color key="backgroundColor" red="0.70274184598136191" green="0.70274184598136191" blue="0.70274184598136191" alpha="0.18527128258529973" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="0qp-4f-58r"/>
+                                    <constraint firstAttribute="width" constant="95" id="VcP-zx-jTx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="mvY-F4-YnQ" secondAttribute="trailing" constant="15" id="Edu-F4-JV8"/>
+                            <constraint firstItem="uWD-VU-GbL" firstAttribute="centerY" secondItem="Tgh-pr-Is5" secondAttribute="centerY" constant="67" id="KbM-dM-xR8"/>
                             <constraint firstAttribute="bottom" secondItem="mvY-F4-YnQ" secondAttribute="bottom" constant="20" id="RTa-XM-gcn"/>
                             <constraint firstAttribute="width" secondItem="Tgh-pr-Is5" secondAttribute="height" multiplier="1:1" id="VWZ-43-KRM"/>
+                            <constraint firstItem="uWD-VU-GbL" firstAttribute="centerX" secondItem="Tgh-pr-Is5" secondAttribute="centerX" id="aiL-Uo-61Y"/>
                             <constraint firstItem="mvY-F4-YnQ" firstAttribute="leading" secondItem="Tgh-pr-Is5" secondAttribute="leading" constant="15" id="h5P-KW-xdI"/>
                             <constraint firstItem="mvY-F4-YnQ" firstAttribute="top" secondItem="Tgh-pr-Is5" secondAttribute="top" constant="15" id="ld5-Jh-Ua7"/>
                         </constraints>
@@ -56,6 +66,7 @@
                 <outlet property="categoryNameLabel" destination="3Yj-H1-pCZ" id="C36-MB-LEk"/>
                 <outlet property="containerView" destination="Tgh-pr-Is5" id="Odl-Sy-zb9"/>
                 <outlet property="imageView" destination="mvY-F4-YnQ" id="Yid-XY-fC1"/>
+                <outlet property="labelViewLoader" destination="uWD-VU-GbL" id="YbH-eE-8oO"/>
             </connections>
             <point key="canvasLocation" x="-98.550724637681171" y="129.91071428571428"/>
         </collectionViewCell>

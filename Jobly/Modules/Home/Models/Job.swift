@@ -15,6 +15,9 @@ struct Job: Mappable {
     var image: String = ""
     var description: String = ""
     var owner: Owner = Owner()
+    var isLoader = true
+    
+    init() {}
     
     init?(map: Map) {}
     
@@ -25,6 +28,7 @@ struct Job: Mappable {
         image <- map ["image"]
         description <- map ["description"]
         owner <- map ["owner"]
+        isLoader = false
     }
     
     

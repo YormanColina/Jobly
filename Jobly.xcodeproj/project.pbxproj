@@ -299,14 +299,14 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
-		F995C9B327EA69A1008DE852 /* Login */ = {
+		F995C9B327EA69A1008DE852 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
 				F995C9B627EA69E6008DE852 /* View */,
 				F995C9B527EA69E4008DE852 /* Controller */,
 				F995C9B427EA69D4008DE852 /* Model */,
 			);
-			path = Login;
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		F995C9B427EA69D4008DE852 /* Model */ = {
@@ -453,7 +453,7 @@
 			isa = PBXGroup;
 			children = (
 				F995C9B727EA6A06008DE852 /* JobDetail */,
-				F995C9B327EA69A1008DE852 /* Login */,
+				F995C9B327EA69A1008DE852 /* SignIn */,
 				F995C9BF27EA6AC9008DE852 /* Home */,
 				F995C9BB27EA6A8A008DE852 /* Profile */,
 			);

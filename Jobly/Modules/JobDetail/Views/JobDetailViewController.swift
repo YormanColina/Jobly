@@ -328,27 +328,3 @@ extension JobDetailViewController: UICollectionViewDelegate {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//(n - min) / (max - min)
-
-
-//let n1 = imageHeigthConstraint.constant * 20 / 100
-//let num = (n1 - 20) / (32 - 20)
-//
-////        print(n1, "n1")
-//print(num, "num")
-////        print(percentaje, "porcentaje")

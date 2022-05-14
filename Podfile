@@ -5,9 +5,6 @@ target 'Jobly' do
   pod 'ObjectMapper', '~> 3.5'
   pod 'Alamofire', '~> 5.5'
   pod 'Kingfisher', '~> 7.0'
-  pod 'Firebase/Storage'
-  pod 'Firebase/Analytics'
-  pod 'FirebaseCrashlytics'
   pod 'GoogleSignIn'
   pod 'Firebase/Auth'
 
