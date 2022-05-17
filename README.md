@@ -5,12 +5,12 @@
 </div>
 
 ### Diagrama de clases
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.png" align="center" height="700" width="800"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.drawio.png" align="center" height="700" width="800"></a>
    
 </div>
 
 ### Diagrama de Flujo
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.png" align="center" height="700" width="800"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.drawio.png" align="center" height="700" width="800"></a>
 
 
 </div>
@@ -23,12 +23,12 @@
 </div>
  
 ### Diagrama de clases
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.png" align="center" height="900" width="800"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center" height="900" width="800"></a>
 
 </div>
 
 ### Diagrama de Flujo
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.png" align="center" height="900" width="800"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center" height="900" width="800"></a>
 
 
 </div>
@@ -41,10 +41,10 @@
 </div>
 
 ### Diagrama de clases
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.png" align="center" height="900" width="800"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="center" height="900" width="800"></a>
 
 </div>
 
 ### Diagrama de Flujo
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.png" align="center" height="900" width="800"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="center" height="900" width="800"></a>
 
