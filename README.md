@@ -13,7 +13,7 @@
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.png" align="center" height="700" width="800"></a>
 
 
-
+</div>
 
 
  # 🏠 Home Module
@@ -25,11 +25,13 @@
 ### Diagrama de clases
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.png" align="center" height="900" width="800"></a>
 
+</div>
+
 ### Diagrama de Flujo
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.png" align="center" height="900" width="800"></a>
 
 
-
+</div>
 
 
  # 🧐 Job Detail
@@ -40,6 +42,8 @@
 
 ### Diagrama de clases
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.png" align="center" height="900" width="800"></a>
+
+</div>
 
 ### Diagrama de Flujo
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.png" align="center" height="900" width="800"></a>
