@@ -5,6 +5,7 @@
 </div>
 
 Descripcion de modulo
+### Diagrama de clases
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.png" align="center" height="700" width="800"></a>
 
 
