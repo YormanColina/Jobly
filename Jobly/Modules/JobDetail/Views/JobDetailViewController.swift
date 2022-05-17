@@ -14,7 +14,6 @@ class JobDetailViewController: UIViewController {
     @IBOutlet private weak var titleWork: UILabel!
     @IBOutlet private weak var workImage: UIImageView!
     @IBOutlet private weak var imageHeigthConstraint: NSLayoutConstraint!
-    @IBOutlet private weak var labelTopContraint: NSLayoutConstraint!
     @IBOutlet weak var blurImage: UIVisualEffectView!
     @IBOutlet weak var viewHeaderContainer: UIView!
     @IBOutlet weak var bottomView: UIView!
@@ -27,12 +26,11 @@ class JobDetailViewController: UIViewController {
     
     private var controller: JobDetailControlable? = JobDetailController()
     private var id: String = ""
-    private var job: Job
     
     //MARK: Initializers
     
     init(job: Job) {
-        self.job = job
+        controller?.job = job
         self.id = job.id
         super.init(nibName: "JobDetailViewController", bundle: nil)
     }
@@ -74,8 +72,8 @@ class JobDetailViewController: UIViewController {
     }
     
     private func configuratedUI() {
-        titleWork?.text = job.title
-        workImage?.kf.setImage(with: URL(string: job.image))
+        titleWork?.text = controller?.job.title
+        workImage?.kf.setImage(with: URL(string: controller?.job.image ?? ""))
         
         blurImage.layer.masksToBounds = true
         titleWork.textColor = .white

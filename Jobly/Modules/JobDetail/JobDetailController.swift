@@ -12,11 +12,14 @@ import Alamofire
 protocol JobDetailControlable: AnyObject {
     var jobDetail: JobDetail { get set }
     func getDetail(id: String, completion: @escaping () -> Void)
+    var job: Job { get set }
 }
 
 
 class JobDetailController: JobDetailControlable {
     var jobDetail: JobDetail = JobDetail()
+    var job: Job = Job()
+    
     
     func getDetail(id: String, completion: @escaping () -> Void) {
         AF.request("https://demo9229930.mockable.io/" + id).responseJSON { response in
