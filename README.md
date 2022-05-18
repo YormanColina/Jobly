@@ -3,6 +3,7 @@
  Esta en unas aplicación de prueba que busca hacer semejanza de lo una aplicación que conecta a los empleadores con los posibles aspirantes mediante vacantes de trabajo en distintas Areas laborales de distintas  empresas. Enfocándome en la parte de diseño mayormente y tratando de hacer una aplicación funcional y de fácil manejo para todos.
  
  En esta Aplicación acion hago uso de distintas herramientas en su mayoría nativas de Xcode, entre ellas están:
+ 
 - Consumo de API REST
 - Inicio de Sesión Con Google
 - AutoLayout (UIKit)
@@ -16,6 +17,7 @@
 - Colores gradientes
 
 Dependencias: 
+ 
 - ObjectMapper: Manejo y transformación de informacion de una Data JSON
 - Alamofire: Consumo de servicio API REST (En este caso un mock con JSON)
 - KingFisher: Descarga de imágenes
@@ -23,6 +25,7 @@ Dependencias:
 - Firebase Authenticaiton: Acceso Sencillo con Google (Próximamente Facebook, Github, Twitter y mas)
 
 Arquitectura:
+ 
 - MVC
 
  
@@ -31,7 +34,7 @@ Arquitectura:
 # 📲 Login Module
 <div align='center'>
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a>
-</div>
+
 
 ---
 <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.drawio.png" align="center" height="700" width="800"></a>  
@@ -47,12 +50,12 @@ Arquitectura:
 
 <div align='center'>
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Home.gif" align="center" height="700" width="350"></a>
-</div>
+
  
 ---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center" height="900" width="800"></a>
 
-</div>
+
 
 ---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center" height="900" width="500"></a>
@@ -70,7 +73,7 @@ Arquitectura:
 ---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="center" height="900" width="800"></a>
 
-</div>
+
 
 ---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="center" height="900" width="500"></a>
