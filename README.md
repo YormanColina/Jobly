@@ -19,8 +19,8 @@ Dependencias:
  
 - ObjectMapper: Manejo y transformación de informacion de una Data JSON
 - Alamofire: Consumo de servicio API REST, en este caso un mock-services, por ejemplo: 
- - https://demo9229930.mockable.io/android/fronted
- -https://demo9229930.mockable.io/ 
+ * https://demo9229930.mockable.io/android/fronted
+ * https://demo9229930.mockable.io/ 
 - KingFisher: Descarga de imágenes
 - GoogleSignIn: Inicio de sección con Google
 - Firebase Authentication: Authenticacion de GoogleSession
