@@ -48,7 +48,8 @@ Arquitectura:
 
 ##### Decripcion del modulo
 
-kdvsdjvnjsd vdj vdsjw
+En esta pantalla hice una customizacion del backgroundColor de la pantalla agregando un color grandiente con dos colores.
+Mediante una verificacion de usuario de google en el SceneDelegate se asigna el rootController de la aplicacion, de esta forma si ya hay un usuario registado el rootController va a ser el Home, si no vaa abrir la pantalla de Sign In
 
 
  # 🏠 Home Module
