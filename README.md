@@ -4,12 +4,12 @@
 
 </div>
 
-### Diagrama de clases
+
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.drawio.png" align="center" height="700" width="800"></a>
    
 </div>
 
-### Diagrama de Flujo
+
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.drawio.png" align="center" height="700" width="800"></a>
 
 
