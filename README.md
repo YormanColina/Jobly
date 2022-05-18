@@ -55,9 +55,8 @@ En este módulo hice inicio de sesión con Google, usando GoogleSignIn y autenti
 
  # 🏠 Home Module
  
- En este módulo se realizó uso de collecciones de vistas verticales y horizontales, la información de la home llega desde el cunsumo de la API usando Alamofire, se realizaron customizaciones en los botones de los UINavigationBarButtons tambien usando la foto de perfil de Google del usuario; creaciónes y configuraciones de sombras en los mismos botones, se realizó una optimización en el título de la vista para mayor comodidad del usuario al momento de desplazarse verticalmente sobre la vista, se añadieron collecciones de vistas horizontales para mayor dinamismo en las diferentes secciones de la home con diferentes diseños para las celdas, la seccion de recomendados tiene la opción de abrir el detalle de un trabajo presionando cualquiera de las celdas, no se añadió para las demas secciones por el alcance del proyecto
+ En este módulo se realizó uso de collecciones de vistas verticales y horizontales, la información de la home llega desde el consumo de la API usando Alamofire, se realizaron customizaciones en los botones de los UINavigationBarButtons tambien usando la foto de perfil de Google del usuario, se realizaron creaciónes y configuraciones de sombras en los mismos botones, se realizó una optimización en el título de la vista para mayor comodidad del usuario al momento de desplazarse verticalmente sobre la vista, se añadieron collecciones de vistas horizontales para mayor dinamismo en las diferentes secciones de la home con diferentes diseños para las celdas, la sección de recomendados y populares tiene la opción de abrir el detalle de un trabajo, las demás secciónes no tienen accesibilidad por el alcance del proyecto
  
- # 🏠 Home Module
 
 <div align='center'>
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Home.gif" align="center" height="700" width="350"></a>
