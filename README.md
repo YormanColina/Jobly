@@ -41,7 +41,7 @@
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="center" height="900" width="800"></a>
 
 </div>
----
 
+---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="center" height="900" width="800"></a>
 
