@@ -1,6 +1,7 @@
 #  Description 📝
 <div align='left'>
- Esta en unas aplicación de prueba que busca hacer semejanza de lo una aplicación que conecta a los empleadores con los posibles aspirantes mediante vacantes de trabajo en distintas Areas laborales de distintas  empresas. Enfocándome en la parte de diseño mayormente y tratando de hacer una aplicación funcional y de fácil manejo para todos.
+ Esta en unas aplicación de prueba que busca hacer semejanza de lo una aplicación que conecta a los empleadores con los posibles aspirantes mediante vacantes de trabajo en distintas Areas laborales de distintas  empresas. Enfocándome en la parte de diseño mayormente y tratando de hacer una aplicación funcional y de fácil manejo para todos
+ 
  
  En esta Aplicación acion hago uso de distintas herramientas en su mayoría nativas de Xcode, entre ellas están:
  
