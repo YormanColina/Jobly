@@ -41,14 +41,14 @@ Arquitectura:
 En este módulo se hizo integración de GoogleSignIn dando facilidad al usuario de hacer login con su cuenta de Google, de igual forma se uso FirebaseAuth para la autenticación del usuario, se hizo un manejo de estados de google de manera que si existe un correo registrado en la app se muestra la Home de la aplicación, y en caso de no haber usuario registrado darle acceso al Login de la app, se hizo uso de vistas con gradientes y se utilizo un diseño agradable y óptimo y de fácil uso para cualquier usuario.
 
 <div align='center'>
-  <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a>
+  <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center"></a>
 
 
 ---
-<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.drawio.png" align="center" height="300" width="500"></a>  
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.drawio.png" align="center"></a>  
 
 ---
-<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.drawio.png" align="center" height="500" width="400"></a>
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.drawio.png" align="center"></a>
 
 
 </div>
@@ -60,13 +60,13 @@ En este módulo se hizo integración de GoogleSignIn dando facilidad al usuario 
  
 
 <div align='center'>
-  <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Home.gif" align="center" height="700" width="350"></a>
+  <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Home.gif" align="center"></a>
  
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center" height="500" width="500"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center"></a>
 
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center" height="400" width="300"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center"></a>
 
 </div>
 
@@ -76,10 +76,10 @@ En este módulo se hizo integración de GoogleSignIn dando facilidad al usuario 
 En este módulo se realizó uso de una colleción de vistas que al igual que la home tiene dinamismo en la cabecera de la vista cambiando el tamaño del texto y de la imagen al momento de desplazarse sobre la vista para mayor observabilidad del contenido, la información viene desde el consumo de una API usando Alamofire, se hizo diseño de direfentes celdas para la collecion, al igual que en la home se hicieron creaciones de sombras y customizaciones en ellas, se realizó  también  una animación en la vista de la parte inferior de la pantalla la cual se muestra dinámicamente de abajo hacia arriba con un botton para aplicar a la oferta y el tipo de trabajo de la oferta, se hizo uso de un efecto de vista difuminado sobre la imagen de fondo de la cabecera y se le colocó dinamismo a el tamaño de las celdas de manera que estas se ajustan automáticamente a la información que viene de la API.
 
 <div align='center'> 
-  <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Detail.gif?" align="center" height="700" width="350" ></a>
+  <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Detail.gif?" align="center"></a>
  
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="rigth" height="500" width="500"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="rigth"></a>
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth" height="400" width="200"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth"></a>
 
