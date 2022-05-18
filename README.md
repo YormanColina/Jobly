@@ -1,4 +1,9 @@
- # 📲 Login Module
+# Description 📝
+<div align='center'>
+ Esta en unas aplicación de prueba que busca hacer semejanza de lo una aplicación que conecta a los empleadores con los posibles aspirantes mediante vacantes de trabajo en distintas Areas laborales de distintas  empresas. Enfocándome en la parte de diseño mayormente y tratando de hacer una aplicación funcional y de fácil manejo para todos.
+
+
+# 📲 Login Module
 <div align='center'>
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a>
 </div>
