@@ -1,6 +1,6 @@
-#  Description 📝
+#  Description 
 <div align='left'>
- Esta en unas aplicación de prueba que busca hacer semejanza de lo una aplicación que conecta a los empleadores con los posibles aspirantes mediante vacantes de trabajo en distintas Areas laborales de distintas  empresas. Enfocándome en la parte de diseño mayormente y tratando de hacer una aplicación funcional y de fácil manejo para todos
+ Esta en una aplicación que busca hacer semejanza de una aplicación que conecta a los empleadores con los posibles aspirantes mediante vacantes de trabajo en distintas áreas laborales de distintas empresas. Enfocándome en la parte de diseño mayormente y tratando de hacer una aplicación funcional y de fácil manejo para todos
 
 Herramientas:
  
@@ -8,17 +8,18 @@ Herramientas:
 - Inicio de sesión con Google
 - AutoLayout (UIKit)
 - Animación de vistas
-- Creación de ViewControllers mediante xibs, Sin usar Storyboars
+- Creación de view controllers mediante xibs, Sin usar Storyboards
 - Customización de UINavigationBar y UINavigationBarButtom
 - Uso de UICollectionView, UICollectionViewDelegate, UICollectionViewDatasource, UICollectionViewDelegateFlowLayout
 - Creacion y configuracion de sombras
-- Navegación ion entre ViewControllers usando UINavigationController
-- Creacion de Vistas con gradientes
+- Navegación entre view controllers usando UINavigationController
+- Creacion de vistas con gradientes
 
 Dependencias: 
  
 - ObjectMapper: Manejo y transformación de informacion de una Data JSON
-- Alamofire: Consumo de servicio API REST, (en este caso un mock-services, por ejemplo: https://demo9229930.mockable.io/android/fronted o  https://demo9229930.mockable.io/ )
+- Alamofire: Consumo de servicio API REST, en este caso un mock-services, por ejemplo: - https://demo9229930.mockable.io/android/fronted
+ -https://demo9229930.mockable.io/ 
 - KingFisher: Descarga de imágenes
 - GoogleSignIn: Inicio de sección con Google
 - Firebase Authentication: Authenticacion de GoogleSession
