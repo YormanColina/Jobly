@@ -69,6 +69,10 @@ Mediante una verificacion de usuario de google en el SceneDelegate se asigna el 
 
 </div>
 
+##### Decripcion del modulo
+
+En este modulo la vista esta co
+
 
  # 🧐 Job Detail
 
