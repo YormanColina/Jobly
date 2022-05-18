@@ -8,6 +8,7 @@ Herramientas:
 - Inicio de sesión con Google
 - AutoLayout (UIKit)
 - Animación de vistas
+- CocoaPods
 - Creación de view controllers mediante xibs, Sin usar Storyboards
 - Customización de UINavigationBar y UINavigationBarButtom
 - Uso de UICollectionView, UICollectionViewDelegate, UICollectionViewDatasource, UICollectionViewDelegateFlowLayout
@@ -52,6 +53,10 @@ En este módulo hice inicio de sesión con Google, usando GoogleSignIn y autenti
 </div>
 
 
+ # 🏠 Home Module
+ 
+ En este módulo se realizó uso de collecciones de vistas verticales y horizontales, la información de la home llega desde el cunsumo de la API usando Alamofire, se realizaron customizaciones en los botones de los UINavigationBarButtons tambien usando la foto de perfil de Google del usuario; creaciónes y configuraciones de sombras en los mismos botones, se realizó una optimización en el título de la vista para mayor comodidad del usuario al momento de desplazarse verticalmente sobre la vista, se añadieron collecciones de vistas horizontales para mayor dinamismo en las diferentes secciones de la home con diferentes diseños para las celdas, la seccion de recomendados tiene la opción de abrir el detalle de un trabajo presionando cualquiera de las celdas, no se añadió para las demas secciones por el alcance del proyecto
+ 
  # 🏠 Home Module
 
 <div align='center'>
