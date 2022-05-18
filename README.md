@@ -66,7 +66,7 @@ Mediante una verificacion de usuario de google en el SceneDelegate se asigna el 
 
 
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center" height="300" width="300"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center" height="400" width="300"></a>
 
 
 </div>
@@ -87,5 +87,5 @@ En este modulo la vista esta co
 
 
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth" height="300" width="200"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth" height="400" width="200"></a>
 
