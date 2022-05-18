@@ -29,14 +29,14 @@ Arquitectura:
  
 - MVC (Modelo - Vista - Controllador) Use este modelo que me permite conectar el proyecto de manera sencilla donde el controlador es el intermediario entre el modelo y la vista d
  
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/MVC.drawio.png" align="center" height="200" width="500"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/MVC.drawio.png" align="rigth" height="200" width="500"></a>
 
  
 </div>
 
 # 📲 Login Module
 
-En este módulo hice inicio de sesión con Google, usando GoogleSignIn y autenticación de usuario con FirebaseAuth, tambien se relizó manejo de estados cuando ya hay un usuario logueado en la aplicación, dándole acceso directo a la home de la app en caso de que exísta, tambien se manejo el uso de a información del usuario, la aplicación usa su foto de perfil de Google, tambien se crearon vistas con colores gradientes 
+En este módulo hice inicio de sesión con Google, usando GoogleSignIn y autenticación de usuario con FirebaseAuth, tambien se realizó manejo de estados cuando ya hay un usuario logueado en la aplicación, dándole acceso directo a la home de la app en caso de que exísta, tambien se manejo el uso de a información del usuario, la aplicación usa su foto de perfil de Google, tambien se crearon vistas con colores gradientes 
 
 <div align='center'>
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a>
