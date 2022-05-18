@@ -5,18 +5,16 @@
 Herramientas:
  
 - Consumo de API REST
-- Inicio de Sesión Con Google
+- Inicio de sesión con Google
 - AutoLayout (UIKit)
-- Animación ion de Vistas
-- Creación de ViewControllers mediante XIBS (Sin Storyboars)
-- Customización de UINavigationBar y UINavigationButtom
-- UICollectionView, UICollectionViewDelegate, UICollectionViewDatasource, UICollectionViewDelegateFlowLayout
-- SubVistas con Colecciones 
-- Customizacion de las sobras de diferentes vistas
-- Navegación ion entre ViewControllers
-- Colores gradientes
+- Animación de vistas
+- Creación de ViewControllers mediante xibs, Sin usar Storyboars
+- Customización de UINavigationBar y UINavigationBarButtom
+- Uso de UICollectionView, UICollectionViewDelegate, UICollectionViewDatasource, UICollectionViewDelegateFlowLayout
+- Creacion y configuracion de sombras
+- Navegación ion entre ViewControllers usando UINavigationController
+- Creacion de Vistas con gradientes
 
- 
 Dependencias: 
  
 - ObjectMapper: Manejo y transformación de informacion de una Data JSON
