@@ -60,34 +60,23 @@ En este módulo hice inicio de sesión con Google, usando GoogleSignIn y autenti
 
 <div align='center'>
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Home.gif" align="center" height="700" width="350"></a>
-
  
 ---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center" height="500" width="500"></a>
 
-
-
 ---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center" height="400" width="300"></a>
 
-
 </div>
-
-##### Decripcion del modulo
-
-En este modulo la vista esta co
 
 
  # 🧐 Job Detail
 
 <div align='center'> 
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Detail.gif?" align="center" height="700" width="350" ></a>
-
+ 
 ---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="rigth" height="500" width="500"></a>
-
-
-
 ---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth" height="400" width="200"></a>
 
