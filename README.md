@@ -36,9 +36,7 @@ Arquitectura:
 
 # 📲 Login Module
 
-
-En esta pantalla hice una customizacion del backgroundColor de la pantalla agregando un color grandiente con dos colores.
-Mediante una verificacion de usuario de google en el SceneDelegate se asigna el rootController de la aplicacion, de esta forma si ya hay un usuario registado el rootController va a ser el Home, si no vaa abrir la pantalla de Sign In. En las imagenes esta adujnto el diagrama de comunicacion entre clases y/o estructuras y tambien esta el flujo de la vista 💁
+En este módulo hice inicio de sesión con Google, usando GoogleSignIn y autenticación de usuario con FirebaseAuth, tambien se relizó manejo de estados cuando ya hay un usuario logueado en la aplicación, dándole acceso directo a la home de la app en caso de que exísta, tambien se manejo el uso de a información del usuario, la aplicación usa su foto de perfil de Google, tambien se crearon vistas con colores gradientes 
 
 <div align='center'>
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a>
