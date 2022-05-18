@@ -25,7 +25,7 @@
 </div>
 
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="trailing" height="900" width="500"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center" height="900" width="500"></a>
 
 
 </div>
