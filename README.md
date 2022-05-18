@@ -44,10 +44,9 @@ En este módulo se hizo integración de GoogleSignIn dando facilidad al usuario 
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a>
 
 
----
 <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.drawio.png" align="center"></a>  
 
----
+
 <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.drawio.png" align="center"></a>
 
 
@@ -62,10 +61,10 @@ En este módulo se hizo integración de GoogleSignIn dando facilidad al usuario 
 <div align='center'>
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Home.gif" align="center" height="700" width="350"></a>
  
----
+
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center"></a>
 
----
+
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center"></a>
 
 </div>
@@ -78,8 +77,8 @@ En este módulo se realizó uso de una colleción de vistas que al igual que la 
 <div align='center'> 
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Detail.gif?" align="center" height="700" width="350"></a>
  
----
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="rigth"></a>
----
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth"></a>
 
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth"></a>
+ 
+</div>
