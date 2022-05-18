@@ -3,7 +3,7 @@
  Esta en una aplicación que busca hacer semejanza a una aplicación que conecta a los empleadores con los posibles aspirantes mediante vacantes de trabajo en distintas áreas laborales de distintas empresas. Enfocándome en la parte de diseño mayormente y tratando de hacer una aplicación funcional y de fácil manejo para todos
 
 
- Herramientas:
+Herramientas:
  
 - Consumo de API REST
 - Inicio de sesión con Google
@@ -25,7 +25,7 @@ Dependencias:
   * https://demo9229930.mockable.io/ 
 - KingFisher: Descarga de imágenes
 - GoogleSignIn: Inicio de sección con Google
-- Firebase Authentication: Authenticacion de GoogleSession
+- FirebaseAuth: Authenticacion de Google session
 
 Arquitectura:
  
