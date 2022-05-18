@@ -35,6 +35,12 @@ Arquitectura:
 </div>
 
 # 📲 Login Module
+
+##### Decripcion del modulo
+
+En esta pantalla hice una customizacion del backgroundColor de la pantalla agregando un color grandiente con dos colores.
+Mediante una verificacion de usuario de google en el SceneDelegate se asigna el rootController de la aplicacion, de esta forma si ya hay un usuario registado el rootController va a ser el Home, si no vaa abrir la pantalla de Sign In. En las imagenes esta adujnto el diagrama de comunicacion entre clases y/o estructuras y tambien esta el flujo de la vista 💁
+
 <div align='center'>
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a>
 
@@ -47,11 +53,6 @@ Arquitectura:
 
 
 </div>
-
-##### Decripcion del modulo
-
-En esta pantalla hice una customizacion del backgroundColor de la pantalla agregando un color grandiente con dos colores.
-Mediante una verificacion de usuario de google en el SceneDelegate se asigna el rootController de la aplicacion, de esta forma si ya hay un usuario registado el rootController va a ser el Home, si no vaa abrir la pantalla de Sign In. En las imagenes esta adujnto el diagrama de comunicacion entre clases y/o estructuras y tambien esta el flujo de la vista 💁
 
 
  # 🏠 Home Module
