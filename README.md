@@ -61,12 +61,12 @@ Mediante una verificacion de usuario de google en el SceneDelegate se asigna el 
 
  
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center" height="900" width="800"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center" height="400" width="500"></a>
 
 
 
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center" height="900" width="500"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center" height="500" width="400"></a>
 
 
 </div>
