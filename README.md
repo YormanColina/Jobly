@@ -88,5 +88,5 @@ En este modulo la vista esta co
 
 
 ---
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="center" height="500" width="200"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth" height="500" width="200"></a>
 
