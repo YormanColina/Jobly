@@ -29,7 +29,7 @@ Arquitectura:
  
 - MVC (Modelo - Vista - Controllador) Use este modelo que me permite conectar el proyecto de manera sencilla donde el controlador es el intermediario entre el modelo y la vista d
  
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/MVC.drawio.png" align="center" height="700" width="350"></a>
+   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/MVC.drawio.png" align="center" height="300" width="350"></a>
 
  
 </div>
