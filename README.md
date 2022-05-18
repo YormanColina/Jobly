@@ -80,7 +80,6 @@ En este modulo la vista esta co
 
 <div align='center'> 
   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Detail.gif?" align="center" height="700" width="350" ></a>
-</div>
 
 ---
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="rigth" height="500" width="500"></a>
