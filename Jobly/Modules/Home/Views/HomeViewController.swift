@@ -11,20 +11,20 @@ import Kingfisher
 class HomeViewController: UIViewController {
     // MARK: @IBOutlets
     
-    @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var notificationButton: UIButton!
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var titleHeader: UILabel!
-    @IBOutlet weak var profileButton: UIButton!
-    @IBOutlet weak var viewHeaderHeight: NSLayoutConstraint!
-    @IBOutlet weak var searchImage: UIImageView!
-    @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var searchView: UIView!
-    @IBOutlet weak var viewImage: UIView!
+    @IBOutlet private weak var userImage: UIImageView!
+    @IBOutlet private weak var notificationButton: UIButton!
+    @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet private weak var titleHeader: UILabel!
+    @IBOutlet private weak var profileButton: UIButton!
+    @IBOutlet private weak var viewHeaderHeight: NSLayoutConstraint!
+    @IBOutlet private weak var searchImage: UIImageView!
+    @IBOutlet private weak var searchTextField: UITextField!
+    @IBOutlet private weak var searchView: UIView!
+    @IBOutlet private weak var viewImage: UIView!
     
     // MARK: Properties
-    var controller: HomeController = HomeController()
-    var currentUserImage: URL?
+    private var controller: HomeController = HomeController()
+    private var currentUserImage: URL?
     
     // MARK: Initializers
     init() {
@@ -42,10 +42,8 @@ class HomeViewController: UIViewController {
     
     // MARK: IBActions
     
-    
     @IBAction func presentProfile(_ sender: Any) {
-        
-        self.navigationController?.pushViewController(ProfileViewController(), animated: true)
+//        self.navigationController?.pushViewController(ProfileViewController(), animated: true)
     }
     
     // MARK: Methods
@@ -55,8 +53,6 @@ class HomeViewController: UIViewController {
     }
     
     private func configurateUI() {
-        
-        
         notificationButton.layer.cornerRadius = 25
         notificationButton.layer.borderColor = UIColor.lightGray.cgColor
         notificationButton.layer.borderWidth = 0.2
@@ -171,7 +167,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        
+
         return CGSize(width: UIScreen.main.bounds.width, height: 80)
     }
 }
@@ -182,7 +178,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 extension HomeViewController: UICollectionViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
         let offSet = scrollView.contentOffset.y
         let maxOffSet = -367.0
         let minOffset = -210.0

@@ -9,15 +9,11 @@ import UIKit
 
 class DescriptionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var salaryLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var footerView: UIView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var salaryLabel: UILabel!
+    @IBOutlet private weak var locationLabel: UILabel!
+    @IBOutlet private weak var footerView: UIView!
+
     
     func setupDescription(description: Description) {
         let myAtribbuted = NSAttributedString(string: description.location)
@@ -33,11 +29,6 @@ class DescriptionViewCell: UICollectionViewCell {
         
         descriptionLabel.numberOfLines = 0
         descriptionLabel.sizeToFit()
-        
-        
-//        descriptionLabel.frame =  CGRect(x: 0, y: 0, width: descriptionLabel.intrinsicContentSize.width, height: descriptionLabel.intrinsicContentSize.height)
-//
-//        print(descriptionLabel.frame.height)
     }
 
 }

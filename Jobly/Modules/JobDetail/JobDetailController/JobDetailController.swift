@@ -1,8 +1,8 @@
 //
-//  JobDetailController.swift
+//  WorkDetailController.swift
 //  Jobly
 //
-//  Created by Apple on 20/05/22.
+//  Created by Jyferson Colina on 19/03/22.
 //
 
 import Foundation
@@ -32,3 +32,5 @@ class JobDetailController: JobDetailControlable {
         }
     }
 }
+
+

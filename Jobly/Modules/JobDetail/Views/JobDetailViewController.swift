@@ -14,13 +14,12 @@ class JobDetailViewController: UIViewController {
     @IBOutlet private weak var titleWork: UILabel!
     @IBOutlet private weak var workImage: UIImageView!
     @IBOutlet private weak var imageHeigthConstraint: NSLayoutConstraint!
-    @IBOutlet weak var blurImage: UIVisualEffectView!
-    @IBOutlet weak var viewHeaderContainer: UIView!
-    @IBOutlet weak var bottomView: UIView!
-    @IBOutlet weak var applyButton: UIButton!
-    @IBOutlet weak var headerFooterView: UIView!
-    @IBOutlet weak var safeAreaHeightBottom: NSLayoutConstraint!
-    @IBOutlet weak var bottomTitleConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var blurImage: UIVisualEffectView!
+    @IBOutlet private weak var viewHeaderContainer: UIView!
+    @IBOutlet private weak var bottomView: UIView!
+    @IBOutlet private weak var applyButton: UIButton!
+    @IBOutlet private weak var headerFooterView: UIView!
+    @IBOutlet private weak var safeAreaHeightBottom: NSLayoutConstraint!
     
     //MARK: Properties
     
@@ -50,7 +49,7 @@ class JobDetailViewController: UIViewController {
             dismissViewController()
         })
         navigationItem.rightBarButtonItem = customizingNavigationBar(image: UIImage(named: "saveJob")!, imageWidth: 18, imageHeight: 20, completion: {
-            navigationController?.pushViewController(ProfileViewController(), animated: true)
+//            navigationController?.pushViewController(ProfileViewController(), animated: true)
         })
         setupUI()
         setupTransparentNagigatioNBar()
@@ -58,8 +57,6 @@ class JobDetailViewController: UIViewController {
         safeAreaHeightBottom.constant += UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0
         collectionView.contentInset = UIEdgeInsets(top: 270, left: 0, bottom: safeAreaHeightBottom.constant, right: 0)
     }
-    
-    //MARK: IBActions
     
     //MARK: Methods
     
@@ -308,7 +305,6 @@ extension JobDetailViewController: UICollectionViewDelegate {
         let heigthDiferenceOffset = maxheigtHeader - abs(maxOfset)
         let fontDifference: CGFloat = 12.0
         let maxFont: CGFloat = 32.0
-        
         
         if offSet <= minOffset && offSet >= maxOfset {
             imageHeigthConstraint.constant = abs(offSet) + heigthDiferenceOffset
