@@ -80,11 +80,22 @@ En este módulo se hizo integración de GoogleSignIn dando facilidad al usuario 
 <div align='center'>
   Vista de la Home
 </div>
+ 
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/blanco.drawio.png" align="center" height="80"></a>
 
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center"></a>
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeClassDiagram.drawio.png" align="center"></a>
+ 
+<div align='center'>
+  Diagrama de comunicacion entre clases
+</div>
 
-
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center"></a>
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/blanco.drawio.png" align="center" height="80"></a>
+ 
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/HomeFlowDiagram.drawio.png" align="center"></a>
+ 
+<div align='center'>
+ Diagrama de flujo
+</div>
 
 </div>
 
