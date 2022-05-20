@@ -53,7 +53,6 @@ _ _ _
  
 <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.drawio.png" align="center"></a> </div>
 
-_ _ _
 
 </div>
 
