@@ -47,14 +47,14 @@ En este módulo se hizo integración de GoogleSignIn dando facilidad al usuario 
 <div align='center'>
   Vista del Login
 </div>
- * * *
- 
-<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.drawio.png" align="center"></a>
- 
- * * *
- 
-<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.drawio.png" align="center"></a> </div>
 
+</div> heigth="20"
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.drawio.png" align="center"></a>
+</div>
+
+</div> heigth="20"
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.drawio.png" align="center"></a> </div>
+</div>
 </div>
 
 
