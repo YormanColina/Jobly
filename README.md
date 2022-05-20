@@ -105,10 +105,24 @@ En este módulo se hizo integración de GoogleSignIn dando facilidad al usuario 
 En este módulo se realizó uso de una colleción de vistas que al igual que la home tiene dinamismo en la cabecera de la vista cambiando el tamaño del texto y de la imagen al momento de desplazarse sobre la vista para mayor observabilidad del contenido, la información viene desde el consumo de una API usando Alamofire, se hizo diseño de direfentes celdas para la collecion, al igual que en la home se hicieron creaciones de sombras y customizaciones en ellas, se realizó  también  una animación en la vista de la parte inferior de la pantalla la cual se muestra dinámicamente de abajo hacia arriba con un botton para aplicar a la oferta y el tipo de trabajo de la oferta, se hizo uso de un efecto de vista difuminado sobre la imagen de fondo de la cabecera y se le colocó dinamismo a el tamaño de las celdas de manera que estas se ajustan automáticamente a la información que viene de la API.
 
 <div align='center'> 
-  <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Detail.gif?" align="center" height="700" width="350"></a>
+  <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/Detail.gif?" align="center" height="700" width="350"></a>\
  
----
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="rigth"></a>
----
-   <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth"></a>
+ <div align='center'>
+  Vista del detalle
+</div>
+ 
+ 
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/blanco.drawio.png" align="center" height="80"></a>
 
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailClassDiagram.drawio.png" align="rigth"></a>
+<div align='center'>
+  Diagrama de comunicaion entre clases
+</div>
+ 
+ <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/blanco.drawio.png" align="center" height="80"></a>
+
+ <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/DetailFlowDiagram.drawio.png" align="rigth"></a>
+
+<div align='center'>
+ Diagrama de flujo
+</div>
