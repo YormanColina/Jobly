@@ -34,7 +34,7 @@ Arquitectura:
    <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/MVC.drawio.png" align="center"></a>
 </div>
 <div align='center'>
-    relacion entre las las clases del modulo
+    Relacion entre las las clases del modulo
 </div>
 </div>
 
