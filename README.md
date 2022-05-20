@@ -43,8 +43,8 @@ Arquitectura:
 En este módulo se hizo integración de GoogleSignIn dando facilidad al usuario de hacer login con su cuenta de Google, de igual forma se uso FirebaseAuth para la autenticación del usuario, se hizo un manejo de estados de google de manera que si existe un correo registrado en la app se muestra la Home de la aplicación, y en caso de no haber usuario registrado darle acceso al Login de la app, se hizo uso de vistas con gradientes y se utilizo un diseño agradable y óptimo y de fácil uso para cualquier usuario.
 
 <div align='center'>
-<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a>
-___
+<a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/login.gif" align="center" height="700" width="350"></a> ___
+
 <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/LoginClassdiagram.drawio.png" align="center"></a>
 ___
 <a href="url"><img src="https://github.com/YormanColina/Jobly/blob/main/resources/loginFlowDiagram.drawio.png" align="center"></a> </div>
