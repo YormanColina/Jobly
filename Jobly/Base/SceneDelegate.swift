@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             guard let image = GIDSignIn.sharedInstance.currentUser?.profile?.imageURL(withDimension: 96) else {
                 return
             }
-            rootNavigation.setViewControllers([HomeViewController(imageProfileURL: image)], animated: false)
+            rootNavigation.setViewControllers([SignInViewController()], animated: false)
             
         }
                                                

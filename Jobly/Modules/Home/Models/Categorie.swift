@@ -26,6 +26,4 @@ struct Categorie: Mappable {
         title <- map  ["title"]
         isLoader = false
     }
-    
-   
 }

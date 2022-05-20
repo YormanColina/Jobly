@@ -12,7 +12,6 @@
             <connections>
                 <outlet property="collectionView" destination="5af-PD-9K0" id="fY0-FN-ETK"/>
                 <outlet property="notificationButton" destination="VoY-PX-uOH" id="jx8-p5-qAa"/>
-                <outlet property="perfilButton" destination="4cJ-EA-6cN" id="6pz-n5-Di6"/>
                 <outlet property="profileButton" destination="lQI-Q3-9Yq" id="pnA-d9-dLK"/>
                 <outlet property="searchImage" destination="hq6-fS-U5G" id="ysB-5I-Gwy"/>
                 <outlet property="searchTextField" destination="RU0-He-T0E" id="MPZ-z3-YzJ"/>

@@ -44,5 +44,4 @@ class RecommendedCell: UICollectionViewCell {
         imageView?.kf.setImage(with: URL(string: recommended.image))
         descriptionCell.text = recommended.location
     }
-
 }

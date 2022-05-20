@@ -24,5 +24,4 @@ struct Owner: Mappable {
         logo <- map ["logo"]
         data <- map ["data"]
     }
-    
 }

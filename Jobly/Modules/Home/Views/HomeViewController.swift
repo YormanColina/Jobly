@@ -20,7 +20,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchImage: UIImageView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchView: UIView!
-    @IBOutlet weak var perfilButton: UIButton!
     @IBOutlet weak var viewImage: UIView!
     
     // MARK: Properties
@@ -54,22 +53,18 @@ class HomeViewController: UIViewController {
     func configuredHome(profileImage: URL) {
         userImage?.kf.setImage(with: profileImage)
     }
-  
+    
     private func configurateUI() {
         
         
         notificationButton.layer.cornerRadius = 25
         notificationButton.layer.borderColor = UIColor.lightGray.cgColor
         notificationButton.layer.borderWidth = 0.2
-        
         profileButton.layer.masksToBounds = false
-        
         profileButton.layer.cornerRadius = 25
         profileButton.layer.borderColor = UIColor.lightGray.cgColor
         profileButton.layer.borderWidth = 0.1
-        
-        perfilButton.isHidden = true
-        
+
         searchView.layer.cornerRadius = 25
         searchTextField.attributedPlaceholder = NSAttributedString(string: "Search your job...", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
         searchImage.alpha = 0.6
@@ -82,18 +77,13 @@ class HomeViewController: UIViewController {
         controller.configurateHome {
             self.collectionView.reloadData()
         }
-        
-        
         configurateUI()
         collectionView.delegate = self
         collectionView.dataSource = self
-    
         navigationController?.isNavigationBarHidden = true
         collectionView.contentInset = UIEdgeInsets(top: 320, left: 0, bottom: 30, right: 0)
         collectionView.register(UINib(nibName: "CollectionCell", bundle: nil), forCellWithReuseIdentifier: "CollectionCell")
         collectionView.register(UINib(nibName: "Header", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
-        
-       
     }
     
     override func viewDidLayoutSubviews() {
@@ -138,10 +128,8 @@ extension HomeViewController: UICollectionViewDataSource {
                     }
                 }
             }
-
             return cell
         }
-        
         return UICollectionViewCell()
     }
     
@@ -161,7 +149,6 @@ extension HomeViewController: UICollectionViewDataSource {
             return header
         }
     }
-    
     
     // Number of sections in collection
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -187,8 +174,8 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         
         return CGSize(width: UIScreen.main.bounds.width, height: 80)
     }
-
 }
+
 
 // MARK: UICollectionViewDelegate
 
@@ -204,7 +191,7 @@ extension HomeViewController: UICollectionViewDelegate {
         let maxHeigthHeader = 367.0
         
         titleHeader.layer.opacity = 1
-   
+        
         if offSet >= maxOffSet && offSet <= minOffset {
             viewHeaderHeight.constant = abs(offSet)
             if offSet > hiddenTitle{
@@ -216,9 +203,8 @@ extension HomeViewController: UICollectionViewDelegate {
         } else if offSet <= maxOffSet {
             viewHeaderHeight.constant = maxHeigthHeader
         }
-    
+        
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    
 }
 

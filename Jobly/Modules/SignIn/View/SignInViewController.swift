@@ -38,7 +38,6 @@ class SignInViewController: UIViewController {
         controller.presentHome(viewController: self) { success in
             
             guard success else {
-                print("Hubo un error en el inicio de sesion")
                 self.activitiIndicator.stopAnimating()
                 self.activitiIndicator.isHidden = true
                 self.signUpButton.isHidden = false
@@ -54,7 +53,7 @@ class SignInViewController: UIViewController {
             self.navigationController?.setViewControllers([HomeViewController(imageProfileURL: image)], animated: true)
         }
     }
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.progressView.progress = 0

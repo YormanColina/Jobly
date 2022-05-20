@@ -30,6 +30,4 @@ struct Job: Mappable {
         owner <- map ["owner"]
         isLoader = false
     }
-    
-    
 }

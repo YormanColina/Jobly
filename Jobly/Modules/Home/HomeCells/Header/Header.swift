@@ -24,8 +24,6 @@ class Header: UICollectionReusableView {
         
         if isHidden {
             moreButton.isHidden = true
-            
         }
     }
-    
 }
